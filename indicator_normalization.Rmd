@@ -13,13 +13,18 @@ library(here)
 
 # Pressure Index
 
-
-
 # Social Index
 
 ## Biodiversity Sub Index
 
 ## Surf Subindex
+
+```{r}
+# read in data
+surf_indicators <- read_csv(here("data", "surf_indicators.csv")) %>% 
+  select(-OBJECTID)
+```
+
 
 ## Social Subindex
 
