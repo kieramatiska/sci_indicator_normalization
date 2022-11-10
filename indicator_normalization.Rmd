@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
 library(here)
+library(janitor)
 ```
 
 # Pressure Index
@@ -22,10 +23,80 @@ library(here)
 ```{r}
 # read in data
 surf_indicators <- read_csv(here("data", "surf_indicators.csv")) %>% 
-  select(-OBJECTID)
+  select(-OBJECTID) %>% 
+  clean_names()
 ```
 
+### Surf Clusters
+
+```{r}
+max_cluster <- max(surf_indicators$join_count)
+min_cluster <- min(surf_indicators$join_count)
+
+cluster_normalized <- round((surf_indicators$join_count - min_cluster) / (max_cluster - min_cluster), 6)
+
+surf_indicators$normalized_cluster <- cluster_normalized
+```
+
+### Direction
+
+```{r}
+surf_indicators$normalized_direction <- surf_indicators$numerical_direction
+```
+
+### Frequency
+
+```{r}
+max_frequency <- max(surf_indicators$numerical_frequency)
+min_frequency <- min(surf_indicators$numerical_frequency)
+
+frequency_normalized <- round((surf_indicators$numerical_frequency - min_frequency) / (max_frequency - min_frequency), 6)
+
+surf_indicators$normalized_frequency <- frequency_normalized
+```
+
+### Experience
+
+```{r}
+surf_indicators$normalized_experience <- surf_indicators$numerical_experience
+```
+
+### Quality
+
+```{r}
+max_quality <- max(surf_indicators$numerical_quality)
+min_quality <- min(surf_indicators$numerical_quality)
+
+frequency_normalized <- round((surf_indicators$numerical_quality - min_quality) / (max_quality - min_quality), 6)
+
+surf_indicators$normalized_quality <- frequency_normalized
+```
+
+## Surf Subindex Export
+
+```{r}
+write_csv(surf_indicators, "surf_indicators_normalized.csv")
+```
 
 ## Social Subindex
 
 # Response Index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
