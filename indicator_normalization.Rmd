@@ -50,7 +50,7 @@ surf_indicators$normalized_direction <- surf_indicators$numerical_direction
 max_frequency <- max(surf_indicators$numerical_frequency)
 min_frequency <- min(surf_indicators$numerical_frequency)
 
-frequency_normalized <- round((surf_indicators$numerical_frequency - min_frequency) / (max_frequency - min_frequency), 6)
+frequency_normalized <- round((surf_indicators$numerical_frequency - min_frequency) / (max_frequency - min_frequency), 10)
 
 surf_indicators$normalized_frequency <- frequency_normalized
 ```
@@ -67,15 +67,35 @@ surf_indicators$normalized_experience <- surf_indicators$numerical_experience
 max_quality <- max(surf_indicators$numerical_quality)
 min_quality <- min(surf_indicators$numerical_quality)
 
-frequency_normalized <- round((surf_indicators$numerical_quality - min_quality) / (max_quality - min_quality), 6)
+quality_normalized <- round((surf_indicators$numerical_quality - min_quality) / (max_quality - min_quality), 10)
 
-surf_indicators$normalized_quality <- frequency_normalized
+surf_indicators$normalized_quality <- quality_normalized
+```
+
+## Surf Subindex Normalized
+
+```{r}
+normalized_added_indicators <- round(surf_indicators$normalized_quality + surf_indicators$normalized_experience + surf_indicators$normalized_frequency + surf_indicators$normalized_direction + surf_indicators$normalized_cluster, 10)
+
+surf_indicators$added_normalized <- normalized_added_indicators
+
+max_added <- max(surf_indicators$added_normalized)
+min_added <- min(surf_indicators$added_normalized)
+
+surf_normalized <- round((surf_indicators$added_normalized - min_added) / (max_added - min_added), 10)
+
+surf_indicators$surf_subindex <- surf_normalized
+```
+
+```{r}
+## Surf Subindex Indicators Export
+# write_csv(surf_indicators, "surf_indicators_normalized.csv")
 ```
 
 ## Surf Subindex Export
 
 ```{r}
-write_csv(surf_indicators, "surf_indicators_normalized.csv")
+write_csv(surf_indicators, file = "surf_subindex.csv")
 ```
 
 ## Social Subindex
