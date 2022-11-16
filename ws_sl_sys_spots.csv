@@ -1,0 +1,513 @@
+fid,name,surf_spot,quality,frequency,direction,type,experience
+0,Cardoso,NA,"NA","NA",NA,NA,NA
+1,Ravena,NA,"NA","NA",NA,NA,NA
+2,Praia da Vila Imbituba,NA,"NA","NA",NA,NA,NA
+3,Praia do Porto Imbituba,NA,"NA","NA",NA,NA,NA
+4,Ponta da Pinheira,NA,"NA","NA",NA,NA,NA
+5,Mocambique,NA,"NA","NA",NA,NA,NA
+6,Ponta das Canas,NA,"NA","NA",NA,NA,NA
+7,Itagua&ccedil;u,NA,"NA","NA",NA,NA,NA
+8,Caioba,NA,"NA","NA",NA,NA,NA
+9,Ilha Comprida,NA,"NA","NA",NA,NA,NA
+10,Iguape,NA,"NA","NA",NA,NA,NA
+11,Peruibe,NA,"NA","NA",NA,NA,NA
+12,Praia dos Pescadores,NA,"NA","NA",NA,NA,NA
+13,Itanhaem,NA,"NA","NA",NA,NA,NA
+14,Praia Grande,NA,"NA","NA",NA,NA,NA
+15,Praia do Forte dos Andradas,NA,"NA","NA",NA,NA,NA
+16,Praia do Forte dos Andradas,NA,"NA","NA",NA,NA,NA
+17,Praia da Ponta Grossa,NA,"NA","NA",NA,NA,NA
+18,Itaipu,NA,"NA","NA",NA,NA,NA
+19,Guaiuba,NA,"NA","NA",NA,NA,NA
+20,Santos,NA,"NA","NA",NA,NA,NA
+21,Morro do Maluf,NA,"NA","NA",NA,NA,NA
+22,Praia da Enseada,NA,"NA","NA",NA,NA,NA
+23,Embare,NA,"NA","NA",NA,NA,NA
+24,Gonzaga,NA,"NA","NA",NA,NA,NA
+25,Pereque,NA,"NA","NA",NA,NA,NA
+26,Praia Preta,NA,"NA","NA",NA,NA,NA
+27,Praia da Bertioga,NA,"NA","NA",NA,NA,NA
+28,Maresias,NA,"NA","NA",NA,NA,NA
+29,Canto de Moreira,NA,"NA","NA",NA,NA,NA
+30,Itaguere,NA,"NA","NA",NA,NA,NA
+31,Boicucanga,NA,"NA","NA",NA,NA,NA
+32,Praia de Baleia,NA,"NA","NA",NA,NA,NA
+33,Barra do Sahy,NA,"NA","NA",NA,NA,NA
+34,Praia Preta,NA,"NA","NA",NA,NA,NA
+35,Bananas Point,NA,"NA","NA",NA,NA,NA
+36,Praia do Juquei,NA,"NA","NA",NA,NA,NA
+37,Barra do Una,NA,"NA","NA",NA,NA,NA
+38,Praia da Boracéia,NA,"NA","NA",NA,NA,NA
+39,Praia Dura,NA,"NA","NA",NA,NA,NA
+40,Pereque-Acu,NA,"NA","NA",NA,NA,NA
+41,Itamambuca,NA,"NA","NA",NA,NA,NA
+42,Praia da Fazenda,NA,"NA","NA",NA,NA,NA
+43,Aventureiro,NA,"NA","NA",NA,NA,NA
+44,Praia do Leste,NA,"NA","NA",NA,NA,NA
+45,Praia do Sul,NA,"NA","NA",NA,NA,NA
+46,Praia do Meio,NA,"NA","NA",NA,NA,NA
+47,Restinga a Marambaia,NA,"NA","NA",NA,NA,NA
+48,Grumari,NA,"NA","NA",NA,NA,NA
+49,Reserva,NA,"NA","NA",NA,NA,NA
+50,Barra da Tijuca,NA,"NA","NA",NA,NA,NA
+51,Barra da Tijuca,NA,"NA","NA",NA,NA,NA
+52,Sao Conrado,NA,"NA","NA",NA,NA,NA
+53,Bambui,NA,"NA","NA",NA,NA,NA
+54,Itaipuacu,NA,"NA","NA",NA,NA,NA
+55,Barra de Marica,NA,"NA","NA",NA,NA,NA
+56,Camboinhas,NA,"NA","NA",NA,NA,NA
+57,Pirantininga,NA,"NA","NA",NA,NA,NA
+58,Jacone,NA,"NA","NA",NA,NA,NA
+59,Figueira,NA,"NA","NA",NA,NA,NA
+60,Praia do Fora,NA,"NA","NA",NA,NA,NA
+61,Laje do Pao de Acucar,NA,"NA","NA",NA,NA,NA
+62,Canal,NA,"NA","NA",NA,NA,NA
+63,Praia Seca,NA,"NA","NA",NA,NA,NA
+64,Caravelas,NA,"NA","NA",NA,NA,NA
+65,Tucuns,NA,"NA","NA",NA,NA,NA
+66,Praia Brava,NA,"NA","NA",NA,NA,NA
+67,Marataizes,NA,"NA","NA",NA,NA,NA
+68,Ponta do Ubu,NA,"NA","NA",NA,NA,NA
+69,Ponta dos Castelhanos,NA,"NA","NA",NA,NA,NA
+70,Maimba,NA,"NA","NA",NA,NA,NA
+71,Praia do Morro,NA,"NA","NA",NA,NA,NA
+72,Ponta de Bororo,NA,"NA","NA",NA,NA,NA
+73,Tropical,NA,"NA","NA",NA,NA,NA
+74,Dunas de Ule,NA,"NA","NA",NA,NA,NA
+75,Guarapari - Ule,NA,"NA","NA",NA,NA,NA
+76,Ponta da Fruta,NA,"NA","NA",NA,NA,NA
+77,Coral Dois,NA,"NA","NA",NA,NA,NA
+78,Ponta da Belina,NA,"NA","NA",NA,NA,NA
+79,Coral Um,NA,"NA","NA",NA,NA,NA
+80,"Barrao, Brazil",NA,"NA","NA",NA,NA,NA
+81,Barrinha,NA,"NA","NA",NA,NA,NA
+82,Praia de Camburi,NA,"NA","NA",NA,NA,NA
+83,Velzyland,NA,"NA","NA",NA,NA,NA
+84,Ponta da Cacao,NA,"NA","NA",NA,NA,NA
+85,"Manguinhos, Brazil",NA,"NA","NA",NA,NA,NA
+86,Praia da Baleia,NA,"NA","NA",NA,NA,NA
+87,Jacaraipe - Solemar,NA,"NA","NA",NA,NA,NA
+88,Xa,NA,"NA","NA",NA,NA,NA
+89,Nova Almeida,NA,"NA","NA",NA,NA,NA
+90,Praia Grande,NA,"NA","NA",NA,NA,NA
+91,Regencia,NA,"NA","NA",NA,NA,NA
+92,Guriri,NA,"NA","NA",NA,NA,NA
+93,Milionarios,NA,"NA","NA",NA,NA,NA
+94,Sul,NA,"NA","NA",NA,NA,NA
+95,Pedra da Cachorra,NA,"NA","NA",NA,NA,NA
+96,Jardim Atlantico,NA,"NA","NA",NA,NA,NA
+97,Baduska,NA,"NA","NA",NA,NA,NA
+98,Norte,NA,"NA","NA",NA,NA,NA
+99,Havaizinho,NA,"NA","NA",NA,NA,NA
+100,Sao Jose,NA,"NA","NA",NA,NA,NA
+101,Corals,NA,"NA","NA",NA,NA,NA
+102,Tony,NA,"NA","NA",NA,NA,NA
+103,Meridien,NA,"NA","NA",NA,NA,NA
+104,Amaralina,NA,"NA","NA",NA,NA,NA
+105,Tubao,NA,"NA","NA",NA,NA,NA
+106,Psiu,NA,"NA","NA",NA,NA,NA
+107,Alex,NA,"NA","NA",NA,NA,NA
+108,Terceira Ponte,NA,"NA","NA",NA,NA,NA
+109,SESC,NA,"NA","NA",NA,NA,NA
+110,Farol,NA,"NA","NA",NA,NA,NA
+111,Pedro do Sal,NA,"NA","NA",NA,NA,NA
+112,Itapoa,NA,"NA","NA",NA,NA,NA
+113,Seper,NA,"NA","NA",NA,NA,NA
+114,Corrente,NA,"NA","NA",NA,NA,NA
+115,Stela Maris,NA,"NA","NA",NA,NA,NA
+116,Plator,NA,"NA","NA",NA,NA,NA
+117,Aleluia,NA,"NA","NA",NA,NA,NA
+118,Ipitanga,NA,"NA","NA",NA,NA,NA
+119,Vilas,NA,"NA","NA",NA,NA,NA
+120,Busca Vida,NA,"NA","NA",NA,NA,NA
+121,Itacimirim,NA,"NA","NA",NA,NA,NA
+122,Praia do Forte,NA,"NA","NA",NA,NA,NA
+123,Imbassai,NA,"NA","NA",NA,NA,NA
+124,Costa do Sauipe,NA,"NA","NA",NA,NA,NA
+125,Marlin,NA,"NA","NA",NA,NA,NA
+126,Conde,NA,"NA","NA",NA,NA,NA
+127,Mangue Seco,NA,"NA","NA",NA,NA,NA
+128,Mosqueiro,NA,"NA","NA",NA,NA,NA
+129,Aruana,NA,"NA","NA",NA,NA,NA
+130,Hawaiizinho,NA,"NA","NA",NA,NA,NA
+131,Praia do Meio,NA,"NA","NA",NA,NA,NA
+132,Pirambu,NA,"NA","NA",NA,NA,NA
+133,Ponta do Mangue,NA,"NA","NA",NA,NA,NA
+134,Pontal de Peba,NA,"NA","NA",NA,NA,NA
+135,Mihai,NA,"NA","NA",NA,NA,NA
+136,Pontal do Coruripe,NA,"NA","NA",NA,NA,NA
+137,Forjos,NA,"NA","NA",NA,NA,NA
+138,Poxim,NA,"NA","NA",NA,NA,NA
+139,Jacarecica,NA,"NA","NA",NA,NA,NA
+140,Praia do Meio,NA,"NA","NA",NA,NA,NA
+141,Praia do Pontal,NA,"NA","NA",NA,NA,NA
+142,Salgema,NA,"NA","NA",NA,NA,NA
+143,Pier do Emissario,NA,"NA","NA",NA,NA,NA
+144,Praia do Sobral,NA,"NA","NA",NA,NA,NA
+145,"Pico da Barra, Brazil",NA,"NA","NA",NA,NA,NA
+146,Pedra Virada,NA,"NA","NA",NA,NA,NA
+147,Praia de Jatiuca,NA,"NA","NA",NA,NA,NA
+148,Garca Torta,NA,"NA","NA",NA,NA,NA
+149,Mirante da Sirena,NA,"NA","NA",NA,NA,NA
+150,Japaratinga,NA,"NA","NA",NA,NA,NA
+151,Impossivel,NA,"NA","NA",NA,NA,NA
+152,Serrambi,NA,"NA","NA",NA,NA,NA
+153,Porto de Galinhas,NA,"NA","NA",NA,NA,NA
+154,Cupe,NA,"NA","NA",NA,NA,NA
+155,Gaibu,NA,"NA","NA",NA,NA,NA
+156,Bessa,NA,"NA","NA",NA,NA,NA
+157,Saji,NA,"NA","NA",NA,NA,NA
+158,Farol,NA,"NA","NA",NA,NA,NA
+159,Xilauzinho,NA,"NA","NA",NA,NA,NA
+160,Mar Aberto,NA,"NA","NA",NA,NA,NA
+161,Pontal,NA,"NA","NA",NA,NA,NA
+162,Mar da Frente,NA,"NA","NA",NA,NA,NA
+163,Lajinha,NA,"NA","NA",NA,NA,NA
+164,Afogados,NA,"NA","NA",NA,NA,NA
+165,Sororoca,NA,"NA","NA",NA,NA,NA
+166,Abacateiro,NA,"NA","NA",NA,NA,NA
+167,Tibau do Sul,NA,"NA","NA",NA,NA,NA
+168,Tabatinga,NA,"NA","NA",NA,NA,NA
+169,Xoxoline,NA,"NA","NA",NA,NA,NA
+170,Pirangi Reef,NA,"NA","NA",NA,NA,NA
+171,Cotovelo,NA,"NA","NA",NA,NA,NA
+172,Miami,NA,"NA","NA",NA,NA,NA
+173,Areia Preta,NA,"NA","NA",NA,NA,NA
+174,Praia dos Artistas,NA,"NA","NA",NA,NA,NA
+175,Genipabu,NA,"NA","NA",NA,NA,NA
+176,Touros Area,NA,"NA","NA",NA,NA,NA
+177,Urca da Concei&ccedil;&atilde;o,NA,"NA","NA",NA,NA,NA
+178,Cocoa das Lavadeiras,NA,"NA","NA",NA,NA,NA
+179,Baia das Ratas,NA,"NA","NA",NA,NA,NA
+180,Volta da Jurema,NA,"NA","NA",NA,NA,NA
+181,Portao,NA,"NA","NA",NA,NA,NA
+182,Barra do Ceara,NA,"NA","NA",NA,NA,NA
+183,Praia do Pecem,NA,"NA","NA",NA,NA,NA
+184,Tabinha,NA,"NA","NA",NA,NA,NA
+185,Pedra do Meio,NA,"NA","NA",NA,NA,NA
+186,Havaizinho,NA,"NA","NA",NA,NA,NA
+187,Curral,NA,"NA","NA",NA,NA,NA
+188,Outside,NA,"NA","NA",NA,NA,NA
+189,Atins,NA,"NA","NA",NA,NA,NA
+190,Ponta d'Areia,NA,"NA","NA",NA,NA,NA
+191,S&atilde;o Marcos,NA,"NA","NA",NA,NA,NA
+192,Calhau,NA,"NA","NA",NA,NA,NA
+193,Olho D'Agu,NA,"NA","NA",NA,NA,NA
+194,Ponta do Farol,NA,"NA","NA",NA,NA,NA
+195,NA,Hermenegildo,3.0,3,Right and left,Beach-break,All surfers
+196,NA,Navio,3.0,2,Right and left,Beach-break,All surfers
+197,NA,Tres Marias,5.0,2,Right and left,Sand-bar,Pros or kamikaze only...
+198,NA,Praia do Cassino,3.0,2,Right and left,Sand-bar,All surfers
+199,NA,Sao Jose do Norte,3.0,"NA",Right and left,Beach-break,All surfers
+200,NA,Quintão,3.5,3,Right and left,Sand-bar,Experienced surfers
+201,NA,Nova Tramandaí,3.0,3,Right and left,Beach-break,All surfers
+202,NA,Oasis Sul,3.0,3,Right and left,Beach-break,All surfers
+203,NA,Tramandai - Malvina,3.5,3,Right and left,Beach-break,All surfers
+204,NA,Tramandai,3.0,3,Right and left,Beach-break,All surfers
+205,NA,Rainha do Mar,3.5,5,Right and left,Beach-break,All surfers
+206,NA,Xangri-lá,3.0,3,Right and left,Beach-break,All surfers
+207,NA,Atlântida - Pier,3.0,3,Right and left,Sand-bar,All surfers
+208,NA,Capao da Canoa,3.0,3,Right and left,Sand-bar,All surfers
+209,NA,Capao Novo,3.0,3,Right and left,Beach-break,All surfers
+210,NA,Curumim,3.0,4,Right and left,Beach-break,Experienced surfers
+211,NA,Itapeva,3.0,3,Right and left,Beach-break,All surfers
+212,NA,Guarita,3.0,2,Right and left,Beach-break,All surfers
+213,NA,Cal,3.5,3,Right and left,Beach-break,All surfers
+214,NA,Ilha dos Lobos,5.0,2,Left,Reef-rocky,Pros or kamikaze only...
+215,NA,Prainha,3.5,3,Right and left,Beach-break,Experienced surfers
+216,NA,Saraiva,3.5,3,Right and left,Beach-break,Experienced surfers
+217,NA,Molhes,3.5,3,Right and left,Beach-break,All surfers
+218,NA,Passo de Torres,3.5,2,Right and left,Rivermouth,Experienced surfers
+219,NA,Gaivota,3.0,2,Right and left,Beach-break,Experienced surfers
+220,NA,Arroio do Silva,3.5,2,Right and left,Beach-break,Experienced surfers
+221,NA,Morro dos Conventos,3.5,3,Right and left,Beach-break,All surfers
+222,NA,Rincão,3.5,4,Right and left,Beach-break,Experienced surfers
+223,NA,Jaguaruna,3.5,3,Right and left,Beach-break,All surfers
+224,NA,Camacho,3.0,2,NA,Beach-break,All surfers
+225,NA,Cigana,3.0,3,Right and left,Beach-break,Experienced surfers
+226,NA,Cardozo,3.5,4,Right and left,Beach-break,All surfers
+227,NA,Cemiterio,5.0,1,Right,Point-break,Pros or kamikaze only...
+228,NA,Prainha do Farol,3.0,1,Right,Beach-break,All surfers
+229,NA,Ipoa,3.0,4,Right and left,Beach-break,All surfers
+230,NA,Teresa,3.0,3,Right and left,Beach-break,All surfers
+231,NA,Praia de Cima,3.5,2,Right and left,Beach-break,All surfers
+232,NA,Laguna,3.5,3,Right and left,Beach-break,All surfers
+233,NA,Cavalinho,3.5,3,Right,Point-break,Experienced surfers
+234,NA,Itapirubá,3.5,4,Right and left,Beach-break,All surfers
+235,NA,Itapirubá Norte,3.5,3,Right and left,Beach-break,All surfers
+236,NA,Castelinho,4.0,4,Right and left,Beach-break,Experienced surfers
+237,NA,Praia da Vila,4.0,4,Right and left,Sand-bar,Experienced surfers
+238,NA,Ribanceira,3.0,2,Right and left,Sand-bar,All surfers
+239,NA,Ibiraquera,4.0,4,Right and left,Point-break,Experienced surfers
+240,NA,Rosa Sul,3.5,4,Right and left,Beach-break,All surfers
+241,NA,Rosa Norte,3.5,2,Right and left,Beach-break,All surfers
+242,NA,Vermelha,3.5,2,Left,Beach-break,Experienced surfers
+243,NA,Ouvidor,2.0,2,Right and left,Beach-break,Beginners wave
+244,NA,Barrinha,3.5,3,Right and left,Beach-break,NA
+245,NA,Ferrugem,3.5,4,Right and left,Sand-bar,All surfers
+246,NA,Praia do Silveira,4.0,4,Right,Point-break,Pros or kamikaze only...
+247,NA,Garopaba Centro,3.0,2,Right and left,Beach-break,All surfers
+248,NA,Siriu,3.5,3,Right and left,Beach-break,All surfers
+249,NA,Gamboa,3.5,1,Right and left,Beach-break,All surfers
+250,NA,Guarda do embau,4.0,3,Left,Rivermouth,Experienced surfers
+251,NA,Costão da Pinheira,3.5,1,Right,Point-break,Experienced surfers
+252,NA,Naufragados,5.0,3,Right,Beach-break,Pros or kamikaze only...
+253,NA,Solidao - Caladinho,3.5,3,Right,Point-break,Experienced surfers
+254,NA,Praia dos Açores,3.0,3,Right and left,Beach-break,All surfers
+255,NA,Lagoinha do Leste,3.5,4,Right and left,Beach-break,All surfers
+256,NA,Matadeiro,3.5,4,Right and left,Beach-break,Experienced surfers
+257,NA,Armação,3.0,2,Right and left,Beach-break,All surfers
+258,NA,Caldeirao,3.5,3,Left,Beach-break,Experienced surfers
+259,NA,Morro das Pedras,3.0,4,Right and left,Sand-bar,Experienced surfers
+260,NA,Campeche Rights,4.0,2,Right,Sand-bar,Experienced surfers
+261,NA,Riozinho,5.0,3,Right and left,Beach-break,Experienced surfers
+262,NA,Joaquina,4.0,4,Left,Sand-bar,Experienced surfers
+263,NA,Praia Mole,3.5,3,Right and left,Sand-bar,All surfers
+264,NA,Galheta,3.5,4,Right and left,Beach-break,All surfers
+265,NA,Barra da Lagoa,3.0,3,Right and left,Beach-break,Beginners wave
+266,NA,Mocambique,3.5,4,Right and left,Beach-break,All surfers
+267,NA,Ponta das Aranhas,3.5,4,Right and left,Beach-break,All surfers
+268,NA,Santinho,3.5,4,Right and left,Beach-break,Experienced surfers
+269,NA,Canasvieiras,3.5,1,Right,Sand-bar,All surfers
+270,NA,Praia do Forte,3.5,1,Right,Point-break,All surfers
+271,NA,Ingleses,3.0,2,Right and left,Beach-break,All surfers
+272,NA,Praia Brava,3.5,3,Right and left,Beach-break,Experienced surfers
+273,NA,Praia Brava,3.0,4,Right and left,Sand-bar,All surfers
+274,NA,Lambe lambe,4.0,1,Right,Point-break,Experienced surfers
+275,NA,Ponta Do Rapa,4.0,1,Right,Reef-rocky,Pros or kamikaze only...
+276,NA,Tingua,3.5,1,Left,Beach-break,Experienced surfers
+277,NA,Palmas,3.5,2,Right and left,Beach-break,Experienced surfers
+278,NA,Mariscal,3.5,3,Right and left,Beach-break,All surfers
+279,NA,Quatro Ilhas,3.5,3,Right,Point-break,Experienced surfers
+280,NA,Bombinhas,2.0,2,Right and left,Beach-break,Beginners wave
+281,NA,Bombas,3.0,2,Right and left,Beach-break,All surfers
+282,NA,Meia Praia,3.0,3,Right and left,Sand-bar,All surfers
+283,NA,Itapema,3.0,3,Right and left,Beach-break,All surfers
+284,NA,Ponta do Cabeço,4.0,2,Left,Reef-rocky,Experienced surfers
+285,NA,Mocó,4.0,2,Left,Reef-rocky,Experienced surfers
+286,NA,Estaleirinho,3.0,4,Right and left,Beach-break,Pros or kamikaze only...
+287,NA,Estaleiro (reef),3.5,2,Left,Reef-rocky,Experienced surfers
+288,NA,Balneário Camboriú,3.0,3,Right and left,Beach-break,All surfers
+289,NA,Parcel,4.0,1,Right and left,Reef-rocky,Pros or kamikaze only...
+290,NA,Praia dos Amores,3.0,2,Right and left,Beach-break,Experienced surfers
+291,NA,Praia Brava,3.0,3,Right and left,Beach-break,Experienced surfers
+292,NA,Morcego,3.5,"NA",Left,Point-break,Pros or kamikaze only...
+293,NA,Atalaia,3.5,2,Left,breakwater/jetty,All surfers
+294,NA,Pracinha,3.5,4,Right and left,Beach-break,All surfers
+295,NA,Navegantes,3.5,3,Right and left,Beach-break,All surfers
+296,NA,Garrincha,3.0,2,Right and left,Sand-bar,Experienced surfers
+297,NA,Gravatá (1 e 2),3.0,3,Right and left,Beach-break,All surfers
+298,NA,Gravatá,3.0,3,Right and left,Beach-break,All surfers
+299,NA,Quilombo,3.5,2,Left,Beach-break,All surfers
+300,NA,Quilombo (reef),3.5,2,Right,Point-break,All surfers
+301,NA,molhe de Piçarras,3.0,1,Right,Point-break,All surfers
+302,NA,Laje do Jacques,4.0,2,Right and left,Reef-rocky,Experienced surfers
+303,NA,Syphodys,3.0,2,Right and left,Beach-break,Experienced surfers
+304,NA,ilha do grants,3.5,1,Left,Reef-rocky,Pros or kamikaze only...
+305,NA,barra de Itajuba,3.0,1,Right,Point-break,All surfers
+306,NA,Praia do Sol,2.0,3,Right and left,Point-break,All surfers
+307,NA,Praia do Tabuleiro,3.0,2,Right and left,Beach-break,Beginners wave
+308,NA,Canoas,2.0,3,Right and left,Beach-break,Beginners wave
+309,NA,Barrinha,3.5,3,Right and left,Beach-break,All surfers
+310,NA,Foz do Itapocu,3.0,3,Left,breakwater/jetty,All surfers
+311,NA,Foz do Itapocu,3.5,4,Right and left,Beach-break,All surfers
+312,NA,Praia do Bispo,3.0,4,Right and left,Beach-break,All surfers
+313,NA,Picama,3.0,3,Right and left,Sand-bar,Experienced surfers
+314,NA,"Praia Grande, São Francisco do Sul",3.0,3,Right and left,Beach-break,All surfers
+315,NA,Praia da Saudade,3.5,4,Right and left,Beach-break,All surfers
+316,NA,Sao Francisco do Sul,3.0,1,Right,Sand-bar,Beginners wave
+317,NA,Píer da Petrobras,3.5,2,Right,Point-break,All surfers
+318,NA,Sumidouro,3.5,1,Right and left,Beach-break,Experienced surfers
+319,NA,Praia do Forte,3.5,1,Right,Point-break,All surfers
+320,NA,Terceira Pedra,3.5,3,Right,Point-break,All surfers
+321,NA,Barra do sai mirim,3.0,3,Right and left,Beach-break,All surfers
+322,NA,Barrinha,3.0,2,Right,Beach-break,Experienced surfers
+323,NA,Guaratuba Praia Brava,3.0,3,Right and left,Beach-break,All surfers
+324,NA,Praia Brava Guaratuba,3.5,3,Right and left,Beach-break,All surfers
+325,NA,Direitas de Guaratuba,4.0,2,Right,Point-break,Experienced surfers
+326,NA,Pico de Matinhos,3.5,3,Right,Point-break,Experienced surfers
+327,NA,Ilha do Mel,3.5,3,Right and left,Beach-break,All surfers
+328,NA,Farolete,3.5,4,Left,Point-break,Experienced surfers
+329,NA,"Guarau, Peruibe SP",3.0,4,Right and left,Beach-break,All surfers
+330,NA,Pier de Mongaguá,3.5,4,Right and left,Beach-break,All surfers
+331,NA,Pitangueiras,3.0,4,Right and left,Beach-break,All surfers
+332,NA,Tombo,3.5,4,Right and left,Beach-break,All surfers
+333,NA,Astúrias,3.0,2,Right and left,Beach-break,All surfers
+334,NA,Pitangueiras Beach,3.5,4,Right and left,Beach-break,Experienced surfers
+335,NA,porta do sol,3.5,2,Right and left,Point-break,Experienced surfers
+336,NA,Itarare,3.0,3,Right and left,Beach-break,All surfers
+337,NA,Santos,3.0,3,Right and left,Beach-break,All surfers
+338,NA,"Praia de Pernambuco (Pernambuco Beach, in Guaruja)",3.5,4,Right and left,Beach-break,All surfers
+339,NA,Bonete,3.5,4,Right and left,Beach-break,Experienced surfers
+340,NA,Sao Pedro,4.0,3,Right and left,Sand-bar,All surfers
+341,NA,Praia de Iporanga,3.5,2,Left,Reef-rocky,Pros or kamikaze only...
+342,NA,Taguaíba,3.5,4,Right and left,Beach-break,All surfers
+343,NA,praia branca,3.5,3,Left,Beach-break,All surfers
+344,NA,Castelhanos,3.5,3,Right and left,Beach-break,Experienced surfers
+345,NA,Enseada - Bertioga,3.0,4,Right and left,Beach-break,All surfers
+346,NA,Santiago,3.5,2,Right and left,Beach-break,Experienced surfers
+347,NA,Guaecá,3.5,3,Right and left,Beach-break,All surfers
+348,NA,Riviera de São Lourenço,3.0,3,Right and left,Beach-break,All surfers
+349,NA,Paúba,4.0,2,Right and left,Beach-break,Pros or kamikaze only...
+350,NA,Itaguaré,3.0,4,Right and left,Beach-break,All surfers
+351,NA,Maresias,3.5,4,Right and left,Beach-break,All surfers
+352,NA,Camburi,3.5,4,Right and left,Beach-break,All surfers
+353,NA,Baleia,3.5,3,Right and left,Beach-break,All surfers
+354,NA,Guaratuba,3.0,3,Right and left,Beach-break,Experienced surfers
+355,NA,Juquehy,3.0,4,Right and left,Beach-break,All surfers
+356,NA,Massaguaçu,3.5,2,Right and left,Beach-break,Experienced surfers
+357,NA,Simão,3.5,3,Right,Beach-break,Experienced surfers
+358,NA,Praia do sape,3.5,3,Right and left,Beach-break,All surfers
+359,NA,Lagoinha,3.5,2,Right and left,Beach-break,Beginners wave
+360,NA,Sununga,3.5,3,Right,Beach-break,Pros or kamikaze only...
+361,NA,Toninhas,3.0,2,Right and left,Beach-break,All surfers
+362,NA,Praia Grande (PG),3.0,3,Right and left,Beach-break,All surfers
+363,NA,Praia Grande North,3.0,3,Left,Beach-break,All surfers
+364,NA,Vermelha do Centro,3.5,4,Right and left,Beach-break,All surfers
+365,NA,Patiero,3.5,2,NA,Reef-rocky,Experienced surfers
+366,NA,Vermelha do Norte,3.0,3,Right and left,Beach-break,All surfers
+367,NA,Itamambuca,3.5,4,Right and left,Beach-break,All surfers
+368,NA,Praia do Felix,3.5,3,Right and left,Beach-break,All surfers
+369,NA,Brava do Camburi,3.0,3,Right and left,Beach-break,Experienced surfers
+370,NA,Ponta do Cepílio,3.5,3,Right and left,Beach-break,Experienced surfers
+371,NA,Laranjeiras,3.5,3,Right,Beach-break,All surfers
+372,NA,Martim de Sa,3.5,3,Right and left,Beach-break,All surfers
+373,NA,Aventureiro,3.5,4,Left,Point-break,All surfers
+374,NA,Lopes Mendes,3.5,4,Right and left,Beach-break,Experienced surfers
+375,NA,Barra de Guaratiba,4.0,2,Left,Rivermouth,Experienced surfers
+376,NA,Laje do Dramin,3.5,2,Left,Reef-rocky,Pros or kamikaze only...
+377,NA,Grumari,3.5,3,Right and left,Beach-break,Experienced surfers
+378,NA,Prainha,3.5,4,Right and left,Beach-break,All surfers
+379,NA,CcB,3.5,4,Right and left,Sand-bar,All surfers
+380,NA,Macumba (Curvão),3.0,3,Right and left,Beach-break,All surfers
+381,NA,Farorinha,3.0,2,Left,Beach-break,All surfers
+382,NA,Canto do recreio,3.5,"NA",Right and left,Beach-break,All surfers
+383,NA,Praia da Macumba,4.0,4,Right and left,Beach-break,All surfers
+384,NA,posto 11 (Atlântico sul),3.5,3,Right and left,Sand-bar,All surfers
+385,NA,Mambucaba,3.5,2,Right and left,Sand-bar,All surfers
+386,NA,Posto 10 - Recreio,3.5,2,Right and left,Beach-break,Experienced surfers
+387,NA,Recreio Posto 9,3.0,3,Right and left,Beach-break,Experienced surfers
+388,NA,Lage Postinho,3.5,2,Right and left,Reef-rocky,Experienced surfers
+389,NA,Joatinga,3.5,4,Right and left,Beach-break,All surfers
+390,NA,Tropical (posto 1),3.5,4,Right and left,Beach-break,Experienced surfers
+391,NA,Barra da Tijuca - Posto 8,3.5,4,Right and left,Sand-bar,All surfers
+392,NA,Sao Conrado,3.5,"NA",Right and left,Beach-break,Experienced surfers
+393,NA,Laje do sheraton,4.0,1,Right and left,Reef-rocky,Pros or kamikaze only...
+394,NA,Pontão do leblon,3.5,3,Right,Point-break,Experienced surfers
+395,NA,Arpoador,3.5,"NA",Right and left,Beach-break,All surfers
+396,NA,Praia do Diabo,3.5,4,Right and left,Beach-break,All surfers
+397,NA,Leblon,3.0,4,Right and left,Beach-break,All surfers
+398,NA,Ipanema,3.0,3,Right and left,Beach-break,All surfers
+399,NA,Shore break expresso escorpiao,3.5,2,Right,Reef-rocky,Pros or kamikaze only...
+400,NA,Forte de Copacabana,3.0,2,Right,Point-break,All surfers
+401,NA,Posto 5 - Copacabana,3.5,3,Right and left,Beach-break,Experienced surfers
+402,NA,Praia Brava - Pontal do Atalaia,3.5,2,Left,Point-break,Experienced surfers
+403,NA,Shock,5.0,2,Right,Reef-rocky,Pros or kamikaze only...
+404,NA,Praia Grande - Arraial do Cabo,3.5,3,Right and left,Beach-break,All surfers
+405,NA,Itacoatiara,3.5,3,Right and left,Beach-break,Experienced surfers
+406,NA,Canal de Camboinhas,2.0,3,Right and left,breakwater/jetty,Beginners wave
+407,NA,Camboinhas,3.5,2,Right and left,Sand-bar,Experienced surfers
+408,NA,Leme,3.0,3,Left,Sand-bar,All surfers
+409,NA,Ponta Negra - Maricá - RJ,3.0,3,Right and left,Beach-break,All surfers
+410,NA,Piratininga,3.0,3,Right and left,Beach-break,All surfers
+411,NA,Massambaba,3.5,4,Right and left,Sand-bar,Experienced surfers
+412,NA,Lage de fora,4.0,2,Left,Reef-rocky,Don't know
+413,NA,Arraial do Cabo,3.5,2,Left,Reef-coral,Experienced surfers
+414,NA,Itauna,4.0,4,Right and left,Point-break,All surfers
+415,NA,Backdoor,3.0,3,Right,Reef-rocky,Experienced surfers
+416,NA,Saquarema - Itauna Beach,3.5,4,Right and left,Beach-break,All surfers
+417,NA,Saquarema - Praia da Vila,3.5,3,Right and left,Beach-break,All surfers
+418,NA,Praia do Foguete - Cabo Frio,3.0,3,Right and left,Sand-bar,NA
+419,NA,Flamengo,3.5,1,Left,Point-break,Experienced surfers
+420,NA,prainha de adão e eva,3.5,1,Right and left,Beach-break,All surfers
+421,NA,Itapuca,3.5,2,Right and left,Reef-rocky,All surfers
+422,NA,Praia Brava - Cabo Frio,3.5,2,Right and left,Beach-break,All surfers
+423,NA,Praia do Forte - Cabo Frio,3.5,4,Right and left,Beach-break,All surfers
+424,NA,Dunas do Peró - Cabo Frio -RJ,"NA","NA",NA,NA,NA
+425,NA,Geriba,3.5,3,Right and left,Beach-break,All surfers
+426,NA,Laje da Rasa,3.0,1,NA,Reef-rocky,Experienced surfers
+427,NA,praia de unamar,2.0,2,Right and left,Beach-break,Beginners wave
+428,NA,Costazul,3.5,4,Right and left,Beach-break,Experienced surfers
+429,NA,Pecado,3.5,4,Right and left,Beach-break,All surfers
+430,NA,Cavaleiros,3.5,4,Right and left,Beach-break,All surfers
+431,NA,Grussaí,3.0,3,Right and left,Beach-break,All surfers
+432,NA,Setiba Pina,3.5,3,Right and left,Beach-break,Experienced surfers
+433,NA,Barra Sol,3.5,2,Right and left,Sand-bar,Experienced surfers
+434,NA,Secret,3.0,2,Right and left,Sand-bar,All surfers
+435,NA,Coral do Céu,3.5,2,Left,Reef-rocky,Pros or kamikaze only...
+436,NA,Pompeia,3.5,3,Right and left,Beach-break,All surfers
+437,NA,D2,3.5,3,Right,Reef-rocky,Experienced surfers
+438,NA,Canal de Vitória,3.0,1,Left,Sand-bar,All surfers
+439,NA,Praia de Camburi,3.0,1,Right and left,Beach-break,All surfers
+440,NA,Prainha de Carapebus,3.5,2,Right,Point-break,Experienced surfers
+441,NA,Barrote-Jacaraipe,3.0,3,Right and left,Beach-break,All surfers
+442,NA,Jacaraípe- Solemar,3.0,3,Right and left,Sand-bar,All surfers
+443,NA,Regencia,3.5,4,Right and left,Beach-break,Experienced surfers
+444,NA,Guriri,3.0,2,Right and left,Beach-break,All surfers
+445,NA,Backdoor,3.5,2,Right,Point-break,Experienced surfers
+446,NA,Itacarezinho,3.0,4,Right and left,Beach-break,All surfers
+447,NA,Engenhoca,"NA",4,Right and left,Beach-break,All surfers
+448,NA,Jeribucaçu,3.0,4,Right and left,Beach-break,All surfers
+449,NA,Prainha,3.5,3,Right and left,Beach-break,All surfers
+450,NA,Tiririca,3.5,4,Right and left,Beach-break,All surfers
+451,NA,Praia da Resende,3.0,4,Right and left,Beach-break,All surfers
+452,NA,Boca da Barra,3.5,4,Right,Rivermouth,Experienced surfers
+453,NA,Pontal,3.0,4,Right and left,Beach-break,All surfers
+454,NA,Praia dos Algodoes,3.0,3,Right and left,Reef-coral,All surfers
+455,NA,Saquaira,3.5,4,Right and left,Beach-break,Experienced surfers
+456,NA,Taipu de Fora,3.0,4,Right and left,Beach-break,All surfers
+457,NA,Pedra do Moleque,3.5,3,Right,Reef-coral,Experienced surfers
+458,NA,Farol da Barra,3.5,2,Left,breakwater/jetty,Experienced surfers
+459,NA,Barravento,3.5,3,Right and left,Beach-break,All surfers
+460,NA,Espanhol,3.5,2,Right and left,Point-break,Experienced surfers
+461,NA,Corsário,3.0,4,Right and left,Beach-break,All surfers
+462,NA,Jaguaribe,3.5,3,Right and left,Beach-break,All surfers
+463,NA,Stella Maris,3.5,4,Right and left,Beach-break,All surfers
+464,NA,Praia do forte,3.5,4,Right and left,Reef-coral,Experienced surfers
+465,NA,Scar Reef,3.5,2,Right and left,Reef-coral,Experienced surfers
+466,NA,Casinha,3.5,3,Right,Reef-coral,Experienced surfers
+467,NA,Aracaju,3.0,3,Right and left,NA,All surfers
+468,NA,Praia Do Francês,3.5,4,Right and left,Beach-break,All surfers
+469,NA,Pedra Virada,3.5,2,Left,Reef-rocky,Experienced surfers
+470,NA,Cruz das Almas,3.5,4,Right and left,Sand-bar,All surfers
+471,NA,Riacho Doce,3.0,3,Right and left,Rivermouth,All surfers
+472,NA,New Orleans,3.0,"NA",Right and left,Beach-break,All surfers
+473,NA,Praia do Morro,3.5,4,Right and left,Beach-break,All surfers
+474,NA,Maracaipe,4.0,4,Right and left,Beach-break,Experienced surfers
+475,NA,Borete,3.0,4,Right and left,Beach-break,All surfers
+476,NA,cupe,4.0,3,Right and left,Beach-break,Experienced surfers
+477,NA,Enseada dos Corais,3.5,4,Right and left,Beach-break,Experienced surfers
+478,NA,Tambaba,3.0,"NA",Right and left,Beach-break,All surfers
+479,NA,Mar do Macaco,2.0,3,Right and left,Beach-break,Beginners wave
+480,NA,Dique de Cabedelo,3.0,2,Left,Beach-break,All surfers
+481,NA,Baia Formosa,3.5,3,Right,Point-break,All surfers
+482,NA,Pipa,4.0,4,Right and left,Beach-break,All surfers
+483,NA,Lajão,3.5,2,Right,Point-break,Experienced surfers
+484,NA,Madeiro,3.5,3,Right and left,Beach-break,All surfers
+485,NA,Cacimbinhas,3.5,3,Right and left,Beach-break,All surfers
+486,NA,Tabatinga,3.0,"NA",Right and left,NA,NA
+487,NA,Ponta negra,3.0,3,Right and left,Beach-break,All surfers
+488,NA,Genipabu,3.0,3,Right and left,Beach-break,All surfers
+489,NA,Morro Branco,3.0,"NA",Right and left,Beach-break,All surfers
+490,NA,Iguape Meio,"NA","NA",NA,Beach-break,All surfers
+491,NA,Cacimba do Padre,4.0,2,Left,Beach-break,Experienced surfers
+492,NA,Boldró,4.0,3,Right and left,Reef-coral,Pros or kamikaze only...
+493,NA,Conceição,3.0,"NA",Right and left,Beach-break,All surfers
+494,NA,Meio,3.0,"NA",Right and left,NA,All surfers
+495,NA,Cachorro,3.0,2,Right,Beach-break,All surfers
+496,NA,Biboca,3.5,"NA",Right,Reef-coral,Experienced surfers
+497,NA,Abras,4.0,2,Left,Reef-rocky,Experienced surfers
+498,NA,Futuro,3.5,4,Right and left,Beach-break,All surfers
+499,NA,Iracema (ponte metalica),3.5,3,Right and left,Reef-rocky,Experienced surfers
+500,NA,Leste-Oeste,3.0,3,Right and left,Beach-break,All surfers
+501,NA,Titanzinho,3.5,"NA",Right and left,Reef-rocky,Experienced surfers
+502,NA,Icarai,3.5,3,Right and left,Beach-break,Experienced surfers
+503,NA,Pico das Almas,3.0,2,Right and left,Beach-break,Experienced surfers
+504,NA,Taiba,3.0,3,Right and left,Point-break,All surfers
+505,NA,Paracuru,3.5,"NA",Right and left,Reef-coral,Experienced surfers
+506,NA,Jericoacoara,3.0,3,Right and left,Beach-break,Beginners wave
+507,NA,Travosa,3.5,"NA",Right and left,Beach-break,All surfers
+508,NA,marahu,3.5,2,Right and left,Sand-bar,All surfers
+509,NA,Camaraçu,5.0,4,Right and left,Beach-break,Experienced surfers
+510,NA,Araruna,3.0,3,Right and left,Sand-bar,All surfers
+511,NA,Pororoca,4.0,"NA",Right and left,Rivermouth,Experienced surfers

@@ -12,6 +12,43 @@ library(here)
 library(janitor)
 ```
 
+# Surf Spots
+
+```{r}
+ws_sl_surf <- read_csv(here("data", "ws_sl.csv")) %>% 
+  clean_names()
+```
+
+```{r}
+ws_sl_surf_na <- ws_sl_surf %>% 
+  mutate(quality = case_when(
+    quality == 0.0 ~ ,
+    quality == 5.0 ~ "5.0",
+    quality == 4.0 ~ "4.0",
+    quality == 3.5 ~ "3.5",
+    quality == 3.0 ~ "3.0",
+    quality == 2.0 ~ "2.0"
+  )) %>% 
+  mutate(frequency = case_when(
+    frequency == 0 ~ "NA",
+    frequency == 5 ~ "5",
+    frequency == 4 ~ "4",
+    frequency == 3 ~ "3",
+    frequency == 2 ~ "2",
+    frequency == 1 ~ "1"
+  ))
+
+ws_sl_surf_na %>% 
+  as.integer(frequency) %>% 
+  as.integer(quality)
+```
+
+## Surf Spots Export
+
+```{r}
+write_csv(ws_sl_surf_na, file = "ws_sl_sys_spots.csv")
+```
+
 # Pressure Index
 
 # Social Index

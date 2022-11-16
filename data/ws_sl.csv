@@ -1,0 +1,513 @@
+﻿FID,Name,Surf_Spot,Quality,Frequency,Direction,Type,Experience
+0,Cardoso, ,0.000000000000000,0, , , 
+1,Ravena, ,0.000000000000000,0, , , 
+2,Praia da Vila Imbituba, ,0.000000000000000,0, , , 
+3,Praia do Porto Imbituba, ,0.000000000000000,0, , , 
+4,Ponta da Pinheira, ,0.000000000000000,0, , , 
+5,Mocambique, ,0.000000000000000,0, , , 
+6,Ponta das Canas, ,0.000000000000000,0, , , 
+7,Itagua&ccedil;u, ,0.000000000000000,0, , , 
+8,Caioba, ,0.000000000000000,0, , , 
+9,Ilha Comprida, ,0.000000000000000,0, , , 
+10,Iguape, ,0.000000000000000,0, , , 
+11,Peruibe, ,0.000000000000000,0, , , 
+12,Praia dos Pescadores, ,0.000000000000000,0, , , 
+13,Itanhaem, ,0.000000000000000,0, , , 
+14,Praia Grande, ,0.000000000000000,0, , , 
+15,Praia do Forte dos Andradas, ,0.000000000000000,0, , , 
+16,Praia do Forte dos Andradas, ,0.000000000000000,0, , , 
+17,Praia da Ponta Grossa, ,0.000000000000000,0, , , 
+18,Itaipu, ,0.000000000000000,0, , , 
+19,Guaiuba, ,0.000000000000000,0, , , 
+20,Santos, ,0.000000000000000,0, , , 
+21,Morro do Maluf, ,0.000000000000000,0, , , 
+22,Praia da Enseada, ,0.000000000000000,0, , , 
+23,Embare, ,0.000000000000000,0, , , 
+24,Gonzaga, ,0.000000000000000,0, , , 
+25,Pereque, ,0.000000000000000,0, , , 
+26,Praia Preta, ,0.000000000000000,0, , , 
+27,Praia da Bertioga, ,0.000000000000000,0, , , 
+28,Maresias, ,0.000000000000000,0, , , 
+29,Canto de Moreira, ,0.000000000000000,0, , , 
+30,Itaguere, ,0.000000000000000,0, , , 
+31,Boicucanga, ,0.000000000000000,0, , , 
+32,Praia de Baleia, ,0.000000000000000,0, , , 
+33,Barra do Sahy, ,0.000000000000000,0, , , 
+34,Praia Preta, ,0.000000000000000,0, , , 
+35,Bananas Point, ,0.000000000000000,0, , , 
+36,Praia do Juquei, ,0.000000000000000,0, , , 
+37,Barra do Una, ,0.000000000000000,0, , , 
+38,Praia da Boracéia, ,0.000000000000000,0, , , 
+39,Praia Dura, ,0.000000000000000,0, , , 
+40,Pereque-Acu, ,0.000000000000000,0, , , 
+41,Itamambuca, ,0.000000000000000,0, , , 
+42,Praia da Fazenda, ,0.000000000000000,0, , , 
+43,Aventureiro, ,0.000000000000000,0, , , 
+44,Praia do Leste, ,0.000000000000000,0, , , 
+45,Praia do Sul, ,0.000000000000000,0, , , 
+46,Praia do Meio, ,0.000000000000000,0, , , 
+47,Restinga a Marambaia, ,0.000000000000000,0, , , 
+48,Grumari, ,0.000000000000000,0, , , 
+49,Reserva, ,0.000000000000000,0, , , 
+50,Barra da Tijuca, ,0.000000000000000,0, , , 
+51,Barra da Tijuca, ,0.000000000000000,0, , , 
+52,Sao Conrado, ,0.000000000000000,0, , , 
+53,Bambui, ,0.000000000000000,0, , , 
+54,Itaipuacu, ,0.000000000000000,0, , , 
+55,Barra de Marica, ,0.000000000000000,0, , , 
+56,Camboinhas, ,0.000000000000000,0, , , 
+57,Pirantininga, ,0.000000000000000,0, , , 
+58,Jacone, ,0.000000000000000,0, , , 
+59,Figueira, ,0.000000000000000,0, , , 
+60,Praia do Fora, ,0.000000000000000,0, , , 
+61,Laje do Pao de Acucar, ,0.000000000000000,0, , , 
+62,Canal, ,0.000000000000000,0, , , 
+63,Praia Seca, ,0.000000000000000,0, , , 
+64,Caravelas, ,0.000000000000000,0, , , 
+65,Tucuns, ,0.000000000000000,0, , , 
+66,Praia Brava, ,0.000000000000000,0, , , 
+67,Marataizes, ,0.000000000000000,0, , , 
+68,Ponta do Ubu, ,0.000000000000000,0, , , 
+69,Ponta dos Castelhanos, ,0.000000000000000,0, , , 
+70,Maimba, ,0.000000000000000,0, , , 
+71,Praia do Morro, ,0.000000000000000,0, , , 
+72,Ponta de Bororo, ,0.000000000000000,0, , , 
+73,Tropical, ,0.000000000000000,0, , , 
+74,Dunas de Ule, ,0.000000000000000,0, , , 
+75,Guarapari - Ule, ,0.000000000000000,0, , , 
+76,Ponta da Fruta, ,0.000000000000000,0, , , 
+77,Coral Dois, ,0.000000000000000,0, , , 
+78,Ponta da Belina, ,0.000000000000000,0, , , 
+79,Coral Um, ,0.000000000000000,0, , , 
+80,"Barrao, Brazil", ,0.000000000000000,0, , , 
+81,Barrinha, ,0.000000000000000,0, , , 
+82,Praia de Camburi, ,0.000000000000000,0, , , 
+83,Velzyland, ,0.000000000000000,0, , , 
+84,Ponta da Cacao, ,0.000000000000000,0, , , 
+85,"Manguinhos, Brazil", ,0.000000000000000,0, , , 
+86,Praia da Baleia, ,0.000000000000000,0, , , 
+87,Jacaraipe - Solemar, ,0.000000000000000,0, , , 
+88,Xa, ,0.000000000000000,0, , , 
+89,Nova Almeida, ,0.000000000000000,0, , , 
+90,Praia Grande, ,0.000000000000000,0, , , 
+91,Regencia, ,0.000000000000000,0, , , 
+92,Guriri, ,0.000000000000000,0, , , 
+93,Milionarios, ,0.000000000000000,0, , , 
+94,Sul, ,0.000000000000000,0, , , 
+95,Pedra da Cachorra, ,0.000000000000000,0, , , 
+96,Jardim Atlantico, ,0.000000000000000,0, , , 
+97,Baduska, ,0.000000000000000,0, , , 
+98,Norte, ,0.000000000000000,0, , , 
+99,Havaizinho, ,0.000000000000000,0, , , 
+100,Sao Jose, ,0.000000000000000,0, , , 
+101,Corals, ,0.000000000000000,0, , , 
+102,Tony, ,0.000000000000000,0, , , 
+103,Meridien, ,0.000000000000000,0, , , 
+104,Amaralina, ,0.000000000000000,0, , , 
+105,Tubao, ,0.000000000000000,0, , , 
+106,Psiu, ,0.000000000000000,0, , , 
+107,Alex, ,0.000000000000000,0, , , 
+108,Terceira Ponte, ,0.000000000000000,0, , , 
+109,SESC, ,0.000000000000000,0, , , 
+110,Farol, ,0.000000000000000,0, , , 
+111,Pedro do Sal, ,0.000000000000000,0, , , 
+112,Itapoa, ,0.000000000000000,0, , , 
+113,Seper, ,0.000000000000000,0, , , 
+114,Corrente, ,0.000000000000000,0, , , 
+115,Stela Maris, ,0.000000000000000,0, , , 
+116,Plator, ,0.000000000000000,0, , , 
+117,Aleluia, ,0.000000000000000,0, , , 
+118,Ipitanga, ,0.000000000000000,0, , , 
+119,Vilas, ,0.000000000000000,0, , , 
+120,Busca Vida, ,0.000000000000000,0, , , 
+121,Itacimirim, ,0.000000000000000,0, , , 
+122,Praia do Forte, ,0.000000000000000,0, , , 
+123,Imbassai, ,0.000000000000000,0, , , 
+124,Costa do Sauipe, ,0.000000000000000,0, , , 
+125,Marlin, ,0.000000000000000,0, , , 
+126,Conde, ,0.000000000000000,0, , , 
+127,Mangue Seco, ,0.000000000000000,0, , , 
+128,Mosqueiro, ,0.000000000000000,0, , , 
+129,Aruana, ,0.000000000000000,0, , , 
+130,Hawaiizinho, ,0.000000000000000,0, , , 
+131,Praia do Meio, ,0.000000000000000,0, , , 
+132,Pirambu, ,0.000000000000000,0, , , 
+133,Ponta do Mangue, ,0.000000000000000,0, , , 
+134,Pontal de Peba, ,0.000000000000000,0, , , 
+135,Mihai, ,0.000000000000000,0, , , 
+136,Pontal do Coruripe, ,0.000000000000000,0, , , 
+137,Forjos, ,0.000000000000000,0, , , 
+138,Poxim, ,0.000000000000000,0, , , 
+139,Jacarecica, ,0.000000000000000,0, , , 
+140,Praia do Meio, ,0.000000000000000,0, , , 
+141,Praia do Pontal, ,0.000000000000000,0, , , 
+142,Salgema, ,0.000000000000000,0, , , 
+143,Pier do Emissario, ,0.000000000000000,0, , , 
+144,Praia do Sobral, ,0.000000000000000,0, , , 
+145,"Pico da Barra, Brazil", ,0.000000000000000,0, , , 
+146,Pedra Virada, ,0.000000000000000,0, , , 
+147,Praia de Jatiuca, ,0.000000000000000,0, , , 
+148,Garca Torta, ,0.000000000000000,0, , , 
+149,Mirante da Sirena, ,0.000000000000000,0, , , 
+150,Japaratinga, ,0.000000000000000,0, , , 
+151,Impossivel, ,0.000000000000000,0, , , 
+152,Serrambi, ,0.000000000000000,0, , , 
+153,Porto de Galinhas, ,0.000000000000000,0, , , 
+154,Cupe, ,0.000000000000000,0, , , 
+155,Gaibu, ,0.000000000000000,0, , , 
+156,Bessa, ,0.000000000000000,0, , , 
+157,Saji, ,0.000000000000000,0, , , 
+158,Farol, ,0.000000000000000,0, , , 
+159,Xilauzinho, ,0.000000000000000,0, , , 
+160,Mar Aberto, ,0.000000000000000,0, , , 
+161,Pontal, ,0.000000000000000,0, , , 
+162,Mar da Frente, ,0.000000000000000,0, , , 
+163,Lajinha, ,0.000000000000000,0, , , 
+164,Afogados, ,0.000000000000000,0, , , 
+165,Sororoca, ,0.000000000000000,0, , , 
+166,Abacateiro, ,0.000000000000000,0, , , 
+167,Tibau do Sul, ,0.000000000000000,0, , , 
+168,Tabatinga, ,0.000000000000000,0, , , 
+169,Xoxoline, ,0.000000000000000,0, , , 
+170,Pirangi Reef, ,0.000000000000000,0, , , 
+171,Cotovelo, ,0.000000000000000,0, , , 
+172,Miami, ,0.000000000000000,0, , , 
+173,Areia Preta, ,0.000000000000000,0, , , 
+174,Praia dos Artistas, ,0.000000000000000,0, , , 
+175,Genipabu, ,0.000000000000000,0, , , 
+176,Touros Area, ,0.000000000000000,0, , , 
+177,Urca da Concei&ccedil;&atilde;o, ,0.000000000000000,0, , , 
+178,Cocoa das Lavadeiras, ,0.000000000000000,0, , , 
+179,Baia das Ratas, ,0.000000000000000,0, , , 
+180,Volta da Jurema, ,0.000000000000000,0, , , 
+181,Portao, ,0.000000000000000,0, , , 
+182,Barra do Ceara, ,0.000000000000000,0, , , 
+183,Praia do Pecem, ,0.000000000000000,0, , , 
+184,Tabinha, ,0.000000000000000,0, , , 
+185,Pedra do Meio, ,0.000000000000000,0, , , 
+186,Havaizinho, ,0.000000000000000,0, , , 
+187,Curral, ,0.000000000000000,0, , , 
+188,Outside, ,0.000000000000000,0, , , 
+189,Atins, ,0.000000000000000,0, , , 
+190,Ponta d'Areia, ,0.000000000000000,0, , , 
+191,S&atilde;o Marcos, ,0.000000000000000,0, , , 
+192,Calhau, ,0.000000000000000,0, , , 
+193,Olho D'Agu, ,0.000000000000000,0, , , 
+194,Ponta do Farol, ,0.000000000000000,0, , , 
+195, ,Hermenegildo,3.000000000000000,3,Right and left,Beach-break,All surfers
+196, ,Navio,3.000000000000000,2,Right and left,Beach-break,All surfers
+197, ,Tres Marias,5.000000000000000,2,Right and left,Sand-bar,Pros or kamikaze only...
+198, ,Praia do Cassino,3.000000000000000,2,Right and left,Sand-bar,All surfers
+199, ,Sao Jose do Norte,3.000000000000000,0,Right and left,Beach-break,All surfers
+200, ,Quintão,3.500000000000000,3,Right and left,Sand-bar,Experienced surfers
+201, ,Nova Tramandaí,3.000000000000000,3,Right and left,Beach-break,All surfers
+202, ,Oasis Sul,3.000000000000000,3,Right and left,Beach-break,All surfers
+203, ,Tramandai - Malvina,3.500000000000000,3,Right and left,Beach-break,All surfers
+204, ,Tramandai,3.000000000000000,3,Right and left,Beach-break,All surfers
+205, ,Rainha do Mar,3.500000000000000,5,Right and left,Beach-break,All surfers
+206, ,Xangri-lá,3.000000000000000,3,Right and left,Beach-break,All surfers
+207, ,Atlântida - Pier,3.000000000000000,3,Right and left,Sand-bar,All surfers
+208, ,Capao da Canoa,3.000000000000000,3,Right and left,Sand-bar,All surfers
+209, ,Capao Novo,3.000000000000000,3,Right and left,Beach-break,All surfers
+210, ,Curumim,3.000000000000000,4,Right and left,Beach-break,Experienced surfers
+211, ,Itapeva,3.000000000000000,3,Right and left,Beach-break,All surfers
+212, ,Guarita,3.000000000000000,2,Right and left,Beach-break,All surfers
+213, ,Cal,3.500000000000000,3,Right and left,Beach-break,All surfers
+214, ,Ilha dos Lobos,5.000000000000000,2,Left,Reef-rocky,Pros or kamikaze only...
+215, ,Prainha,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+216, ,Saraiva,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+217, ,Molhes,3.500000000000000,3,Right and left,Beach-break,All surfers
+218, ,Passo de Torres,3.500000000000000,2,Right and left,Rivermouth,Experienced surfers
+219, ,Gaivota,3.000000000000000,2,Right and left,Beach-break,Experienced surfers
+220, ,Arroio do Silva,3.500000000000000,2,Right and left,Beach-break,Experienced surfers
+221, ,Morro dos Conventos,3.500000000000000,3,Right and left,Beach-break,All surfers
+222, ,Rincão,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+223, ,Jaguaruna,3.500000000000000,3,Right and left,Beach-break,All surfers
+224, ,Camacho,3.000000000000000,2, ,Beach-break,All surfers
+225, ,Cigana,3.000000000000000,3,Right and left,Beach-break,Experienced surfers
+226, ,Cardozo,3.500000000000000,4,Right and left,Beach-break,All surfers
+227, ,Cemiterio,5.000000000000000,1,Right,Point-break,Pros or kamikaze only...
+228, ,Prainha do Farol,3.000000000000000,1,Right,Beach-break,All surfers
+229, ,Ipoa,3.000000000000000,4,Right and left,Beach-break,All surfers
+230, ,Teresa,3.000000000000000,3,Right and left,Beach-break,All surfers
+231, ,Praia de Cima,3.500000000000000,2,Right and left,Beach-break,All surfers
+232, ,Laguna,3.500000000000000,3,Right and left,Beach-break,All surfers
+233, ,Cavalinho,3.500000000000000,3,Right,Point-break,Experienced surfers
+234, ,Itapirubá,3.500000000000000,4,Right and left,Beach-break,All surfers
+235, ,Itapirubá Norte,3.500000000000000,3,Right and left,Beach-break,All surfers
+236, ,Castelinho,4.000000000000000,4,Right and left,Beach-break,Experienced surfers
+237, ,Praia da Vila,4.000000000000000,4,Right and left,Sand-bar,Experienced surfers
+238, ,Ribanceira,3.000000000000000,2,Right and left,Sand-bar,All surfers
+239, ,Ibiraquera,4.000000000000000,4,Right and left,Point-break,Experienced surfers
+240, ,Rosa Sul,3.500000000000000,4,Right and left,Beach-break,All surfers
+241, ,Rosa Norte,3.500000000000000,2,Right and left,Beach-break,All surfers
+242, ,Vermelha,3.500000000000000,2,Left,Beach-break,Experienced surfers
+243, ,Ouvidor,2.000000000000000,2,Right and left,Beach-break,Beginners wave
+244, ,Barrinha,3.500000000000000,3,Right and left,Beach-break, 
+245, ,Ferrugem,3.500000000000000,4,Right and left,Sand-bar,All surfers
+246, ,Praia do Silveira,4.000000000000000,4,Right,Point-break,Pros or kamikaze only...
+247, ,Garopaba Centro,3.000000000000000,2,Right and left,Beach-break,All surfers
+248, ,Siriu,3.500000000000000,3,Right and left,Beach-break,All surfers
+249, ,Gamboa,3.500000000000000,1,Right and left,Beach-break,All surfers
+250, ,Guarda do embau,4.000000000000000,3,Left,Rivermouth,Experienced surfers
+251, ,Costão da Pinheira,3.500000000000000,1,Right,Point-break,Experienced surfers
+252, ,Naufragados,5.000000000000000,3,Right,Beach-break,Pros or kamikaze only...
+253, ,Solidao - Caladinho,3.500000000000000,3,Right,Point-break,Experienced surfers
+254, ,Praia dos Açores,3.000000000000000,3,Right and left,Beach-break,All surfers
+255, ,Lagoinha do Leste,3.500000000000000,4,Right and left,Beach-break,All surfers
+256, ,Matadeiro,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+257, ,Armação,3.000000000000000,2,Right and left,Beach-break,All surfers
+258, ,Caldeirao,3.500000000000000,3,Left,Beach-break,Experienced surfers
+259, ,Morro das Pedras,3.000000000000000,4,Right and left,Sand-bar,Experienced surfers
+260, ,Campeche Rights,4.000000000000000,2,Right,Sand-bar,Experienced surfers
+261, ,Riozinho,5.000000000000000,3,Right and left,Beach-break,Experienced surfers
+262, ,Joaquina,4.000000000000000,4,Left,Sand-bar,Experienced surfers
+263, ,Praia Mole,3.500000000000000,3,Right and left,Sand-bar,All surfers
+264, ,Galheta,3.500000000000000,4,Right and left,Beach-break,All surfers
+265, ,Barra da Lagoa,3.000000000000000,3,Right and left,Beach-break,Beginners wave
+266, ,Mocambique,3.500000000000000,4,Right and left,Beach-break,All surfers
+267, ,Ponta das Aranhas,3.500000000000000,4,Right and left,Beach-break,All surfers
+268, ,Santinho,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+269, ,Canasvieiras,3.500000000000000,1,Right,Sand-bar,All surfers
+270, ,Praia do Forte,3.500000000000000,1,Right,Point-break,All surfers
+271, ,Ingleses,3.000000000000000,2,Right and left,Beach-break,All surfers
+272, ,Praia Brava,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+273, ,Praia Brava,3.000000000000000,4,Right and left,Sand-bar,All surfers
+274, ,Lambe lambe,4.000000000000000,1,Right,Point-break,Experienced surfers
+275, ,Ponta Do Rapa,4.000000000000000,1,Right,Reef-rocky,Pros or kamikaze only...
+276, ,Tingua,3.500000000000000,1,Left,Beach-break,Experienced surfers
+277, ,Palmas,3.500000000000000,2,Right and left,Beach-break,Experienced surfers
+278, ,Mariscal,3.500000000000000,3,Right and left,Beach-break,All surfers
+279, ,Quatro Ilhas,3.500000000000000,3,Right,Point-break,Experienced surfers
+280, ,Bombinhas,2.000000000000000,2,Right and left,Beach-break,Beginners wave
+281, ,Bombas,3.000000000000000,2,Right and left,Beach-break,All surfers
+282, ,Meia Praia,3.000000000000000,3,Right and left,Sand-bar,All surfers
+283, ,Itapema,3.000000000000000,3,Right and left,Beach-break,All surfers
+284, ,Ponta do Cabeço,4.000000000000000,2,Left,Reef-rocky,Experienced surfers
+285, ,Mocó,4.000000000000000,2,Left,Reef-rocky,Experienced surfers
+286, ,Estaleirinho,3.000000000000000,4,Right and left,Beach-break,Pros or kamikaze only...
+287, ,Estaleiro (reef),3.500000000000000,2,Left,Reef-rocky,Experienced surfers
+288, ,Balneário Camboriú,3.000000000000000,3,Right and left,Beach-break,All surfers
+289, ,Parcel,4.000000000000000,1,Right and left,Reef-rocky,Pros or kamikaze only...
+290, ,Praia dos Amores,3.000000000000000,2,Right and left,Beach-break,Experienced surfers
+291, ,Praia Brava,3.000000000000000,3,Right and left,Beach-break,Experienced surfers
+292, ,Morcego,3.500000000000000,0,Left,Point-break,Pros or kamikaze only...
+293, ,Atalaia,3.500000000000000,2,Left,breakwater/jetty,All surfers
+294, ,Pracinha,3.500000000000000,4,Right and left,Beach-break,All surfers
+295, ,Navegantes,3.500000000000000,3,Right and left,Beach-break,All surfers
+296, ,Garrincha,3.000000000000000,2,Right and left,Sand-bar,Experienced surfers
+297, ,Gravatá (1 e 2),3.000000000000000,3,Right and left,Beach-break,All surfers
+298, ,Gravatá,3.000000000000000,3,Right and left,Beach-break,All surfers
+299, ,Quilombo,3.500000000000000,2,Left,Beach-break,All surfers
+300, ,Quilombo (reef),3.500000000000000,2,Right,Point-break,All surfers
+301, ,molhe de Piçarras,3.000000000000000,1,Right,Point-break,All surfers
+302, ,Laje do Jacques,4.000000000000000,2,Right and left,Reef-rocky,Experienced surfers
+303, ,Syphodys,3.000000000000000,2,Right and left,Beach-break,Experienced surfers
+304, ,ilha do grants,3.500000000000000,1,Left,Reef-rocky,Pros or kamikaze only...
+305, ,barra de Itajuba,3.000000000000000,1,Right,Point-break,All surfers
+306, ,Praia do Sol,2.000000000000000,3,Right and left,Point-break,All surfers
+307, ,Praia do Tabuleiro,3.000000000000000,2,Right and left,Beach-break,Beginners wave
+308, ,Canoas,2.000000000000000,3,Right and left,Beach-break,Beginners wave
+309, ,Barrinha,3.500000000000000,3,Right and left,Beach-break,All surfers
+310, ,Foz do Itapocu,3.000000000000000,3,Left,breakwater/jetty,All surfers
+311, ,Foz do Itapocu,3.500000000000000,4,Right and left,Beach-break,All surfers
+312, ,Praia do Bispo,3.000000000000000,4,Right and left,Beach-break,All surfers
+313, ,Picama,3.000000000000000,3,Right and left,Sand-bar,Experienced surfers
+314, ,"Praia Grande, São Francisco do Sul",3.000000000000000,3,Right and left,Beach-break,All surfers
+315, ,Praia da Saudade,3.500000000000000,4,Right and left,Beach-break,All surfers
+316, ,Sao Francisco do Sul,3.000000000000000,1,Right,Sand-bar,Beginners wave
+317, ,Píer da Petrobras,3.500000000000000,2,Right,Point-break,All surfers
+318, ,Sumidouro,3.500000000000000,1,Right and left,Beach-break,Experienced surfers
+319, ,Praia do Forte,3.500000000000000,1,Right,Point-break,All surfers
+320, ,Terceira Pedra,3.500000000000000,3,Right,Point-break,All surfers
+321, ,Barra do sai mirim,3.000000000000000,3,Right and left,Beach-break,All surfers
+322, ,Barrinha,3.000000000000000,2,Right,Beach-break,Experienced surfers
+323, ,Guaratuba Praia Brava,3.000000000000000,3,Right and left,Beach-break,All surfers
+324, ,Praia Brava Guaratuba,3.500000000000000,3,Right and left,Beach-break,All surfers
+325, ,Direitas de Guaratuba,4.000000000000000,2,Right,Point-break,Experienced surfers
+326, ,Pico de Matinhos,3.500000000000000,3,Right,Point-break,Experienced surfers
+327, ,Ilha do Mel,3.500000000000000,3,Right and left,Beach-break,All surfers
+328, ,Farolete,3.500000000000000,4,Left,Point-break,Experienced surfers
+329, ,"Guarau, Peruibe SP",3.000000000000000,4,Right and left,Beach-break,All surfers
+330, ,Pier de Mongaguá,3.500000000000000,4,Right and left,Beach-break,All surfers
+331, ,Pitangueiras,3.000000000000000,4,Right and left,Beach-break,All surfers
+332, ,Tombo,3.500000000000000,4,Right and left,Beach-break,All surfers
+333, ,Astúrias,3.000000000000000,2,Right and left,Beach-break,All surfers
+334, ,Pitangueiras Beach,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+335, ,porta do sol,3.500000000000000,2,Right and left,Point-break,Experienced surfers
+336, ,Itarare,3.000000000000000,3,Right and left,Beach-break,All surfers
+337, ,Santos,3.000000000000000,3,Right and left,Beach-break,All surfers
+338, ,"Praia de Pernambuco (Pernambuco Beach, in Guaruja)",3.500000000000000,4,Right and left,Beach-break,All surfers
+339, ,Bonete,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+340, ,Sao Pedro,4.000000000000000,3,Right and left,Sand-bar,All surfers
+341, ,Praia de Iporanga,3.500000000000000,2,Left,Reef-rocky,Pros or kamikaze only...
+342, ,Taguaíba,3.500000000000000,4,Right and left,Beach-break,All surfers
+343, ,praia branca,3.500000000000000,3,Left,Beach-break,All surfers
+344, ,Castelhanos,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+345, ,Enseada - Bertioga,3.000000000000000,4,Right and left,Beach-break,All surfers
+346, ,Santiago,3.500000000000000,2,Right and left,Beach-break,Experienced surfers
+347, ,Guaecá,3.500000000000000,3,Right and left,Beach-break,All surfers
+348, ,Riviera de São Lourenço,3.000000000000000,3,Right and left,Beach-break,All surfers
+349, ,Paúba,4.000000000000000,2,Right and left,Beach-break,Pros or kamikaze only...
+350, ,Itaguaré,3.000000000000000,4,Right and left,Beach-break,All surfers
+351, ,Maresias,3.500000000000000,4,Right and left,Beach-break,All surfers
+352, ,Camburi,3.500000000000000,4,Right and left,Beach-break,All surfers
+353, ,Baleia,3.500000000000000,3,Right and left,Beach-break,All surfers
+354, ,Guaratuba,3.000000000000000,3,Right and left,Beach-break,Experienced surfers
+355, ,Juquehy,3.000000000000000,4,Right and left,Beach-break,All surfers
+356, ,Massaguaçu,3.500000000000000,2,Right and left,Beach-break,Experienced surfers
+357, ,Simão,3.500000000000000,3,Right,Beach-break,Experienced surfers
+358, ,Praia do sape,3.500000000000000,3,Right and left,Beach-break,All surfers
+359, ,Lagoinha,3.500000000000000,2,Right and left,Beach-break,Beginners wave
+360, ,Sununga,3.500000000000000,3,Right,Beach-break,Pros or kamikaze only...
+361, ,Toninhas,3.000000000000000,2,Right and left,Beach-break,All surfers
+362, ,Praia Grande (PG),3.000000000000000,3,Right and left,Beach-break,All surfers
+363, ,Praia Grande North,3.000000000000000,3,Left,Beach-break,All surfers
+364, ,Vermelha do Centro,3.500000000000000,4,Right and left,Beach-break,All surfers
+365, ,Patiero,3.500000000000000,2, ,Reef-rocky,Experienced surfers
+366, ,Vermelha do Norte,3.000000000000000,3,Right and left,Beach-break,All surfers
+367, ,Itamambuca,3.500000000000000,4,Right and left,Beach-break,All surfers
+368, ,Praia do Felix,3.500000000000000,3,Right and left,Beach-break,All surfers
+369, ,Brava do Camburi,3.000000000000000,3,Right and left,Beach-break,Experienced surfers
+370, ,Ponta do Cepílio,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+371, ,Laranjeiras,3.500000000000000,3,Right,Beach-break,All surfers
+372, ,Martim de Sa,3.500000000000000,3,Right and left,Beach-break,All surfers
+373, ,Aventureiro,3.500000000000000,4,Left,Point-break,All surfers
+374, ,Lopes Mendes,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+375, ,Barra de Guaratiba,4.000000000000000,2,Left,Rivermouth,Experienced surfers
+376, ,Laje do Dramin,3.500000000000000,2,Left,Reef-rocky,Pros or kamikaze only...
+377, ,Grumari,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+378, ,Prainha,3.500000000000000,4,Right and left,Beach-break,All surfers
+379, ,CcB,3.500000000000000,4,Right and left,Sand-bar,All surfers
+380, ,Macumba (Curvão),3.000000000000000,3,Right and left,Beach-break,All surfers
+381, ,Farorinha,3.000000000000000,2,Left,Beach-break,All surfers
+382, ,Canto do recreio,3.500000000000000,0,Right and left,Beach-break,All surfers
+383, ,Praia da Macumba,4.000000000000000,4,Right and left,Beach-break,All surfers
+384, ,posto 11 (Atlântico sul),3.500000000000000,3,Right and left,Sand-bar,All surfers
+385, ,Mambucaba,3.500000000000000,2,Right and left,Sand-bar,All surfers
+386, ,Posto 10 - Recreio,3.500000000000000,2,Right and left,Beach-break,Experienced surfers
+387, ,Recreio Posto 9,3.000000000000000,3,Right and left,Beach-break,Experienced surfers
+388, ,Lage Postinho,3.500000000000000,2,Right and left,Reef-rocky,Experienced surfers
+389, ,Joatinga,3.500000000000000,4,Right and left,Beach-break,All surfers
+390, ,Tropical (posto 1),3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+391, ,Barra da Tijuca - Posto 8,3.500000000000000,4,Right and left,Sand-bar,All surfers
+392, ,Sao Conrado,3.500000000000000,0,Right and left,Beach-break,Experienced surfers
+393, ,Laje do sheraton,4.000000000000000,1,Right and left,Reef-rocky,Pros or kamikaze only...
+394, ,Pontão do leblon,3.500000000000000,3,Right,Point-break,Experienced surfers
+395, ,Arpoador,3.500000000000000,0,Right and left,Beach-break,All surfers
+396, ,Praia do Diabo,3.500000000000000,4,Right and left,Beach-break,All surfers
+397, ,Leblon,3.000000000000000,4,Right and left,Beach-break,All surfers
+398, ,Ipanema,3.000000000000000,3,Right and left,Beach-break,All surfers
+399, ,Shore break expresso escorpiao,3.500000000000000,2,Right,Reef-rocky,Pros or kamikaze only...
+400, ,Forte de Copacabana,3.000000000000000,2,Right,Point-break,All surfers
+401, ,Posto 5 - Copacabana,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+402, ,Praia Brava - Pontal do Atalaia,3.500000000000000,2,Left,Point-break,Experienced surfers
+403, ,Shock,5.000000000000000,2,Right,Reef-rocky,Pros or kamikaze only...
+404, ,Praia Grande - Arraial do Cabo,3.500000000000000,3,Right and left,Beach-break,All surfers
+405, ,Itacoatiara,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+406, ,Canal de Camboinhas,2.000000000000000,3,Right and left,breakwater/jetty,Beginners wave
+407, ,Camboinhas,3.500000000000000,2,Right and left,Sand-bar,Experienced surfers
+408, ,Leme,3.000000000000000,3,Left,Sand-bar,All surfers
+409, ,Ponta Negra - Maricá - RJ,3.000000000000000,3,Right and left,Beach-break,All surfers
+410, ,Piratininga,3.000000000000000,3,Right and left,Beach-break,All surfers
+411, ,Massambaba,3.500000000000000,4,Right and left,Sand-bar,Experienced surfers
+412, ,Lage de fora,4.000000000000000,2,Left,Reef-rocky,Don't know
+413, ,Arraial do Cabo,3.500000000000000,2,Left,Reef-coral,Experienced surfers
+414, ,Itauna,4.000000000000000,4,Right and left,Point-break,All surfers
+415, ,Backdoor,3.000000000000000,3,Right,Reef-rocky,Experienced surfers
+416, ,Saquarema - Itauna Beach,3.500000000000000,4,Right and left,Beach-break,All surfers
+417, ,Saquarema - Praia da Vila,3.500000000000000,3,Right and left,Beach-break,All surfers
+418, ,Praia do Foguete - Cabo Frio,3.000000000000000,3,Right and left,Sand-bar, 
+419, ,Flamengo,3.500000000000000,1,Left,Point-break,Experienced surfers
+420, ,prainha de adão e eva,3.500000000000000,1,Right and left,Beach-break,All surfers
+421, ,Itapuca,3.500000000000000,2,Right and left,Reef-rocky,All surfers
+422, ,Praia Brava - Cabo Frio,3.500000000000000,2,Right and left,Beach-break,All surfers
+423, ,Praia do Forte - Cabo Frio,3.500000000000000,4,Right and left,Beach-break,All surfers
+424, ,Dunas do Peró - Cabo Frio -RJ,0.000000000000000,0, , , 
+425, ,Geriba,3.500000000000000,3,Right and left,Beach-break,All surfers
+426, ,Laje da Rasa,3.000000000000000,1, ,Reef-rocky,Experienced surfers
+427, ,praia de unamar,2.000000000000000,2,Right and left,Beach-break,Beginners wave
+428, ,Costazul,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+429, ,Pecado,3.500000000000000,4,Right and left,Beach-break,All surfers
+430, ,Cavaleiros,3.500000000000000,4,Right and left,Beach-break,All surfers
+431, ,Grussaí,3.000000000000000,3,Right and left,Beach-break,All surfers
+432, ,Setiba Pina,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+433, ,Barra Sol,3.500000000000000,2,Right and left,Sand-bar,Experienced surfers
+434, ,Secret,3.000000000000000,2,Right and left,Sand-bar,All surfers
+435, ,Coral do Céu,3.500000000000000,2,Left,Reef-rocky,Pros or kamikaze only...
+436, ,Pompeia,3.500000000000000,3,Right and left,Beach-break,All surfers
+437, ,D2,3.500000000000000,3,Right,Reef-rocky,Experienced surfers
+438, ,Canal de Vitória,3.000000000000000,1,Left,Sand-bar,All surfers
+439, ,Praia de Camburi,3.000000000000000,1,Right and left,Beach-break,All surfers
+440, ,Prainha de Carapebus,3.500000000000000,2,Right,Point-break,Experienced surfers
+441, ,Barrote-Jacaraipe,3.000000000000000,3,Right and left,Beach-break,All surfers
+442, ,Jacaraípe- Solemar,3.000000000000000,3,Right and left,Sand-bar,All surfers
+443, ,Regencia,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+444, ,Guriri,3.000000000000000,2,Right and left,Beach-break,All surfers
+445, ,Backdoor,3.500000000000000,2,Right,Point-break,Experienced surfers
+446, ,Itacarezinho,3.000000000000000,4,Right and left,Beach-break,All surfers
+447, ,Engenhoca,0.000000000000000,4,Right and left,Beach-break,All surfers
+448, ,Jeribucaçu,3.000000000000000,4,Right and left,Beach-break,All surfers
+449, ,Prainha,3.500000000000000,3,Right and left,Beach-break,All surfers
+450, ,Tiririca,3.500000000000000,4,Right and left,Beach-break,All surfers
+451, ,Praia da Resende,3.000000000000000,4,Right and left,Beach-break,All surfers
+452, ,Boca da Barra,3.500000000000000,4,Right,Rivermouth,Experienced surfers
+453, ,Pontal,3.000000000000000,4,Right and left,Beach-break,All surfers
+454, ,Praia dos Algodoes,3.000000000000000,3,Right and left,Reef-coral,All surfers
+455, ,Saquaira,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+456, ,Taipu de Fora,3.000000000000000,4,Right and left,Beach-break,All surfers
+457, ,Pedra do Moleque,3.500000000000000,3,Right,Reef-coral,Experienced surfers
+458, ,Farol da Barra,3.500000000000000,2,Left,breakwater/jetty,Experienced surfers
+459, ,Barravento,3.500000000000000,3,Right and left,Beach-break,All surfers
+460, ,Espanhol,3.500000000000000,2,Right and left,Point-break,Experienced surfers
+461, ,Corsário,3.000000000000000,4,Right and left,Beach-break,All surfers
+462, ,Jaguaribe,3.500000000000000,3,Right and left,Beach-break,All surfers
+463, ,Stella Maris,3.500000000000000,4,Right and left,Beach-break,All surfers
+464, ,Praia do forte,3.500000000000000,4,Right and left,Reef-coral,Experienced surfers
+465, ,Scar Reef,3.500000000000000,2,Right and left,Reef-coral,Experienced surfers
+466, ,Casinha,3.500000000000000,3,Right,Reef-coral,Experienced surfers
+467, ,Aracaju,3.000000000000000,3,Right and left, ,All surfers
+468, ,Praia Do Francês,3.500000000000000,4,Right and left,Beach-break,All surfers
+469, ,Pedra Virada,3.500000000000000,2,Left,Reef-rocky,Experienced surfers
+470, ,Cruz das Almas,3.500000000000000,4,Right and left,Sand-bar,All surfers
+471, ,Riacho Doce,3.000000000000000,3,Right and left,Rivermouth,All surfers
+472, ,New Orleans,3.000000000000000,0,Right and left,Beach-break,All surfers
+473, ,Praia do Morro,3.500000000000000,4,Right and left,Beach-break,All surfers
+474, ,Maracaipe,4.000000000000000,4,Right and left,Beach-break,Experienced surfers
+475, ,Borete,3.000000000000000,4,Right and left,Beach-break,All surfers
+476, ,cupe,4.000000000000000,3,Right and left,Beach-break,Experienced surfers
+477, ,Enseada dos Corais,3.500000000000000,4,Right and left,Beach-break,Experienced surfers
+478, ,Tambaba,3.000000000000000,0,Right and left,Beach-break,All surfers
+479, ,Mar do Macaco,2.000000000000000,3,Right and left,Beach-break,Beginners wave
+480, ,Dique de Cabedelo,3.000000000000000,2,Left,Beach-break,All surfers
+481, ,Baia Formosa,3.500000000000000,3,Right,Point-break,All surfers
+482, ,Pipa,4.000000000000000,4,Right and left,Beach-break,All surfers
+483, ,Lajão,3.500000000000000,2,Right,Point-break,Experienced surfers
+484, ,Madeiro,3.500000000000000,3,Right and left,Beach-break,All surfers
+485, ,Cacimbinhas,3.500000000000000,3,Right and left,Beach-break,All surfers
+486, ,Tabatinga,3.000000000000000,0,Right and left, , 
+487, ,Ponta negra,3.000000000000000,3,Right and left,Beach-break,All surfers
+488, ,Genipabu,3.000000000000000,3,Right and left,Beach-break,All surfers
+489, ,Morro Branco,3.000000000000000,0,Right and left,Beach-break,All surfers
+490, ,Iguape Meio,0.000000000000000,0, ,Beach-break,All surfers
+491, ,Cacimba do Padre,4.000000000000000,2,Left,Beach-break,Experienced surfers
+492, ,Boldró,4.000000000000000,3,Right and left,Reef-coral,Pros or kamikaze only...
+493, ,Conceição,3.000000000000000,0,Right and left,Beach-break,All surfers
+494, ,Meio,3.000000000000000,0,Right and left, ,All surfers
+495, ,Cachorro,3.000000000000000,2,Right,Beach-break,All surfers
+496, ,Biboca,3.500000000000000,0,Right,Reef-coral,Experienced surfers
+497, ,Abras,4.000000000000000,2,Left,Reef-rocky,Experienced surfers
+498, ,Futuro,3.500000000000000,4,Right and left,Beach-break,All surfers
+499, ,Iracema (ponte metalica),3.500000000000000,3,Right and left,Reef-rocky,Experienced surfers
+500, ,Leste-Oeste,3.000000000000000,3,Right and left,Beach-break,All surfers
+501, ,Titanzinho,3.500000000000000,0,Right and left,Reef-rocky,Experienced surfers
+502, ,Icarai,3.500000000000000,3,Right and left,Beach-break,Experienced surfers
+503, ,Pico das Almas,3.000000000000000,2,Right and left,Beach-break,Experienced surfers
+504, ,Taiba,3.000000000000000,3,Right and left,Point-break,All surfers
+505, ,Paracuru,3.500000000000000,0,Right and left,Reef-coral,Experienced surfers
+506, ,Jericoacoara,3.000000000000000,3,Right and left,Beach-break,Beginners wave
+507, ,Travosa,3.500000000000000,0,Right and left,Beach-break,All surfers
+508, ,marahu,3.500000000000000,2,Right and left,Sand-bar,All surfers
+509, ,Camaraçu,5.000000000000000,4,Right and left,Beach-break,Experienced surfers
+510, ,Araruna,3.000000000000000,3,Right and left,Sand-bar,All surfers
+511, ,Pororoca,4.000000000000000,0,Right and left,Rivermouth,Experienced surfers
