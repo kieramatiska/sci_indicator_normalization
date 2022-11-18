@@ -139,6 +139,77 @@ write_csv(surf_indicators, file = "surf_subindex.csv")
 
 ## Social Subindex
 
+```{r}
+employment <- read_csv(here("data", "social", "SLR_employment.csv")) %>% 
+  select(OBJECTID, Join_Count, Name, Surf_Spot, SLR_employ) %>% 
+  clean_names()
+hotels <- read_csv(here("data", "social", "hotels.csv")) %>% 
+  select(OBJECTID, Join_Count, Name, Surf_Spot) %>% 
+  clean_names()
+airports <- read_csv(here("data", "social", "airports.csv")) %>% 
+  select(OBJECTID, Join_Count, Name, Surf_Spot) %>% 
+  clean_names()
+```
+
+### Employment
+
+```{r}
+max_employment <- round(max(employment$slr_employ), 10)
+min_employment <- round(min(employment$slr_employ), 10)
+
+employment_normalized <- round((employment$slr_employ - min_employment) /
+                                         (max_employment - min_employment), 10)
+
+employment$normalized_employment <- employment_normalized
+```
+
+### Hotels
+
+```{r}
+max_hotel <- round(max(hotels$join_count), 10)
+min_hotel <- round(min(hotels$join_count), 10)
+
+hotels_normalized <- round((hotels$join_count - min_hotel) /
+                                     (max_hotel - min_hotel), 10)
+
+hotels$normalized_hotels <- hotels_normalized
+```
+
+### Airports
+
+```{r}
+max_airport <- round(max(airports$join_count), 10)
+min_airport <- round(min(airports$join_count), 10)
+
+airports <- airports %>% 
+  mutate(normalized_airports = round((airports$join_count - min_airport) /
+                                       (max_airport - min_airport), 10))
+```
+
+### Merge Social Index Indicators
+
+```{r}
+social_normalized <- merge(employment$normalized_employment, hotels$normalized_hotels,
+                           by = "objectid")
+
+employment %>% 
+  left_join(hotels, by = "objectid")
+
+# cbind, rbind, 
+```
+
+### Normalized Social Subindex
+
+```{r}
+
+```
+
+### Export Social Subindex
+
+```{r}
+
+```
+
 # Response Index
 
 ```{r}
