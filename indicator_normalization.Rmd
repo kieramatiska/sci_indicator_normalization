@@ -101,19 +101,93 @@ marine_richness <- marine_richness %>%
 
 ```{r}
 # marine ecosystems
+max_coral <- round(max(coral$coral_reef), 10)
+min_coral <- round(min(coral$coral_reef), 10)
 
+coral <- coral %>% 
+  mutate(normalized_coral_reef = round((coral_reef - min_coral) /
+                                          (max_coral - min_coral), 10))
+
+max_mangrove <- round(max(mangrove$mangrove_p), 10)
+min_mangrove <- round(min(mangrove$mangrove_p), 10)
+
+mangrove <- mangrove %>% 
+  mutate(normalized_mangrove = round((mangrove_p - min_mangrove) /
+                                       (max_mangrove - min_mangrove), 10))
+
+max_seagrass <- round(max(seagrass$join_count), 10)
+min_seagrass <- round(min(seagrass$join_count), 10)
+
+seagrass <- seagrass %>% 
+  mutate(normalized_seagrass = round((join_count - min_seagrass) /
+                                       (max_seagrass - min_seagrass), 10))
+
+# terrestrial ecosystems
+max_tree_cover <- round(max(tree_cover$mean), 10)
+min_tree_cover <- round(min(tree_cover$mean), 10)
+
+tree_cover <- tree_cover %>% 
+  mutate(normalized_tree_cover = round((mean - min_tree_cover) /
+                                         (max_tree_cover - min_tree_cover), 10))
 ```
 
-#### Marine Ecosystem Biodiversity Weighted
+#### Marine Ecosystem Biodiversity Weighted (& Normalized)
 
 ```{r}
+marine_eco_weighted <- left_join(coral, seagrass,
+                                 by= "objectid") %>% 
+  select(objectid, name.x, surf_spot.x, 
+         sum_area_s, coral_reef, normalized_coral_reef, 
+         join_count, normalized_seagrass)
 
+marine_eco_weighted <- left_join(marine_eco_weighted, mangrove,
+                                 by = "objectid")
+
+# weight marine ecosystems
+marine_eco_weighted <- marine_eco_weighted %>% 
+  mutate(marine_eco_added = round((normalized_coral_reef + normalized_mangrove + normalized_seagrass), 10))
+
+# normalize weighted marine areas
+max_added_marine_eco <- round(max(marine_eco_weighted$marine_eco_added), 10)
+min_added_marine_eco <- round(min(marine_eco_weighted$marine_eco_added), 10)
+
+marine_eco_weighted <- marine_eco_weighted %>% 
+  mutate(normalized_marine_eco = round((marine_eco_added - min_added_marine_eco) /
+                                         (max_added_marine_eco - min_added_marine_eco), 10))
 ```
 
 ### Priority Areas (& Weighted)
 
 ```{r}
+# high priority terrestrial areas weighted
+terr_pa_high <- terr_pa_high %>% 
+  mutate(terr_pa_high_weighted = round(terr_pa_high$high_perce * 0.3333, 10))
 
+max_terr_pa_high <- round(max(terr_pa_high$terr_pa_high_weighted), 10)
+min_terr_pa_high <- round(min(terr_pa_high$terr_pa_high_weighted), 10)
+
+terr_pa_high <- terr_pa_high %>% 
+  mutate(normalized_terr_pa_high = round((terr_pa_high_weighted - min_terr_pa_high) /
+                                           (max_terr_pa_high - min_terr_pa_high), 10))
+
+# very high priority terrestrial areas weighted
+terr_pa_ver_high <- terr_pa_ver_high %>% 
+  mutate(terr_pa_ver_high_weighted = round(very_high * 0.6666, 10))
+
+max_terr_pa_very_high <- round(max(terr_pa_ver_high$terr_pa_ver_high_weighted), 10)
+min_terr_pa_very_high <- round(min(terr_pa_ver_high$terr_pa_ver_high_weighted), 10)
+
+terr_pa_ver_high <- terr_pa_ver_high %>% 
+  mutate(normalized_terr_pa_ver_high = round((terr_pa_ver_high_weighted - min_terr_pa_very_high) /
+                                           (max_terr_pa_very_high - min_terr_pa_very_high), 10))
+
+# extremely high priority terrestrial areas weighted
+max_terr_pa_ext_high <- round(max(terr_pa_ext_high$extremely), 10)
+min_terr_pa_ext_high <- round(min(terr_pa_ext_high$extremely), 10)
+
+terr_pa_ext_high <- terr_pa_ext_high %>% 
+  mutate(normalized_terr_pa_ext_high = round((extremely - min_terr_pa_ext_high) /
+                                           (max_terr_pa_ext_high - min_terr_pa_ext_high), 10))
 ```
 
 ### Merge Biodiversity Indicators
