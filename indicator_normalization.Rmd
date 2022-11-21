@@ -51,6 +51,8 @@ write_csv(ws_sl_surf_na, file = "ws_sl_sys_spots.csv")
 
 ## Biodiversity Sub Index
 
+
+
 ## Surf Subindex
 
 ```{r}
@@ -157,10 +159,9 @@ airports <- read_csv(here("data", "social", "airports.csv")) %>%
 max_employment <- round(max(employment$slr_employ), 10)
 min_employment <- round(min(employment$slr_employ), 10)
 
-employment_normalized <- round((employment$slr_employ - min_employment) /
-                                         (max_employment - min_employment), 10)
-
-employment$normalized_employment <- employment_normalized
+employment <- employment %>% 
+  mutate(normalized_employment = round((employment$slr_employ - min_employment) /
+                                         (max_employment - min_employment), 10))
 ```
 
 ### Hotels
@@ -169,10 +170,9 @@ employment$normalized_employment <- employment_normalized
 max_hotel <- round(max(hotels$join_count), 10)
 min_hotel <- round(min(hotels$join_count), 10)
 
-hotels_normalized <- round((hotels$join_count - min_hotel) /
-                                     (max_hotel - min_hotel), 10)
-
-hotels$normalized_hotels <- hotels_normalized
+hotels <- hotels %>% 
+  mutate(normalized_hotels = round((hotels$join_count - min_hotel) /
+                                     (max_hotel - min_hotel), 10))
 ```
 
 ### Airports
@@ -189,25 +189,35 @@ airports <- airports %>%
 ### Merge Social Index Indicators
 
 ```{r}
-social_normalized <- merge(employment$normalized_employment, hotels$normalized_hotels,
-                           by = "objectid")
+social_normalized <- left_join(employment, hotels, 
+                               by = "objectid") %>% 
+  select(objectid, name.x, surf_spot.x, 
+         normalized_employment, normalized_hotels)
 
-employment %>% 
-  left_join(hotels, by = "objectid")
-
-# cbind, rbind, 
+social_normalized <- left_join(social_normalized, airports,
+                               by = "objectid") %>% 
+  select(objectid, name.x, surf_spot.x, 
+         normalized_employment, normalized_hotels, normalized_airports)
 ```
 
 ### Normalized Social Subindex
 
 ```{r}
+social_normalized <- social_normalized %>% 
+  mutate(social_added = round(normalized_employment + normalized_hotels + normalized_airports, 10))
 
+max_social_added <- round(max(social_normalized$social_added), 10)
+min_social_added <- round(min(social_normalized$social_added), 10)
+
+social_normalized <- social_normalized %>% 
+  mutate(social_subindex = round((social_normalized$social_added - min_social_added) /
+                                   (max_social_added - min_social_added), 10))
 ```
 
 ### Export Social Subindex
 
 ```{r}
-
+write_csv(social_normalized, file = "normalized_social.csv")
 ```
 
 # Response Index
