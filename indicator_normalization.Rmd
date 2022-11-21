@@ -51,7 +51,88 @@ write_csv(ws_sl_surf_na, file = "ws_sl_sys_spots.csv")
 
 ## Biodiversity Sub Index
 
+```{r}
+marine_richness <- read_csv(here("data", "biodiversity", "marine_richness.csv")) %>% 
+  clean_names()
+terr_richness <- read_csv(here("data", "biodiversity", "terr_richness.csv")) %>% 
+  clean_names()
+coral <- read_csv(here("data", "biodiversity", "coral_reef.csv")) %>% 
+  select(OBJECTID, Name, Surf_Spot, SUM_Area_S, coral_reef) %>% 
+  clean_names()
+mangrove <- read_csv(here("data", "biodiversity", "mangrove.csv")) %>% 
+  select(OBJECTID, Name, Surf_Spot, SUM_Area_S, mangrove_p) %>% 
+  clean_names()
+seagrass <- read_csv(here("data", "biodiversity", "seagrass.csv")) %>% 
+  select(OBJECTID, Join_Count, Name, Surf_Spot) %>% 
+  clean_names()
+tree_cover <- read_csv(here("data", "biodiversity", "tree_cover.csv")) %>% 
+  clean_names()
+terr_pa_high <- read_csv(here("data", "biodiversity", "terr_pa_high.csv")) %>% 
+  clean_names()
+terr_pa_ver_high <- read_csv(here("data", "biodiversity", "terr_pa_very_high.csv")) %>% 
+  clean_names()
+terr_pa_ext_high <- read_csv(here("data", "biodiversity", "terr_pa_extremely_high.csv")) %>% 
+  clean_names()
+ocean_pa <- read_csv(here("data", "biodiversity", "oceanic_pa.csv")) %>% 
+  clean_names()
+```
 
+### Species Biodiversity
+
+```{r}
+# terrestrial species
+max_terr_rich <- round(max(terr_richness$mean), 10)
+min_terr_rich <- round(min(terr_richness$mean), 10)
+
+terr_richness <- terr_richness %>% 
+  mutate(normalized_terr_rich = round((mean - min_terr_rich) / 
+                                        (max_terr_rich - min_terr_rich), 10))
+
+# marine species
+max_marine_rich <- round(max(marine_richness$mean), 10)
+min_marine_rich <- round(min(marine_richness$mean), 10)
+
+marine_richness <- marine_richness %>% 
+  mutate(normalized_mar_rich = round((mean - min_marine_rich) /
+                                       (max_marine_rich - min_marine_rich), 10))
+```
+
+### Ecosystem Biodiversity
+
+```{r}
+# marine ecosystems
+
+```
+
+#### Marine Ecosystem Biodiversity Weighted
+
+```{r}
+
+```
+
+### Priority Areas (& Weighted)
+
+```{r}
+
+```
+
+### Merge Biodiversity Indicators
+
+```{r}
+
+```
+
+### Normalize Biodiversity Subindex
+
+```{r}
+
+```
+
+### Export Normalized Biodiverstiy Subindex
+
+```{r}
+
+```
 
 ## Surf Subindex
 
