@@ -53,27 +53,34 @@ write_csv(ws_sl_surf_na, file = "ws_sl_sys_spots.csv")
 
 ```{r}
 marine_richness <- read_csv(here("data", "biodiversity", "marine_richness.csv")) %>% 
+  select(OBJECTID, MEAN) %>% 
   clean_names()
 terr_richness <- read_csv(here("data", "biodiversity", "terr_richness.csv")) %>% 
+  select(OBJECTID, MEAN) %>% 
   clean_names()
 coral <- read_csv(here("data", "biodiversity", "coral_reef.csv")) %>% 
-  select(OBJECTID, Name, Surf_Spot, SUM_Area_S, coral_reef) %>% 
+  select(OBJECTID, coral_reef) %>% 
   clean_names()
 mangrove <- read_csv(here("data", "biodiversity", "mangrove.csv")) %>% 
-  select(OBJECTID, Name, Surf_Spot, SUM_Area_S, mangrove_p) %>% 
+  select(OBJECTID, mangrove_p) %>% 
   clean_names()
 seagrass <- read_csv(here("data", "biodiversity", "seagrass.csv")) %>% 
-  select(OBJECTID, Join_Count, Name, Surf_Spot) %>% 
+  select(OBJECTID, Join_Count) %>% 
   clean_names()
 tree_cover <- read_csv(here("data", "biodiversity", "tree_cover.csv")) %>% 
+  select(OBJECTID, MEAN) %>% 
   clean_names()
 terr_pa_high <- read_csv(here("data", "biodiversity", "terr_pa_high.csv")) %>% 
+  select(OBJECTID, high_perce) %>% 
   clean_names()
 terr_pa_ver_high <- read_csv(here("data", "biodiversity", "terr_pa_very_high.csv")) %>% 
+  select(OBJECTID, very_high_) %>% 
   clean_names()
 terr_pa_ext_high <- read_csv(here("data", "biodiversity", "terr_pa_extremely_high.csv")) %>% 
+  select(OBJECTID, extremely_) %>% 
   clean_names()
 ocean_pa <- read_csv(here("data", "biodiversity", "oceanic_pa.csv")) %>% 
+  select(OBJECTID, oceanic_pa) %>% 
   clean_names()
 ```
 
@@ -95,6 +102,11 @@ min_marine_rich <- round(min(marine_richness$mean), 10)
 marine_richness <- marine_richness %>% 
   mutate(normalized_mar_rich = round((mean - min_marine_rich) /
                                        (max_marine_rich - min_marine_rich), 10))
+
+# join terrestrial and marine species richness
+species_richness <- left_join(terr_richness, marine_richness,
+                              by = "objectid") %>% 
+  select(objectid, normalized_terr_rich, normalized_mar_rich)
 ```
 
 ### Ecosystem Biodiversity
@@ -134,14 +146,13 @@ tree_cover <- tree_cover %>%
 #### Marine Ecosystem Biodiversity Weighted (& Normalized)
 
 ```{r}
-marine_eco_weighted <- left_join(coral, seagrass,
+marine_two_eco_weighted <- left_join(coral, seagrass,
                                  by= "objectid") %>% 
-  select(objectid, name.x, surf_spot.x, 
-         sum_area_s, coral_reef, normalized_coral_reef, 
-         join_count, normalized_seagrass)
+  select(-coral_reef, -join_count)
 
-marine_eco_weighted <- left_join(marine_eco_weighted, mangrove,
-                                 by = "objectid")
+marine_eco_weighted <- left_join(marine_two_eco_weighted, mangrove,
+                                 by = "objectid") %>% 
+  select(-mangrove_p)
 
 # weight marine ecosystems
 marine_eco_weighted <- marine_eco_weighted %>% 
@@ -188,24 +199,71 @@ min_terr_pa_ext_high <- round(min(terr_pa_ext_high$extremely), 10)
 terr_pa_ext_high <- terr_pa_ext_high %>% 
   mutate(normalized_terr_pa_ext_high = round((extremely - min_terr_pa_ext_high) /
                                            (max_terr_pa_ext_high - min_terr_pa_ext_high), 10))
+
+# oceanic priority areas
+max_oceanic_pa <- round(max(ocean_pa$oceanic_pa), 10)
+min_oceanic_pa <- round(min(ocean_pa$oceanic_pa), 10)
+
+ocean_pa <- ocean_pa %>% 
+  mutate(normalized_ocean_pa = round((oceanic_pa - min_oceanic_pa) /
+                                       (max_oceanic_pa - min_oceanic_pa), 10))
+
+# join terrestrial priority areas
+two_terr_pa <- left_join(terr_pa_high, terr_pa_ver_high,
+                    by = "objectid")
+  
+terr_pa <- left_join(two_terr_pa, terr_pa_ext_high,
+                     by = "objectid")
+
+# normalize all terrestrial priority areas
+terr_pa <- terr_pa %>% 
+  mutate(added_terr_pa = round(normalized_terr_pa_high + normalized_terr_pa_ver_high + normalized_terr_pa_ext_high, 10))
+
+max_terr_pa <- round(max(terr_pa$added_terr_pa), 10)
+min_terr_pa <- round(min(terr_pa$added_terr_pa), 10)
+
+terr_pa <- terr_pa %>% 
+  mutate(normalized_terr_pa = round((added_terr_pa - min_terr_pa) /
+                                      (max_terr_pa - min_terr_pa), 10))
+
+# join oceanic priority areas to all terrestrial priority areas
+all_pa <- left_join(terr_pa, ocean_pa,
+                    by = "objectid")
 ```
 
 ### Merge Biodiversity Indicators
 
 ```{r}
+mar_eco_rich <- left_join(species_richness, marine_eco_weighted,
+                          by = "objectid")
 
+plus_pa <- left_join(mar_eco_rich, all_pa,
+                     by = "objectid")
+
+biodiversity_normalized <- left_join(plus_pa, tree_cover,
+                                     by = "objectid")
 ```
 
 ### Normalize Biodiversity Subindex
 
 ```{r}
+biodiversity_normalized <- biodiversity_normalized %>% 
+  mutate(added_biodiversity = round(normalized_terr_rich + normalized_mar_rich +
+                                      normalized_marine_eco + normalized_terr_pa +
+                                      normalized_ocean_pa + normalized_tree_cover, 10))
 
+max_added_biod <- round(max(biodiversity_normalized$added_biodiversity), 10)
+min_added_biod <- round(min(biodiversity_normalized$added_biodiversity), 10)
+
+biodiversity_normalized <- biodiversity_normalized %>% 
+  mutate(biodiversity_subindex = round((added_biodiversity - min_added_biod) /
+                                         (max_added_biod - min_added_biod), 10))
 ```
 
 ### Export Normalized Biodiverstiy Subindex
 
 ```{r}
-
+write_csv(biodiversity_normalized, file = "normalized_biodiversity.csv")
 ```
 
 ## Surf Subindex
