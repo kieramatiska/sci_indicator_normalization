@@ -357,9 +357,17 @@ write_csv(biodiversity_normalized, file = "normalized_biodiversity.csv")
 
 ```{r}
 # read in data
-surf_indicators <- read_csv(here("data", "surf_indicators.csv")) %>% 
-  select(-OBJECTID) %>% 
+surf_indicators <- read_csv(here("data", "surf", "surf_indicators.csv")) %>% 
+  select(OBJECTID, Join_Count, numerical_, numerical1, numerica_1, numerica_2) %>% 
   clean_names()
+
+surf_indicators <- surf_indicators %>% 
+  mutate(numerical_direction = numerical) %>% 
+  mutate(numerical_frequency = numerical1) %>% 
+  mutate(numerical_experience = numerica_1) %>% 
+  mutate(numerical_quality = numerica_2) %>% 
+  select(-numerical, -numerical1, 
+         -numerica_1, -numerica_2)
 ```
 
 ### Surf Clusters
@@ -368,16 +376,16 @@ surf_indicators <- read_csv(here("data", "surf_indicators.csv")) %>%
 max_cluster <- max(surf_indicators$join_count)
 min_cluster <- min(surf_indicators$join_count)
 
-cluster_normalized <- round((surf_indicators$join_count - min_cluster) / 
-                              (max_cluster - min_cluster), 6)
-
-surf_indicators$normalized_cluster <- cluster_normalized
+surf_indicators <- surf_indicators %>% 
+  mutate(normalized_clusters =  round((surf_indicators$join_count - min_cluster) / 
+                              (max_cluster - min_cluster), 6))
 ```
 
 ### Direction
 
 ```{r}
-surf_indicators$normalized_direction <- surf_indicators$numerical_direction
+surf_indicators <- surf_indicators %>% 
+  mutate(normalized_direction = numerical_direction)
 ```
 
 ### Frequency
@@ -386,16 +394,16 @@ surf_indicators$normalized_direction <- surf_indicators$numerical_direction
 max_frequency <- max(surf_indicators$numerical_frequency)
 min_frequency <- min(surf_indicators$numerical_frequency)
 
-frequency_normalized <- round((surf_indicators$numerical_frequency - min_frequency) / 
-                                (max_frequency - min_frequency), 10)
-
-surf_indicators$normalized_frequency <- frequency_normalized
+surf_indicators <- surf_indicators %>% 
+  mutate(normalized_frequency = round((surf_indicators$numerical_frequency - min_frequency) / 
+                                (max_frequency - min_frequency), 10))
 ```
 
 ### Experience
 
 ```{r}
-surf_indicators$normalized_experience <- surf_indicators$numerical_experience
+surf_indicators <- surf_indicators %>% 
+  mutate(normalized_experience = numerical_experience)
 ```
 
 ### Quality
@@ -404,20 +412,19 @@ surf_indicators$normalized_experience <- surf_indicators$numerical_experience
 max_quality <- max(surf_indicators$numerical_quality)
 min_quality <- min(surf_indicators$numerical_quality)
 
-quality_normalized <- round((surf_indicators$numerical_quality - min_quality) / 
-                              (max_quality - min_quality), 10)
-
-surf_indicators$normalized_quality <- quality_normalized
+surf_indicators <- surf_indicators %>% 
+  mutate(normalized_quality = round((surf_indicators$numerical_quality - min_quality) / 
+                              (max_quality - min_quality), 10))
 ```
 
-## Surf Subindex Normalized
+## Normalized Surf Subindex
 
 ```{r}
 normalized_added_indicators <- round(surf_indicators$normalized_quality + surf_indicators$normalized_experience +
                                        surf_indicators$normalized_frequency + surf_indicators$normalized_direction +
                                        surf_indicators$normalized_cluster, 10)
 
-surf_indicators$added_normalized <- normalized_added_indicators
+surf_normalized <- 
 
 max_added <- max(surf_indicators$added_normalized)
 min_added <- min(surf_indicators$added_normalized)
@@ -426,11 +433,6 @@ surf_normalized <- round((surf_indicators$added_normalized - min_added) /
                            (max_added - min_added), 10)
 
 surf_indicators$surf_subindex <- surf_normalized
-```
-
-```{r}
-## Surf Subindex Indicators Export
-# write_csv(surf_indicators, "surf_indicators_normalized.csv")
 ```
 
 ## Surf Subindex Export
