@@ -373,11 +373,11 @@ surf_indicators <- surf_indicators %>%
 ### Surf Clusters
 
 ```{r}
-max_cluster <- max(surf_indicators$join_count)
-min_cluster <- min(surf_indicators$join_count)
+max_cluster <- round(max(surf_indicators$join_count), 10)
+min_cluster <- round(min(surf_indicators$join_count), 10)
 
 surf_indicators <- surf_indicators %>% 
-  mutate(normalized_clusters =  round((surf_indicators$join_count - min_cluster) / 
+  mutate(normalized_clusters =  round((join_count - min_cluster) / 
                               (max_cluster - min_cluster), 6))
 ```
 
@@ -391,11 +391,11 @@ surf_indicators <- surf_indicators %>%
 ### Frequency
 
 ```{r}
-max_frequency <- max(surf_indicators$numerical_frequency)
-min_frequency <- min(surf_indicators$numerical_frequency)
+max_frequency <- round(max(surf_indicators$numerical_frequency), 10)
+min_frequency <- round(min(surf_indicators$numerical_frequency), 10)
 
 surf_indicators <- surf_indicators %>% 
-  mutate(normalized_frequency = round((surf_indicators$numerical_frequency - min_frequency) / 
+  mutate(normalized_frequency = round((numerical_frequency - min_frequency) / 
                                 (max_frequency - min_frequency), 10))
 ```
 
@@ -409,36 +409,34 @@ surf_indicators <- surf_indicators %>%
 ### Quality
 
 ```{r}
-max_quality <- max(surf_indicators$numerical_quality)
-min_quality <- min(surf_indicators$numerical_quality)
+max_quality <- round(max(surf_indicators$numerical_quality), 10)
+min_quality <- round(min(surf_indicators$numerical_quality), 10)
 
 surf_indicators <- surf_indicators %>% 
-  mutate(normalized_quality = round((surf_indicators$numerical_quality - min_quality) / 
+  mutate(normalized_quality = round((numerical_quality - min_quality) / 
                               (max_quality - min_quality), 10))
 ```
 
 ## Normalized Surf Subindex
 
 ```{r}
-normalized_added_indicators <- round(surf_indicators$normalized_quality + surf_indicators$normalized_experience +
-                                       surf_indicators$normalized_frequency + surf_indicators$normalized_direction +
-                                       surf_indicators$normalized_cluster, 10)
+surf_normalized <- surf_indicators %>% 
+  mutate(added_surf = round(normalized_quality + normalized_experience + 
+                              normalized_frequency + normalized_direction +
+                              normalized_clusters, 10))
 
-surf_normalized <- 
+max_added <- round(max(surf_normalized$added_surf), 10)
+min_added <- round(min(surf_normalized$added_surf), 10)
 
-max_added <- max(surf_indicators$added_normalized)
-min_added <- min(surf_indicators$added_normalized)
-
-surf_normalized <- round((surf_indicators$added_normalized - min_added) / 
-                           (max_added - min_added), 10)
-
-surf_indicators$surf_subindex <- surf_normalized
+surf_normalized <- surf_normalized %>% 
+  mutate(surf_subindex = round((added_surf - min_added) / 
+                           (max_added - min_added), 10))
 ```
 
 ## Surf Subindex Export
 
 ```{r}
-write_csv(surf_indicators, file = "surf_subindex.csv")
+write_csv(surf_normalized, file = "normalized_surf.csv")
 ```
 
 ## Social Subindex
@@ -672,7 +670,52 @@ response_normalized <- response_normalized %>%
 write_csv(response_normalized, file = "normalized_response.csv")
 ```
 
+# Surf Conservation Index
 
+## Merge SCI Indices
+
+```{r}
+pressure_biod <- left_join(pressure_normalized, biodiversity_normalized,
+                           by = "objectid") %>% 
+  select(objectid, pressure_index, biodiversity_subindex)
+
+press_biod_surf <- left_join(pressure_biod, surf_normalized,
+                             by = "objectid") %>% 
+  select(objectid, pressure_index, biodiversity_subindex,
+         surf_subindex)
+
+press_biod_surf_soc <- left_join(press_biod_surf, social_normalized,
+                                 by = "objectid") %>% 
+  select(objectid, pressure_index, biodiversity_subindex,
+         surf_subindex, social_subindex)
+
+all_indices <- left_join(press_biod_surf_soc, response_normalized,
+                         by = "objectid") %>% 
+  select(objectid, pressure_index, biodiversity_subindex,
+         surf_subindex, social_subindex, response_index)
+```
+
+## Normalize SCI
+
+```{r}
+sci_normalized <- all_indices %>% 
+  mutate(added_indices = round(pressure_index + biodiversity_subindex +
+                                 surf_subindex + social_subindex +
+                                 response_index, 10))
+
+max_sci_added <- round(max(sci_normalized$added_indices), 10)
+min_sci_added <- round(min(sci_normalized$added_indices), 10)
+
+sci_normalized <- sci_normalized %>% 
+  mutate(sci = round((added_indices - min_sci_added) /
+                       (max_sci_added - min_sci_added), 10))
+```
+
+## Export SCI
+
+```{r}
+write_csv(sci_normalized, file = "sci.csv")
+```
 
 
 
