@@ -14,38 +14,125 @@ library(janitor)
 
 # Surf Spots
 
+# Pressure Index
+
 ```{r}
-ws_sl_surf <- read_csv(here("data", "ws_sl.csv")) %>% 
+built_area <- read_csv(here("data", "pressure", "built_area.csv")) %>% 
+  select(OBJECTID, Shape_Area, SUM_Area_S) %>% 
+  clean_names()
+human_mod <- read_csv(here("data", "pressure", "human_modification.csv")) %>% 
+  select(OBJECTID, MEAN) %>% 
+  clean_names()
+pop <- read_csv(here("data", "pressure", "pop.csv")) %>% 
+  select(OBJECTID, pop_change) %>% 
+  clean_names()
+ports <- read_csv(here("data", "pressure", "ports.csv")) %>% 
+  select(OBJECTID, Join_Count) %>% 
+  clean_names()
+roads <- read_csv(here("data", "pressure", "roads.csv")) %>% 
+  select(OBJECTID, SUM_Length) %>% 
   clean_names()
 ```
 
-```{r}
-ws_sl_surf_na <- ws_sl_surf %>% 
-  mutate(quality = case_when(
-    quality == 0.0 ~ ,
-    quality == 5.0 ~ "5.0",
-    quality == 4.0 ~ "4.0",
-    quality == 3.5 ~ "3.5",
-    quality == 3.0 ~ "3.0",
-    quality == 2.0 ~ "2.0"
-  )) %>% 
-  mutate(frequency = case_when(
-    frequency == 0 ~ "NA",
-    frequency == 5 ~ "5",
-    frequency == 4 ~ "4",
-    frequency == 3 ~ "3",
-    frequency == 2 ~ "2",
-    frequency == 1 ~ "1"
-  ))
-```
-
-## Surf Spots Export
+## Built Area
 
 ```{r}
-write_csv(ws_sl_surf_na, file = "ws_sl_sys_spots.csv")
+built_area <- built_area %>% 
+  mutate(percent_ba = round(sum_area_s / (shape_area / 1000000), 10))
+
+max_percent_ba <- round(max(built_area$percent_ba), 10)
+min_percent_ba <- round(min(built_area$percent_ba), 10)
+
+built_area <- built_area %>% 
+  mutate(normalized_built_area = round((percent_ba - min_percent_ba) /
+                                         (max_percent_ba - min_percent_ba), 10))
 ```
 
-# Pressure Index
+## Human Modification
+
+```{r}
+max_human_mod <- round(max(human_mod$mean), 10)
+min_human_mod <- round(min(human_mod$mean), 10)
+
+human_mod <- human_mod %>% 
+  mutate(normalized_human_mod = round((mean - min_human_mod) /
+                                        (max_human_mod - min_human_mod), 10))
+```
+
+## Population
+
+```{r}
+max_pop_change <- round(max(pop$pop_change), 10)
+min_pop_change <- round(min(pop$pop_change), 10)
+
+pop <- pop %>% 
+  mutate(normalized_pop_change = round((pop_change - min_pop_change) /
+                                         (max_pop_change - min_pop_change), 10))
+```
+
+## Ports
+
+```{r}
+max_ports <- round(max(ports$join_count), 10)
+min_ports <- round(min(ports$join_count), 10)
+
+ports <- ports %>% 
+  mutate(normalized_ports = round((join_count - min_ports) /
+                                    (max_ports - min_ports), 10))
+```
+
+## Roads
+
+```{r}
+max_road <- round(max(roads$sum_length), 10)
+min_road <- round(min(roads$sum_length), 10)
+
+roads <- roads %>% 
+  mutate(normalized_roads = round((sum_length - min_road) /
+                                    (max_road - min_road), 10))
+```
+
+## Merge Pressure Indicators
+
+```{r}
+ba_mod_join <- left_join(built_area, human_mod, 
+                         by = "objectid") %>% 
+  select(-shape_area, -sum_area_s, -percent_ba, -mean)
+
+ba_mod_pop <- left_join(ba_mod_join, pop,
+                        by = "objectid") %>% 
+  select(-pop_change)
+
+ba_mod_pop_ports <- left_join(ba_mod_pop, ports,
+                              by = "objectid") %>% 
+  select(-join_count)
+
+pressure_normalized <- left_join(ba_mod_pop_ports, roads,
+                                 by = "objectid") %>% 
+  select(-sum_length)
+```
+
+## Normalize Pressure Index
+
+```{r}
+pressure_normalized <- pressure_normalized %>% 
+  mutate(added_pressure = round(normalized_built_area + normalized_human_mod +
+                                  normalized_pop_change + normalized_ports +
+                                  normalized_roads, 10))
+
+max_pressure <- round(max(pressure_normalized$added_pressure), 10)
+min_pressure <- round(min(pressure_normalized$added_pressure), 10)
+
+pressure_normalized <- pressure_normalized %>% 
+  mutate(pressure_index = round((added_pressure - min_pressure) /
+                                  (max_pressure - min_pressure), 10))
+```
+
+## Export Pressure Index
+
+```{r}
+write_csv(pressure_normalized, file = "normalized_pressure.csv")
+```
 
 # Social Index
 
