@@ -463,14 +463,14 @@ write_csv(surf_normalized, file = "normalized_surf.csv")
 ## Social Subindex
 
 ```{r}
-employment <- read_csv(here("data", "social", "SLR_employment.csv")) %>% 
-  select(OBJECTID, Join_Count, Name, Surf_Spot, SLR_employ) %>% 
+employment <- read_csv(here("data", "social", "employment.csv")) %>% 
+  select(id, Join_Count, SLR_employ) %>% 
   clean_names()
 hotels <- read_csv(here("data", "social", "hotels.csv")) %>% 
-  select(OBJECTID, Join_Count, Name, Surf_Spot) %>% 
+  select(id, Join_Count) %>% 
   clean_names()
 airports <- read_csv(here("data", "social", "airports.csv")) %>% 
-  select(OBJECTID, Join_Count, Name, Surf_Spot) %>% 
+  select(id, Join_Count) %>% 
   clean_names()
 ```
 
@@ -511,14 +511,13 @@ airports <- airports %>%
 
 ```{r}
 social_normalized <- left_join(employment, hotels, 
-                               by = "objectid") %>% 
-  select(objectid, name.x, surf_spot.x, 
-         normalized_employment, normalized_hotels)
+                               by = "id") %>% 
+  select(id, normalized_employment, normalized_hotels)
 
 social_normalized <- left_join(social_normalized, airports,
-                               by = "objectid") %>% 
-  select(objectid, name.x, surf_spot.x, 
-         normalized_employment, normalized_hotels, normalized_airports)
+                               by = "id") %>% 
+  select(id, normalized_employment, 
+         normalized_hotels, normalized_airports)
 ```
 
 ### Normalized Social Subindex
