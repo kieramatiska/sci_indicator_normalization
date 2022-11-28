@@ -705,18 +705,18 @@ pressure_biod <- left_join(pressure_normalized, biodiversity_normalized,
   select(id, pressure_index, biodiversity_subindex)
 
 press_biod_surf <- left_join(pressure_biod, surf_normalized,
-                             by = "objectid") %>% 
-  select(objectid, pressure_index, biodiversity_subindex,
+                             by = "id") %>% 
+  select(id, pressure_index, biodiversity_subindex,
          surf_subindex)
 
 press_biod_surf_soc <- left_join(press_biod_surf, social_normalized,
-                                 by = "objectid") %>% 
-  select(objectid, pressure_index, biodiversity_subindex,
+                                 by = "id") %>% 
+  select(id, pressure_index, biodiversity_subindex,
          surf_subindex, social_subindex)
 
 all_indices <- left_join(press_biod_surf_soc, response_normalized,
-                         by = "objectid") %>% 
-  select(objectid, pressure_index, biodiversity_subindex,
+                         by = "id") %>% 
+  select(id, pressure_index, biodiversity_subindex,
          surf_subindex, social_subindex, response_index)
 ```
 
