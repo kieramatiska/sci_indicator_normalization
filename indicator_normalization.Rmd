@@ -18,30 +18,24 @@ library(janitor)
 
 ```{r}
 built_area <- read_csv(here("data", "pressure", "built_area.csv")) %>% 
-  select(OBJECTID, Shape_Area, SUM_Area_S) %>% 
+  select(id, Shape_Area, SUM_Area_S) %>% 
   clean_names() %>% 
   mutate(sum_area_sqkm = sum_area_s) %>% 
-  select(-sum_area_s) %>% 
-  filter(objectid != 332)
+  select(-sum_area_s)
 human_mod <- read_csv(here("data", "pressure", "human_mod.csv")) %>% 
-  select(OBJECTID_1, MEAN) %>% 
-  clean_names() %>% 
-  mutate(objectid = objectid_1) %>% 
-  select(-objectid_1)
+  select(id, MEAN) %>% 
+  clean_names()
 pop <- read_csv(here("data", "pressure", "pop.csv")) %>% 
-  select(OBJECTID, pop_change) %>% 
-  clean_names() %>% 
-  filter(objectid != 332)
+  select(id, pop_change) %>% 
+  clean_names()
 ports <- read_csv(here("data", "pressure", "ports.csv")) %>% 
-  select(OBJECTID, Join_Count) %>% 
-  clean_names() %>% 
-  filter(objectid != 332)
+  select(id, Join_Count) %>% 
+  clean_names()
 roads <- read_csv(here("data", "pressure", "roads.csv")) %>% 
-  select(OBJECTID, SUM_Length) %>% 
+  select(id, SUM_Length) %>% 
   clean_names() %>% 
   mutate(sum_length_km = sum_length) %>% 
-  select(-sum_length) %>% 
-  filter(objectid != 332)
+  select(-sum_length)
 ```
 
 ## Built Area
@@ -106,19 +100,19 @@ roads <- roads %>%
 
 ```{r}
 ba_mod_join <- left_join(built_area, human_mod, 
-                         by = "objectid") %>% 
+                         by = "id") %>% 
   select(-shape_area, -sum_area_sqkm, -percent_ba, -mean)
 
 ba_mod_pop <- left_join(ba_mod_join, pop,
-                        by = "objectid") %>% 
+                        by = "id") %>% 
   select(-pop_change)
 
 ba_mod_pop_ports <- left_join(ba_mod_pop, ports,
-                              by = "objectid") %>% 
+                              by = "id") %>% 
   select(-join_count)
 
 pressure_normalized <- left_join(ba_mod_pop_ports, roads,
-                                 by = "objectid") %>% 
+                                 by = "id") %>% 
   select(-sum_length_km)
 ```
 
