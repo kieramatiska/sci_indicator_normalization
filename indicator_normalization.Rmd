@@ -543,60 +543,70 @@ write_csv(social_normalized, file = "normalized_social.csv")
 # Response Index
 
 ```{r}
-heritage <- read_csv(here("data", "response", "heritage_surf.csv")) %>% 
-  select(OBJECTID, Name, Surfline_n, Shape_Leng, Shape_Area, SUM_Area_S, world_heri) %>% 
+heritage <- read_csv(here("data", "response", "world_heritage.csv")) %>% 
+  select(id, SUM_Area_S, world_heri) %>% 
+  clean_names() %>% 
+  mutate(sum_area_sqkm = sum_area_s) %>% 
+  mutate(heritage_pa = world_heri) %>% 
+  select(-sum_area_s, -world_heri)
+atl_for_priority <- read_csv(here("data", "response", "atl_forest_pa.csv")) %>% 
+  select(id, SUM_Area_S, protected_) %>% 
+  clean_names() %>% 
+  mutate(sum_area_sqkm = sum_area_s) %>% 
+  mutate(atl_for_pa = protected) %>% 
+  select(-sum_area_s, -protected)
+guarda <- read_csv(here("data", "response", "wsr.csv")) %>% 
+  select(id, SUM_Area_S, wsr_percen) %>% 
+  clean_names() %>% 
+  mutate(sum_area_sqkm = sum_area_s) %>% 
+  mutate(wsr_pa = wsr_percen) %>% 
+  select(-sum_area_s, -wsr_percen)
+prot_areas <- read_csv(here("data", "response", "protected.csv")) %>% 
+  select(id, SUM_Area_S, protected_) %>% 
+  clean_names() %>% 
+  mutate()
+bandeira <- read_csv(here("data", "response", "bandeira.csv")) %>% 
+  select(id, Join_Count) %>% 
   clean_names()
-atl_for_priority <- read_csv(here("data", "response", "priority_area_surf.csv")) %>% 
-  select(OBJECTID, Name, Surfline_n, Shape_Leng, Shape_Area, SUM_Area_S, protected_) %>% 
-  clean_names()
-guarda <- read_csv(here("data", "response", "wsr_surf.csv")) %>% 
-  select(OBJECTID, Name, Surfline_n, Shape_Leng, Shape_Area, SUM_Area_S, wsr_percen) %>% 
-  clean_names()
-prot_areas <- read_csv(here("data", "response", "protected_surf.csv")) %>% 
-  select(OBJECTID, Name, Surfline_n, Shape_Leng, Shape_Area, SUM_Area_S, protected_) %>% 
-  clean_names()
-bandeira <- read_csv(here("data", "response", "bandeira_surf.csv")) %>% 
-  select(OBJECTID, Join_Count, Name, Surfline_n) %>% 
-  clean_names()
-ramsar <- read_csv(here("data", "response", "ramsar_surf.csv")) %>% 
-  select(OBJECTID, Name, Surfline_n, Shape_Leng, Shape_Area, SUM_Area_S, ramsar_per) %>% 
-  clean_names()
+ramsar <- read_csv(here("data", "response", "ramsar.csv")) %>% 
+  select(id, SUM_Area_S, ramsar_per) %>% 
+  clean_names() %>% 
+  mutate(sum_area_sqkm = sum_area_s) %>% 
+  mutate(ramsar_pa = ramsar_per) %>% 
+  select(-sum_area_s, -ramsar_per)
 ```
 
 ## World Heritage Sites
 
 ```{r}
-max_heritage <- round(max(heritage$world_heri), 10)
-min_heritage <- round(min(heritage$world_heri), 10)
+max_heritage <- round(max(heritage$heritage_pa), 10)
+min_heritage <- round(min(heritage$heritage_pa), 10)
 
-heritage_normalized <- round((heritage$world_heri - min_heritage) / 
-                               (max_heritage - min_heritage), 10)
-
-heritage$normalized_heritage <- heritage_normalized
+heritage <- heritage %>% 
+  mutate(normalized_heritage = round((heritage_pa - min_heritage) / 
+                               (max_heritage - min_heritage), 10))
 ```
 
 ## Atlantic Forest Priority Areas
 
 ```{r}
-max_priority <- round(max(atl_for_priority$protected), 10)
-min_priority <- round(min(atl_for_priority$protected), 10)
+max_priority <- round(max(atl_for_priority$atl_for_pa), 10)
+min_priority <- round(min(atl_for_priority$atl_for_pa), 10)
 
-priority_normalized <- round((atl_for_priority$protected - min_priority) / 
-                               (max_priority - min_priority), 10)
-
-atl_for_priority$normalized_priority <- priority_normalized
+atl_for_priority <- atl_for_priority %>% 
+  mutate(normalized_priority = round((atl_for_pa - min_priority) / 
+                               (max_priority - min_priority), 10))
 ```
 
 ## Guarda World Surfing Reserve
 
 ```{r}
-max_wsr <- round(max(guarda$wsr_percen), 10)
-min_wsr <- round(min(guarda$wsr_percen), 10)
+max_wsr <- round(max(guarda$wsr_pa), 10)
+min_wsr <- round(min(guarda$wsr_pa), 10)
 
-wsr_normalized <- round((guarda$wsr_percen - min_wsr) / 
-                          (max_wsr - min_wsr), 10)
-
-guarda$normalized_wsr <- wsr_normalized
+guarda <- guarda %>% 
+  mutate(normalized_wsr = round((wsr_pa - min_wsr) / 
+                          (max_wsr - min_wsr), 10))
 ```
 
 ## Protected Areas
@@ -605,10 +615,9 @@ guarda$normalized_wsr <- wsr_normalized
 max_protected <- round(max(prot_areas$protected), 10)
 min_protected <- round(min(prot_areas$protected), 10)
 
-protected_normalized <- round((prot_areas$protected - min_protected) / 
-                                (max_protected - min_protected), 10)
-
-prot_areas$normalized_protected <- protected_normalized
+prot_areas <- prot_areas %>% 
+  mutate(normalized_protected = round((protected - min_protected) / 
+                                (max_protected - min_protected), 10))
 ```
 
 ## Bandeira Reserves
@@ -617,54 +626,50 @@ prot_areas$normalized_protected <- protected_normalized
 max_join <- round(max(bandeira$join_count), 10)
 min_join <- round(min(bandeira$join_count), 10)
 
-bandeira_normalized <- round((bandeira$join_count - min_join) / 
-                               (max_join - min_join), 10)
-
-bandeira$normalized_bandeira <- bandeira_normalized
+bandeira <- bandeira %>% 
+  mutate(normalized_bandeira = round((join_count - min_join) / 
+                               (max_join - min_join), 10))
 ```
 
 ## Ramsar Sites
 
 ```{r}
-max_ramsar <- round(max(ramsar$ramsar_per), 10)
-min_ramsar <- round(min(ramsar$ramsar_per), 10)
+max_ramsar <- round(max(ramsar$ramsar_pa), 10)
+min_ramsar <- round(min(ramsar$ramsar_pa), 10)
 
-ramsar_normalized <- round((ramsar$ramsar_per - min_ramsar) / 
-                            (max_ramsar - min_ramsar), 10)
-
-ramsar$normalized_ramsar <- ramsar_normalized
+ramsar <- ramsar %>% 
+  mutate(normalized_ramsar = round((ramsar_pa - min_ramsar) / 
+                            (max_ramsar - min_ramsar), 10))
 ```
 
 ## Merge Response Index Indicators
 
 ```{r}
-response_normalized <- merge(heritage, atl_for_priority,
-                             by = "objectid") %>% 
-  select(objectid, name.x, surfline_n.x, 
-         normalized_heritage, normalized_priority)
+heri_atl <- left_join(heritage, atl_for_priority,
+                      by = "id") %>% 
+  select(id, normalized_heritage, normalized_priority)
 
-response_normalized <- merge(response_normalized, guarda,
-                             by = "objectid") %>% 
-  select(objectid, name.x, surfline_n.x, 
-         normalized_heritage, normalized_priority, normalized_wsr)
+heri_atl_wsr <- left_join(heri_atl, guarda,
+                          by = "id") %>% 
+  select(id, normalized_heritage, 
+         normalized_priority, normalized_wsr)
 
-response_normalized <- merge(response_normalized, prot_areas, 
-                             by = "objectid") %>% 
-  select(objectid, name.x, surfline_n.x, 
-         normalized_heritage, normalized_priority, normalized_wsr, 
-         normalized_protected)
+prot_bandeira <- left_join(prot_areas, bandeira,
+                           by = "id") %>% 
+  select(id, normalized_protected,
+         normalized_bandeira)
+  
+prot_band_ramsar <- left_join(prot_bandeira, ramsar,
+                              by = "id") %>% 
+  select(id, normalized_protected,
+         normalized_bandeira, normalized_ramsar)
 
-response_normalized <- merge(response_normalized, bandeira,
-                             by = "objectid") %>% 
-  select(objectid, name.x, surfline_n.x, 
-         normalized_heritage, normalized_priority, normalized_wsr, 
-         normalized_protected, normalized_bandeira)
-
-response_normalized <- merge(response_normalized, ramsar, 
-                             by = "objectid") %>% 
-  select(objectid, name.x, surfline_n.x, 
-         normalized_heritage, normalized_priority, normalized_wsr, 
-         normalized_protected, normalized_bandeira, normalized_ramsar)
+response_normalized <- left_join(heri_atl_wsr, prot_band_ramsar,
+                                 by = "id") %>% 
+  select(id, normalized_heritage,
+         normalized_priority, normalized_wsr,
+         normalized_protected, normalized_bandeira,
+         normalized_ramsar)
 ```
 
 ## Normalized Response Index
@@ -672,9 +677,9 @@ response_normalized <- merge(response_normalized, ramsar,
 ```{r}
 # add column called response_added 
 response_normalized <- response_normalized %>% 
-  mutate(response_added = round(response_normalized$normalized_heritage + response_normalized$normalized_priority +
-                        response_normalized$normalized_wsr + response_normalized$normalized_protected +
-                        response_normalized$normalized_bandeira + response_normalized$normalized_ramsar, 10))
+  mutate(response_added = round(normalized_heritage + normalized_priority +
+                        normalized_wsr + normalized_protected +
+                        normalized_bandeira + normalized_ramsar, 10))
 
 max_response_added <- round(max(response_normalized$response_added), 10)
 min_response_added <- round(min(response_normalized$response_added), 10)
@@ -696,8 +701,8 @@ write_csv(response_normalized, file = "normalized_response.csv")
 
 ```{r}
 pressure_biod <- left_join(pressure_normalized, biodiversity_normalized,
-                           by = "objectid") %>% 
-  select(objectid, pressure_index, biodiversity_subindex)
+                           by = "id") %>% 
+  select(id, pressure_index, biodiversity_subindex)
 
 press_biod_surf <- left_join(pressure_biod, surf_normalized,
                              by = "objectid") %>% 
