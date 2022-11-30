@@ -12,8 +12,6 @@ library(here)
 library(janitor)
 ```
 
-# Surf Spots
-
 # Pressure Index
 
 ```{r}
@@ -540,6 +538,8 @@ social_normalized <- social_normalized %>%
 write_csv(social_normalized, file = "normalized_social.csv")
 ```
 
+# Climate Index
+
 # Response Index
 
 ```{r}
@@ -741,18 +741,3 @@ sci_normalized <- sci_normalized %>%
 ```{r}
 write_csv(sci_normalized, file = "sci.csv")
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
