@@ -791,5 +791,5 @@ sci_normalized <- sci_normalized %>%
 ## Export SCI
 
 ```{r}
-write_csv(sci_normalized, file = "sci.csv")
+write_csv(sci_normalized, file = "sci_w_climate.csv")
 ```
