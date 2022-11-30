@@ -540,6 +540,52 @@ write_csv(social_normalized, file = "normalized_social.csv")
 
 # Climate Index
 
+```{r}
+climate <- read_csv(here("data", "climate", "climate.csv")) %>% 
+  clean_names() %>% 
+  filter(id != 331 & id != 511) %>% 
+  select(id, sum_10km, hab_10km)
+```
+
+# Mangrove Carbon
+
+```{r}
+max_carbon <- round(max(climate$sum_10km), 10)
+min_carbon <- round(min(climate$sum_10km), 10)
+
+climate <- climate %>% 
+  mutate(normalized_carbon = round((sum_10km - min_carbon) / (max_carbon - min_carbon), 10))
+```
+
+# Coastal Protection
+
+```{r}
+max_cp <- round(max(climate$hab_10km), 10)
+min_cp <- round(min(climate$hab_10km), 10)
+
+climate <- climate %>% 
+  mutate(normalized_cp = round((hab_10km - min_cp) / (max_cp - min_cp), 10))
+```
+
+# Normalized Climate Index
+
+```{r}
+climate_normalized <- climate %>% 
+  mutate(climate_added = round(normalized_carbon + normalized_cp, 10))
+
+max_climate_added <- round(max(climate_normalized$climate_added), 10)
+min_climate_added <- round(min(climate_normalized$climate_added), 10)
+
+climate_normalized <- climate_normalized %>% 
+  mutate(climate_index = round((climate_normalized$climate_added - min_climate_added) / (max_climate_added - min_climate_added), 10))
+```
+
+# Climate Index Export
+
+```{r}
+write_csv(climate_normalized, file = "normalized_climate.csv")
+```
+
 # Response Index
 
 ```{r}
@@ -714,10 +760,16 @@ press_biod_surf_soc <- left_join(press_biod_surf, social_normalized,
   select(id, pressure_index, biodiversity_subindex,
          surf_subindex, social_subindex)
 
-all_indices <- left_join(press_biod_surf_soc, response_normalized,
+press_biod_surf_soc_clim <- left_join(press_biod_surf_soc, climate_normalized,
+                                 by = "id") %>% 
+  select(id, pressure_index, biodiversity_subindex,
+         surf_subindex, social_subindex, climate_index)
+
+all_indices <- left_join(press_biod_surf_soc_clim, response_normalized,
                          by = "id") %>% 
   select(id, pressure_index, biodiversity_subindex,
-         surf_subindex, social_subindex, response_index)
+         surf_subindex, social_subindex, climate_index,
+         response_index)
 ```
 
 ## Normalize SCI
@@ -725,8 +777,8 @@ all_indices <- left_join(press_biod_surf_soc, response_normalized,
 ```{r}
 sci_normalized <- all_indices %>% 
   mutate(added_indices = round(pressure_index + biodiversity_subindex +
-                                 surf_subindex + social_subindex +
-                                 response_index, 10))
+                                 surf_subindex + social_subindex + 
+                                 climate_index + response_index, 10))
 
 max_sci_added <- round(max(sci_normalized$added_indices), 10)
 min_sci_added <- round(min(sci_normalized$added_indices), 10)
