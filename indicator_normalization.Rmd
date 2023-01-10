@@ -15,21 +15,21 @@ library(janitor)
 # Pressure Index
 
 ```{r}
-built_area <- read_csv(here("data", "pressure", "built_area.csv")) %>% 
+nne_built_area <- read_csv(here("data", "nne", "pressure", "nne_built_area.csv")) %>% 
   select(id, Shape_Area, SUM_Area_S) %>% 
   clean_names() %>% 
   mutate(sum_area_sqkm = sum_area_s) %>% 
   select(-sum_area_s)
-human_mod <- read_csv(here("data", "pressure", "human_mod.csv")) %>% 
+nne_human_mod <- read_csv(here("data", "nne", "pressure", "nne_human_mod.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names()
-pop <- read_csv(here("data", "pressure", "pop.csv")) %>% 
+nne_pop <- read_csv(here("data", "nne", "pressure", "nne_pop.csv")) %>% 
   select(id, pop_change) %>% 
   clean_names()
-ports <- read_csv(here("data", "pressure", "ports.csv")) %>% 
+nne_ports <- read_csv(here("data", "nne", "pressure", "nne_ports.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names()
-roads <- read_csv(here("data", "pressure", "roads.csv")) %>% 
+nne_roads <- read_csv(here("data", "nne", "pressure", "nne_roads.csv")) %>% 
   select(id, SUM_Length) %>% 
   clean_names() %>% 
   mutate(sum_length_km = sum_length) %>% 
@@ -39,13 +39,13 @@ roads <- read_csv(here("data", "pressure", "roads.csv")) %>%
 ## Built Area
 
 ```{r}
-built_area <- built_area %>% 
+nne_built_area <- nne_built_area %>% 
   mutate(percent_ba = round(sum_area_sqkm / (shape_area / 1000000), 10))
 
-max_percent_ba <- round(max(built_area$percent_ba), 10)
-min_percent_ba <- round(min(built_area$percent_ba), 10)
+max_percent_ba <- round(max(nne_built_area$percent_ba), 10)
+min_percent_ba <- round(min(nne_built_area$percent_ba), 10)
 
-built_area <- built_area %>% 
+nne_built_area <- nne_built_area %>% 
   mutate(normalized_built_area = round((percent_ba - min_percent_ba) /
                                          (max_percent_ba - min_percent_ba), 10))
 ```
@@ -53,10 +53,10 @@ built_area <- built_area %>%
 ## Human Modification
 
 ```{r}
-max_human_mod <- round(max(human_mod$mean), 10)
-min_human_mod <- round(min(human_mod$mean), 10)
+max_human_mod <- round(max(nne_human_mod$mean), 10)
+min_human_mod <- round(min(nne_human_mod$mean), 10)
 
-human_mod <- human_mod %>% 
+nne_human_mod <- nne_human_mod %>% 
   mutate(normalized_human_mod = round((mean - min_human_mod) /
                                         (max_human_mod - min_human_mod), 10))
 ```
@@ -64,10 +64,10 @@ human_mod <- human_mod %>%
 ## Population
 
 ```{r}
-max_pop_change <- round(max(pop$pop_change), 10)
-min_pop_change <- round(min(pop$pop_change), 10)
+max_pop_change <- round(max(nne_pop$pop_change), 10)
+min_pop_change <- round(min(nne_pop$pop_change), 10)
 
-pop <- pop %>% 
+nne_pop <- nne_pop %>% 
   mutate(normalized_pop_change = round((pop_change - min_pop_change) /
                                          (max_pop_change - min_pop_change), 10))
 ```
@@ -75,10 +75,10 @@ pop <- pop %>%
 ## Ports
 
 ```{r}
-max_ports <- round(max(ports$join_count), 10)
-min_ports <- round(min(ports$join_count), 10)
+max_ports <- round(max(nne_ports$join_count), 10)
+min_ports <- round(min(nne_ports$join_count), 10)
 
-ports <- ports %>% 
+nne_ports <- nne_ports %>% 
   mutate(normalized_ports = round((join_count - min_ports) /
                                     (max_ports - min_ports), 10))
 ```
@@ -86,10 +86,10 @@ ports <- ports %>%
 ## Roads
 
 ```{r}
-max_road <- round(max(roads$sum_length_km), 10)
-min_road <- round(min(roads$sum_length_km), 10)
+max_road <- round(max(nne_roads$sum_length_km), 10)
+min_road <- round(min(nne_roads$sum_length_km), 10)
 
-roads <- roads %>% 
+nne_roads <- nne_roads %>% 
   mutate(normalized_roads = round((sum_length_km - min_road) /
                                     (max_road - min_road), 10))
 ```
@@ -97,19 +97,19 @@ roads <- roads %>%
 ## Merge Pressure Indicators
 
 ```{r}
-ba_mod_join <- left_join(built_area, human_mod, 
+nne_ba_mod_join <- left_join(nne_built_area, nne_human_mod, 
                          by = "id") %>% 
   select(-shape_area, -sum_area_sqkm, -percent_ba, -mean)
 
-ba_mod_pop <- left_join(ba_mod_join, pop,
+nne_ba_mod_pop <- left_join(nne_ba_mod_join, nne_pop,
                         by = "id") %>% 
   select(-pop_change)
 
-ba_mod_pop_ports <- left_join(ba_mod_pop, ports,
+nne_ba_mod_pop_ports <- left_join(nne_ba_mod_pop, nne_ports,
                               by = "id") %>% 
   select(-join_count)
 
-pressure_normalized <- left_join(ba_mod_pop_ports, roads,
+nne_pressure_normalized <- left_join(nne_ba_mod_pop_ports, nne_roads,
                                  by = "id") %>% 
   select(-sum_length_km)
 ```
@@ -117,15 +117,15 @@ pressure_normalized <- left_join(ba_mod_pop_ports, roads,
 ## Normalize Pressure Index
 
 ```{r}
-pressure_normalized <- pressure_normalized %>% 
+nne_pressure_normalized <- nne_pressure_normalized %>% 
   mutate(added_pressure = round(normalized_built_area + normalized_human_mod +
                                   normalized_pop_change + normalized_ports +
                                   normalized_roads, 10))
 
-max_pressure <- round(max(pressure_normalized$added_pressure), 10)
-min_pressure <- round(min(pressure_normalized$added_pressure), 10)
+max_pressure <- round(max(nne_pressure_normalized$added_pressure), 10)
+min_pressure <- round(min(nne_pressure_normalized$added_pressure), 10)
 
-pressure_normalized <- pressure_normalized %>% 
+nne_pressure_normalized <- nne_pressure_normalized %>% 
   mutate(pressure_index = round((added_pressure - min_pressure) /
                                   (max_pressure - min_pressure), 10))
 ```
@@ -133,7 +133,7 @@ pressure_normalized <- pressure_normalized %>%
 ## Export Pressure Index
 
 ```{r}
-write_csv(pressure_normalized, file = "normalized_pressure.csv")
+write_csv(nne_pressure_normalized, file = "nne_normalized_pressure.csv")
 ```
 
 # Social Index
