@@ -15,21 +15,21 @@ library(janitor)
 # Pressure Index
 
 ```{r}
-nne_built_area <- read_csv(here("data", "nne", "pressure", "nne_built_area.csv")) %>% 
+built_area <- read_csv(here("data", "nne", "pressure", "nne_built_area.csv")) %>% 
   select(id, Shape_Area, SUM_Area_S) %>% 
   clean_names() %>% 
   mutate(sum_area_sqkm = sum_area_s) %>% 
   select(-sum_area_s)
-nne_human_mod <- read_csv(here("data", "nne", "pressure", "nne_human_mod.csv")) %>% 
+human_mod <- read_csv(here("data", "nne", "pressure", "nne_human_mod.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names()
-nne_pop <- read_csv(here("data", "nne", "pressure", "nne_pop.csv")) %>% 
+pop <- read_csv(here("data", "nne", "pressure", "nne_pop.csv")) %>% 
   select(id, pop_change) %>% 
   clean_names()
-nne_ports <- read_csv(here("data", "nne", "pressure", "nne_ports.csv")) %>% 
+ports <- read_csv(here("data", "nne", "pressure", "nne_ports.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names()
-nne_roads <- read_csv(here("data", "nne", "pressure", "nne_roads.csv")) %>% 
+roads <- read_csv(here("data", "nne", "pressure", "nne_roads.csv")) %>% 
   select(id, SUM_Length) %>% 
   clean_names() %>% 
   mutate(sum_length_km = sum_length) %>% 
@@ -39,13 +39,13 @@ nne_roads <- read_csv(here("data", "nne", "pressure", "nne_roads.csv")) %>%
 ## Built Area
 
 ```{r}
-nne_built_area <- nne_built_area %>% 
+built_area <- built_area %>% 
   mutate(percent_ba = round(sum_area_sqkm / (shape_area / 1000000), 10))
 
-max_percent_ba <- round(max(nne_built_area$percent_ba), 10)
-min_percent_ba <- round(min(nne_built_area$percent_ba), 10)
+max_percent_ba <- round(max(built_area$percent_ba), 10)
+min_percent_ba <- round(min(built_area$percent_ba), 10)
 
-nne_built_area <- nne_built_area %>% 
+built_area <- built_area %>% 
   mutate(normalized_built_area = round((percent_ba - min_percent_ba) /
                                          (max_percent_ba - min_percent_ba), 10))
 ```
@@ -53,10 +53,10 @@ nne_built_area <- nne_built_area %>%
 ## Human Modification
 
 ```{r}
-max_human_mod <- round(max(nne_human_mod$mean), 10)
-min_human_mod <- round(min(nne_human_mod$mean), 10)
+max_human_mod <- round(max(human_mod$mean), 10)
+min_human_mod <- round(min(human_mod$mean), 10)
 
-nne_human_mod <- nne_human_mod %>% 
+human_mod <- human_mod %>% 
   mutate(normalized_human_mod = round((mean - min_human_mod) /
                                         (max_human_mod - min_human_mod), 10))
 ```
@@ -64,10 +64,10 @@ nne_human_mod <- nne_human_mod %>%
 ## Population
 
 ```{r}
-max_pop_change <- round(max(nne_pop$pop_change), 10)
-min_pop_change <- round(min(nne_pop$pop_change), 10)
+max_pop_change <- round(max(pop$pop_change), 10)
+min_pop_change <- round(min(pop$pop_change), 10)
 
-nne_pop <- nne_pop %>% 
+pop <- pop %>% 
   mutate(normalized_pop_change = round((pop_change - min_pop_change) /
                                          (max_pop_change - min_pop_change), 10))
 ```
@@ -75,10 +75,10 @@ nne_pop <- nne_pop %>%
 ## Ports
 
 ```{r}
-max_ports <- round(max(nne_ports$join_count), 10)
-min_ports <- round(min(nne_ports$join_count), 10)
+max_ports <- round(max(ports$join_count), 10)
+min_ports <- round(min(ports$join_count), 10)
 
-nne_ports <- nne_ports %>% 
+ports <- ports %>% 
   mutate(normalized_ports = round((join_count - min_ports) /
                                     (max_ports - min_ports), 10))
 ```
@@ -86,10 +86,10 @@ nne_ports <- nne_ports %>%
 ## Roads
 
 ```{r}
-max_road <- round(max(nne_roads$sum_length_km), 10)
-min_road <- round(min(nne_roads$sum_length_km), 10)
+max_road <- round(max(roads$sum_length_km), 10)
+min_road <- round(min(roads$sum_length_km), 10)
 
-nne_roads <- nne_roads %>% 
+roads <- roads %>% 
   mutate(normalized_roads = round((sum_length_km - min_road) /
                                     (max_road - min_road), 10))
 ```
@@ -97,19 +97,19 @@ nne_roads <- nne_roads %>%
 ## Merge Pressure Indicators
 
 ```{r}
-nne_ba_mod_join <- left_join(nne_built_area, nne_human_mod, 
+ba_mod_join <- left_join(built_area, human_mod, 
                          by = "id") %>% 
   select(-shape_area, -sum_area_sqkm, -percent_ba, -mean)
 
-nne_ba_mod_pop <- left_join(nne_ba_mod_join, nne_pop,
+ba_mod_pop <- left_join(ba_mod_join, pop,
                         by = "id") %>% 
   select(-pop_change)
 
-nne_ba_mod_pop_ports <- left_join(nne_ba_mod_pop, nne_ports,
+ba_mod_pop_ports <- left_join(ba_mod_pop, ports,
                               by = "id") %>% 
   select(-join_count)
 
-nne_pressure_normalized <- left_join(nne_ba_mod_pop_ports, nne_roads,
+pressure_normalized <- left_join(ba_mod_pop_ports, roads,
                                  by = "id") %>% 
   select(-sum_length_km)
 ```
@@ -117,15 +117,15 @@ nne_pressure_normalized <- left_join(nne_ba_mod_pop_ports, nne_roads,
 ## Normalize Pressure Index
 
 ```{r}
-nne_pressure_normalized <- nne_pressure_normalized %>% 
+pressure_normalized <- pressure_normalized %>% 
   mutate(added_pressure = round(normalized_built_area + normalized_human_mod +
                                   normalized_pop_change + normalized_ports +
                                   normalized_roads, 10))
 
-max_pressure <- round(max(nne_pressure_normalized$added_pressure), 10)
-min_pressure <- round(min(nne_pressure_normalized$added_pressure), 10)
+max_pressure <- round(max(pressure_normalized$added_pressure), 10)
+min_pressure <- round(min(pressure_normalized$added_pressure), 10)
 
-nne_pressure_normalized <- nne_pressure_normalized %>% 
+pressure_normalized <- pressure_normalized %>% 
   mutate(pressure_index = round((added_pressure - min_pressure) /
                                   (max_pressure - min_pressure), 10))
 ```
@@ -133,7 +133,7 @@ nne_pressure_normalized <- nne_pressure_normalized %>%
 ## Export Pressure Index
 
 ```{r}
-write_csv(nne_pressure_normalized, file = "nne_normalized_pressure.csv")
+write_csv(pressure_normalized, file = "nne_normalized_pressure.csv")
 ```
 
 # Social Index
@@ -141,44 +141,44 @@ write_csv(nne_pressure_normalized, file = "nne_normalized_pressure.csv")
 ## Biodiversity Sub Index
 
 ```{r}
-marine_richness <- read_csv(here("data", "biodiversity", "marine_rich.csv")) %>% 
+marine_richness <- read_csv(here("data", "nne", "biodiversity", "nne_marine_rich.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names()
-terr_richness <- read_csv(here("data", "biodiversity", "terr_rich.csv")) %>% 
+terr_richness <- read_csv(here("data", "nne", "biodiversity", "nne_terr_rich.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names()
-coral <- read_csv(here("data", "biodiversity", "coral_reef.csv")) %>% 
+coral <- read_csv(here("data", "nne", "biodiversity", "nne_coral_reef.csv")) %>% 
   select(id, coral_reef) %>% 
   clean_names() %>% 
   mutate(coral_reef_pa = coral_reef) %>% 
   select(-coral_reef)
-mangrove <- read_csv(here("data", "biodiversity", "mangrove.csv")) %>% 
+mangrove <- read_csv(here("data", "nne", "biodiversity", "nne_mangrove.csv")) %>% 
   select(id, mangrove_p) %>% 
   clean_names() %>% 
   mutate(mangrove_pa = mangrove_p) %>% 
   select(-mangrove_p)
-seagrass <- read_csv(here("data", "biodiversity", "seagrass.csv")) %>% 
+seagrass <- read_csv(here("data", "nne", "biodiversity", "nne_seagrass.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names()
-tree_cover <- read_csv(here("data", "biodiversity", "tree_cover.csv")) %>% 
+tree_cover <- read_csv(here("data", "nne", "biodiversity", "nne_tree_cover.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names()
-terr_pa_high <- read_csv(here("data", "biodiversity", "terr_pa_high.csv")) %>% 
+terr_pa_high <- read_csv(here("data", "nne", "biodiversity", "nne_terr_pa_high.csv")) %>% 
   select(id, high_perce) %>% 
   clean_names() %>% 
   mutate(high_pa = high_perce) %>% 
   select(-high_perce)
-terr_pa_ver_high <- read_csv(here("data", "biodiversity", "terr_pa_very_high.csv")) %>% 
+terr_pa_ver_high <- read_csv(here("data", "nne", "biodiversity", "nne_terr_pa_vh.csv")) %>% 
   select(id, very_high_) %>% 
   clean_names() %>% 
   mutate(very_high_pa = very_high) %>% 
   select(-very_high)
-terr_pa_ext_high <- read_csv(here("data", "biodiversity", "terr_pa_ext_high.csv")) %>% 
+terr_pa_ext_high <- read_csv(here("data", "nne", "biodiversity", "nne_terr_pa_ext_high.csv")) %>% 
   select(id, extremely_) %>% 
   clean_names() %>% 
   mutate(ext_high_pa = extremely) %>% 
   select(-extremely)
-ocean_pa <- read_csv(here("data", "biodiversity", "oceanic_pa.csv")) %>% 
+ocean_pa <- read_csv(here("data", "nne", "biodiversity", "nne_oceanic_pa.csv")) %>% 
   select(id, oceanic_pa) %>% 
   clean_names()
 ```
@@ -371,14 +371,14 @@ biodiversity_normalized <- biodiversity_normalized %>%
 ### Export Normalized Biodiverstiy Subindex
 
 ```{r}
-write_csv(biodiversity_normalized, file = "normalized_biodiversity.csv")
+write_csv(biodiversity_normalized, file = "nne_normalized_biodiversity.csv")
 ```
 
 ## Surf Subindex
 
 ```{r}
 # read in data
-surf_indicators <- read_csv(here("data", "surf", "surf_indicators.csv")) %>% 
+surf_indicators <- read_csv(here("data", "nne", "surf", "nne_surf_spots.csv")) %>% 
   select(id, Join_Count, numerical_, numerical1, numerica_1, numerica_2) %>% 
   clean_names() %>% 
   mutate(numerical_direction = numerical) %>% 
