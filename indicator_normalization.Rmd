@@ -832,10 +832,22 @@ all_indices_w_climate <- left_join(all_indices, climate_normalized,
          response_index)
 
 sci_normalized_climate <- all_indices_w_climate %>% 
-  mutate(add_indices = round(pressure_index + biodiversity_subindex +
+  mutate(added_indices = round(pressure_index + biodiversity_subindex +
                                  surf_subindex + social_subindex + 
-                                 climate_index, response_index, 10))
+                                 climate_index + response_index, 10))
+
+max_sci_clim_added <- round(max(sci_normalized_climate$added_indices), 10)
+min_sci_clim_added <- round(min(sci_normalized_climate$added_indices), 10)
+
+sci_normalized_climate <- sci_normalized_climate %>% 
+  mutate(sci = round((added_indices - min_sci_clim_added) /
+                       (max_sci_added - min_sci_clim_added), 10))
 ```
 
+## Export SCI (w/ climate)
+
+```{r}
+write_csv(sci_normalized_climate, file = "sci_w_climate.csv")
+```
 
 
