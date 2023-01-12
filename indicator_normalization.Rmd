@@ -12,10 +12,6 @@ library(here)
 library(janitor)
 ```
 
-```{r}
-# Test for github to see if it works!!
-```
-
 # Pressure Index
 
 ```{r}
@@ -382,7 +378,7 @@ write_csv(biodiversity_normalized, file = "nne_normalized_biodiversity.csv")
 
 ```{r}
 # read in data
-surf_indicators <- read_csv(here("data", "nne", "surf", "nne_surf_spots.csv")) %>% 
+surf_indicators <- read_csv(here("data", "nne", "surf", "nne_surf_clusters.csv")) %>% 
   select(id, Join_Count, numerical_, numerical1, numerica_1, numerica_2) %>% 
   clean_names() %>% 
   mutate(numerical_direction = numerical) %>% 
