@@ -819,7 +819,7 @@ sci_normalized <- sci_normalized %>%
 ## Export SCI (w/o climate)
 
 ```{r}
-write_csv(sci_normalized, file = "sci_wo_climate.csv")
+write_csv(sci_normalized, file = "nne_sci_wo_climate.csv")
 ```
 
 ## Normalize SCI (w/ climate)
@@ -847,7 +847,7 @@ sci_normalized_climate <- sci_normalized_climate %>%
 ## Export SCI (w/ climate)
 
 ```{r}
-write_csv(sci_normalized_climate, file = "sci_w_climate.csv")
+write_csv(sci_normalized_climate, file = "nne_sci_w_climate.csv")
 ```
 
 
