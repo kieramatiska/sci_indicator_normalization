@@ -15,29 +15,29 @@ library(janitor)
 # Pressure Index
 
 ```{r}
-built_area <- read_csv(here("data", "se", "pressure", "se_built_area.csv")) %>% 
-  select(id, Shape_Area, sum_Area_SQUAREKILOMETERS) %>% 
+built_area <- read_csv(here("data", "nne", "pressure", "nne_built_area.csv")) %>% 
+  select(id, Shape_Area, SUM_Area_S) %>% 
   clean_names() %>% 
-  mutate(sum_area_sqkm = sum_area_squarekilometers) %>% 
-  select(-sum_area_squarekilometers) %>% 
+  mutate(sum_area_sqkm = sum_area_s) %>% 
+  select(-sum_area_s) %>% 
   filter(id != 331 & id != 511)
-human_mod <- read_csv(here("data", "se", "pressure", "se_human_mod.csv")) %>% 
+human_mod <- read_csv(here("data", "nne", "pressure", "nne_human_mod.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-pop <- read_csv(here("data", "se", "pressure", "se_pop.csv")) %>% 
+pop <- read_csv(here("data", "nne", "pressure", "nne_pop.csv")) %>% 
   select(id, pop_change) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-ports <- read_csv(here("data", "se", "pressure", "se_ports.csv")) %>% 
+ports <- read_csv(here("data", "nne", "pressure", "nne_ports.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-roads <- read_csv(here("data", "se", "pressure", "se_roads.csv")) %>% 
-  select(id, sum_Length_KILOMETERS) %>% 
+roads <- read_csv(here("data", "nne", "pressure", "nne_roads.csv")) %>% 
+  select(id, SUM_Length) %>% 
   clean_names() %>% 
-  mutate(sum_length_km = sum_length_kilometers) %>% 
-  select(-sum_length_kilometers) %>% 
+  mutate(sum_length_km = sum_length) %>% 
+  select(-sum_length) %>% 
   filter(id != 331 & id != 511)
 ```
 
@@ -146,56 +146,54 @@ write_csv(pressure_normalized, file = "se_normalized_pressure.csv")
 ## Biodiversity Sub Index
 
 ```{r}
-marine_richness <- read_csv(here("data", "se", "biodiversity", "se_mar_rich.csv")) %>% 
+marine_richness <- read_csv(here("data", "nne", "biodiversity", "nne_marine_rich.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-terr_richness <- read_csv(here("data", "se", "biodiversity", "se_terr_rich.csv")) %>% 
+terr_richness <- read_csv(here("data", "nne", "biodiversity", "nne_terr_rich.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-coral <- read_csv(here("data", "se", "biodiversity", "se_coral.csv")) %>% 
-  select(id, coral_reef_area) %>% 
+coral <- read_csv(here("data", "nne", "biodiversity", "nne_coral_reef.csv")) %>% 
+  select(id, coral_reef) %>% 
   clean_names() %>% 
-  mutate(coral_reef_pa = coral_reef_area) %>% 
-  select(-coral_reef_area) %>% 
+  mutate(coral_reef_pa = coral_reef) %>% 
+  select(-coral_reef) %>% 
   filter(id != 331 & id != 511)
-mangrove <- read_csv(here("data", "se", "biodiversity", "se_mangrove.csv")) %>% 
-  select(id, mangrove_percent_area) %>% 
+mangrove <- read_csv(here("data", "nne", "biodiversity", "nne_mangrove.csv")) %>% 
+  select(id, mangrove_p) %>% 
   clean_names() %>% 
-  mutate(mangrove_pa = mangrove_percent_area) %>% 
-  select(-mangrove_percent_area) %>% 
+  mutate(mangrove_pa = mangrove_p) %>% 
+  select(-mangrove_p) %>% 
   filter(id != 331 & id != 511)
-seagrass <- read_csv(here("data", "se", "biodiversity", "se_seagrass.csv")) %>% 
+seagrass <- read_csv(here("data", "nne", "biodiversity", "nne_seagrass.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-tree_cover <- read_csv(here("data", "se", "biodiversity", "se_tree_cover.csv")) %>% 
+tree_cover <- read_csv(here("data", "nne", "biodiversity", "nne_tree_cover.csv")) %>% 
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-terr_pa_high <- read_csv(here("data", "se", "biodiversity", "se_terr_pa_high.csv")) %>% 
-  select(id, high_percent_area) %>% 
+terr_pa_high <- read_csv(here("data", "nne", "biodiversity", "nne_terr_pa_high.csv")) %>% 
+  select(id, high_perce) %>% 
   clean_names() %>% 
-  mutate(high_pa = high_percent_area) %>% 
-  select(-high_percent_area) %>% 
+  mutate(high_pa = high_perce) %>% 
+  select(-high_perce) %>% 
   filter(id != 331 & id != 511)
-terr_pa_ver_high <- read_csv(here("data", "se", "biodiversity", "se_terr_pa_v_high.csv")) %>% 
-  select(id, very_high_percent_area) %>% 
+terr_pa_ver_high <- read_csv(here("data", "nne", "biodiversity", "nne_terr_pa_vh.csv")) %>% 
+  select(id, very_high_) %>% 
   clean_names() %>% 
-  mutate(very_high_pa = very_high_percent_area) %>% 
-  select(-very_high_percent_area) %>% 
+  mutate(very_high_pa = very_high) %>% 
+  select(-very_high) %>% 
   filter(id != 331 & id != 511)
-terr_pa_ext_high <- read_csv(here("data", "se", "biodiversity", "se_terr_pa_ext_high.csv")) %>% 
-  select(id, extremely_high_percent_area) %>% 
+terr_pa_ext_high <- read_csv(here("data", "nne", "biodiversity", "nne_terr_pa_ext_high.csv")) %>% 
+  select(id, extremely_) %>% 
   clean_names() %>% 
-  mutate(ext_high_pa = extremely_high_percent_area) %>% 
-  select(-extremely_high_percent_area) %>% 
+  mutate(ext_high_pa = extremely) %>% 
+  select(-extremely) %>% 
   filter(id != 331 & id != 511)
-ocean_pa <- read_csv(here("data", "se", "biodiversity", "se_oceanic_pa.csv")) %>% 
-  select(id, oceanic_pa_percent_area) %>% 
-  mutate(oceanic_pa = oceanic_pa_percent_area) %>% 
-  select(-oceanic_pa_percent_area) %>% 
+ocean_pa <- read_csv(here("data", "nne", "biodiversity", "nne_oceanic_pa.csv")) %>% 
+  select(id, oceanic_pa) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 ```
@@ -234,10 +232,10 @@ min_coral <- round(min(coral$coral_reef_pa), 10)
 
 coral <- coral %>% 
   mutate(normalized_coral_reef = round((coral_reef_pa - min_coral) /
-                                          (max_coral - min_coral), 10)) %>% 
-  mutate(normalized_coral_reef = case_when(
-    normalized_coral_reef == "NaN" ~ 0
-  ))
+                                          (max_coral - min_coral), 10)) 
+  # mutate(normalized_coral_reef = case_when(    ##### for se and s
+  #   normalized_coral_reef == "NaN" ~ 0
+  # ))
 
 max_mangrove <- round(max(mangrove$mangrove_pa), 10)
 min_mangrove <- round(min(mangrove$mangrove_pa), 10)
