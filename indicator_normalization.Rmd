@@ -396,7 +396,7 @@ write_csv(biodiversity_normalized, file = "se_normalized_biodiversity.csv")
 
 ```{r}
 # read in data
-surf_indicators <- read_csv(here("data", "se", "surf", "se_surf_indicators.csv")) %>% 
+surf_indicators <- read_csv(here("data", "nne", "surf", "nne_surf_indicators.csv")) %>% 
   select(id, Join_Count, numerical_direction, 
          numerical_frequency, numerical_experience, numerical_quality) %>% 
   clean_names() %>% 
@@ -476,22 +476,21 @@ surf_normalized <- surf_normalized %>%
 ## Surf Subindex Export
 
 ```{r}
-write_csv(surf_normalized, file = "se_normalized_surf.csv")
+write_csv(surf_normalized, file = "nne_normalized_surf.csv")
 ```
 
 ## Social Subindex
 
 ```{r}
-employment <- read_csv(here("data", "se", "social", "se_employment.csv")) %>% 
-  select(id, Join_Count, SLR_employment_per_capita) %>% 
+employment <- read_csv(here("data", "nne", "social", "nne_employment.csv")) %>% 
+  select(id, Join_Count, SLR_employ) %>% 
   clean_names() %>% 
-  mutate(slr_employ = slr_employment_per_capita) %>% 
   filter(id != 331 & id != 511)
-hotels <- read_csv(here("data", "se", "social", "se_hotels.csv")) %>% 
+hotels <- read_csv(here("data", "nne", "social", "nne_hotels.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-airports <- read_csv(here("data", "se", "social", "se_airports.csv")) %>% 
+airports <- read_csv(here("data", "nne", "social", "nne_airports.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
@@ -566,11 +565,11 @@ write_csv(social_normalized, file = "se_normalized_social.csv")
 # Climate Index
 
 ```{r}
-climate <- read_csv(here("data", "se", "climate", "se_climate.csv")) %>% 
+climate <- read_csv(here("data", "nne", "climate", "climate.csv")) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511) %>% 
   select(nm_regiao, id, sum_10km, hab_10km) %>% 
-  filter(nm_regiao != "Sul", nm_regiao != "Norte", nm_regiao != "Nordeste")
+  filter(nm_regiao != "Sul", nm_regiao != "Sudeste")
 ```
 
 # Mangrove Carbon
@@ -617,38 +616,38 @@ write_csv(climate_normalized, file = "se_normalized_climate.csv")
 # Response Index
 
 ```{r}
-heritage <- read_csv(here("data", "se", "response", "se_world_heri.csv")) %>% 
-  select(id, world_heritage_percent_area) %>% 
+heritage <- read_csv(here("data", "nne", "response", "nne_world_heritage.csv")) %>% 
+  select(id, world_heri) %>% 
   clean_names() %>% 
-  mutate(heritage_pa = world_heritage_percent_area) %>% 
-  select(-world_heritage_percent_area) %>% 
+  mutate(heritage_pa = world_heri) %>% 
+  select(-world_heri) %>% 
   filter(id != 331 & id != 511)
-atl_for_priority <- read_csv(here("data", "se", "response", "se_PAF.csv")) %>% 
-  select(id, protected_atl_forest_area) %>% 
+atl_for_priority <- read_csv(here("data", "nne", "response", "nne_PAF.csv")) %>% 
+  select(id, protected_) %>% 
   clean_names() %>% 
-  mutate(atl_for_pa = protected_atl_forest_area) %>% 
-  select(-protected_atl_forest_area) %>% 
+  mutate(atl_for_pa = protected) %>% 
+  select(-protected) %>% 
   filter(id != 331 & id != 511)
-guarda <- read_csv(here("data", "se", "response", "se_wsr.csv")) %>% 
-  select(id, wsr_percent_area) %>% 
+guarda <- read_csv(here("data", "nne", "response", "nne_wsr.csv")) %>% 
+  select(id, wsr_percen) %>% 
   clean_names() %>% 
-  mutate(wsr_pa = wsr_percent_area) %>% 
-  select(-wsr_percent_area) %>% 
+  mutate(wsr_pa = wsr_percen) %>% 
+  select(-wsr_percen) %>% 
   filter(id != 331 & id != 511)
-prot_areas <- read_csv(here("data", "se", "response", "se_protected.csv")) %>% 
-  select(id, protected_percent_area) %>% 
+prot_areas <- read_csv(here("data", "nne", "response", "nne_protected.csv")) %>% 
+  select(id, protected_) %>% 
   clean_names() %>% 
-  mutate(protected = protected_percent_area) %>% 
+  mutate(protected = protected) %>% 
   filter(id != 331 & id != 511)
-bandeira <- read_csv(here("data", "se", "response", "se_bandeira.csv")) %>% 
+bandeira <- read_csv(here("data", "nne", "response", "nne_bandeira.csv")) %>% 
   select(id, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
-ramsar <- read_csv(here("data", "se", "response", "se_ramsar.csv")) %>% 
-  select(id, ramsar_percent_area) %>% 
+ramsar <- read_csv(here("data", "nne", "response", "nne_ramsar.csv")) %>% 
+  select(id, ramsar_per) %>% 
   clean_names() %>% 
-  mutate(ramsar_pa = ramsar_percent_area) %>% 
-  select(-ramsar_percent_area) %>% 
+  mutate(ramsar_pa = ramsar_per) %>% 
+  select(-ramsar_per) %>% 
   filter(id != 331 & id != 511)
 ```
 
@@ -818,7 +817,7 @@ sci_normalized <- sci_normalized %>%
 ## Export SCI (w/o climate)
 
 ```{r}
-write_csv(sci_normalized, file = "se_sci_wo_climate.csv")
+write_csv(sci_normalized, file = "nne_sci_wo_climate.csv")
 ```
 
 ## Normalize SCI (w/ climate)
@@ -846,7 +845,7 @@ sci_normalized_climate <- sci_normalized_climate %>%
 ## Export SCI (w/ climate)
 
 ```{r}
-write_csv(sci_normalized_climate, file = "se_sci_w_climate.csv")
+write_csv(sci_normalized_climate, file = "nne_sci_w_climate.csv")
 ```
 
 
