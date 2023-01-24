@@ -474,7 +474,8 @@ max_direction <- round(max(surf_indicators$numerical_direction), 10)
 min_direction <- round(min(surf_indicators$numerical_direction), 10)
 
 surf_indicators <- surf_indicators %>% 
-  mutate(normalized_direction = numerical_direction)
+  mutate(normalized_direction = round((numerical_direction - min_direction) /
+                                        (max_direction - min_direction), 10))
 ```
 
 ### Frequency
@@ -511,7 +512,7 @@ surf_indicators <- surf_indicators %>%
 ```{r}
 surf_normalized <- surf_indicators %>% 
   mutate(weighted_surf = normalized_clusters + normalized_quality + 
-           (0.5 * normalized_direction) + (0.5 * normalized_experience))
+          (0.5 * normalized_direction) + (0.5 * normalized_experience))
 
 max_weighted <- round(max(surf_normalized$weighted_surf), 10)
 min_weighted <- round(min(surf_normalized$weighted_surf), 10)
@@ -519,6 +520,7 @@ min_weighted <- round(min(surf_normalized$weighted_surf), 10)
 surf_normalized <- surf_normalized %>% 
   mutate(surf_subindex = round((weighted_surf - min_weighted) / 
                            (max_weighted - min_weighted), 10))
+  
 ```
 
 ## Surf Subindex Export
