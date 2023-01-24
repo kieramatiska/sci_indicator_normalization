@@ -114,19 +114,19 @@ roads <- roads %>%
 ```{r}
 ba_mod_join <- left_join(built_area, human_mod, 
                          by = "id") %>% 
-  select(-shape_area, -sum_area_sqkm, -percent_ba, -mean)
+  select(-shape_area, -sum_area_sqkm, -percent_ba, -mean, - region)
 
 ba_mod_pop <- left_join(ba_mod_join, pop,
                         by = "id") %>% 
-  select(-pop_change)
+  select(-pop_change, -region)
 
 ba_mod_pop_ports <- left_join(ba_mod_pop, ports,
                               by = "id") %>% 
-  select(-join_count)
+  select(-join_count, -region)
 
 pressure_normalized <- left_join(ba_mod_pop_ports, roads,
                                  by = "id") %>% 
-  select(-sum_length_km)
+  select(-sum_length_km, -region)
 ```
 
 ## Normalize Pressure Index
@@ -606,7 +606,6 @@ climate <- read_csv(here("data", "climate", "climate.csv")) %>%
   clean_names() %>% 
   filter(id != 331 & id != 511) %>% 
   select(nm_regiao, id, sum_10km, hab_10km)
-  # filter(nm_regiao != "Sul", nm_regiao != "Sudeste")
 ```
 
 # Mangrove Carbon
@@ -730,10 +729,10 @@ min_wsr <- round(min(guarda$wsr_pa), 10)
 
 guarda <- guarda %>% 
   mutate(normalized_wsr = round((wsr_pa - min_wsr) / 
-                          (max_wsr - min_wsr), 10)) 
-  # mutate(normalized_wsr = case_when( # only for the regions without Guarda's surfing reserve
-  #  normalized_wsr == "NaN" ~ 0
-  # ))
+                          (max_wsr - min_wsr), 10)) %>% 
+  mutate(normalized_wsr = case_when( # only for the regions without Guarda's surfing reserve
+   normalized_wsr == "NaN" ~ 0
+  ))
 ```
 
 ## Protected Areas
@@ -819,7 +818,7 @@ response_normalized <- response_normalized %>%
 ## Response Index Export
 
 ```{r}
-write_csv(response_normalized, file = "normalized_response.csv")
+write_csv(response_normalized, file = "nne_normalized_response.csv")
 ```
 
 # Surf Conservation Index (w and w/o climate)
@@ -866,7 +865,7 @@ sci_normalized <- sci_normalized %>%
 ## Export SCI (w/o climate)
 
 ```{r}
-write_csv(sci_normalized, file = "sci_wo_climate.csv")
+write_csv(sci_normalized, file = "nne_sci_wo_climate.csv")
 ```
 
 ## Normalize SCI (w/ climate)
@@ -894,7 +893,7 @@ sci_normalized_climate <- sci_normalized_climate %>%
 ## Export SCI (w/ climate)
 
 ```{r}
-write_csv(sci_normalized_climate, file = "sci_w_climate.csv")
+write_csv(sci_normalized_climate, file = "nne_sci_w_climate.csv")
 ```
 
 
