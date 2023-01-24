@@ -148,7 +148,7 @@ write_csv(pressure_normalized, file = "normalized_pressure.csv")
 
 # Social Index
 
-## Biodiversity Sub Index
+## Biodiversity Subindex
 
 ```{r}
 marine_richness <- read_csv(here("data", "biodiversity", "marine_rich.csv")) %>%
@@ -162,22 +162,21 @@ terr_richness <- read_csv(here("data", "biodiversity", "terr_rich.csv")) %>%
   clean_names() %>% 
   filter(id != 331 & id != 511)
 coral <- read_csv(here("data", "biodiversity", "coral_reef.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, coral_reef) %>% 
+  select(id, region, coral_reef) %>% 
   clean_names() %>% 
   mutate(coral_reef_pa = coral_reef) %>% 
   select(-coral_reef) %>% 
   filter(id != 331 & id != 511)
 mangrove <- read_csv(here("data", "biodiversity", "mangrove.csv")) %>% 
   #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, mangrove_p) %>% 
+  select(id, region, mangrove_p) %>% 
   clean_names() %>% 
   mutate(mangrove_pa = mangrove_p) %>% 
   select(-mangrove_p) %>% 
   filter(id != 331 & id != 511)
 seagrass <- read_csv(here("data", "biodiversity", "seagrass.csv")) %>% 
   #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, Join_Count) %>% 
+  select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 tree_cover <- read_csv(here("data", "biodiversity", "tree_cover.csv")) %>%
@@ -186,29 +185,25 @@ tree_cover <- read_csv(here("data", "biodiversity", "tree_cover.csv")) %>%
   clean_names() %>% 
   filter(id != 331 & id != 511)
 terr_pa_high <- read_csv(here("data", "biodiversity", "terr_pa_high.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, high_perce) %>% 
+  select(id, region, high_perce) %>% 
   clean_names() %>% 
   mutate(high_pa = high_perce) %>% 
   select(-high_perce) %>% 
   filter(id != 331 & id != 511)
 terr_pa_ver_high <- read_csv(here("data", "biodiversity", "terr_pa_very_high.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, very_high_) %>% 
+  select(id, region, very_high_) %>% 
   clean_names() %>% 
   mutate(very_high_pa = very_high) %>% 
   select(-very_high) %>% 
   filter(id != 331 & id != 511)
 terr_pa_ext_high <- read_csv(here("data", "biodiversity", "terr_pa_ext_high.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, extremely_) %>% 
+  select(id, region, extremely_) %>% 
   clean_names() %>% 
   mutate(ext_high_pa = extremely) %>% 
   select(-extremely) %>% 
   filter(id != 331 & id != 511)
 ocean_pa <- read_csv(here("data", "biodiversity", "oceanic_pa.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, oceanic_pa) %>% 
+  select(id, region, oceanic_pa) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 ```
@@ -415,20 +410,10 @@ write_csv(biodiversity_normalized, file = "normalized_biodiversity.csv")
 
 ```{r}
 # read in data
-surf_indicators <- read_csv(here("data", "surf", "surf_indicators.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  # select(id, Join_Count, numerical_direction, 
-  #        numerical_frequency, numerical_experience, numerical_quality) %>% 
-  # clean_names() %>% 
+surf_indicators <- read_csv(here("data", "surf", "surf_clusters.csv")) %>% 
   filter(id != 331 & id != 511) %>% 
-  select(id, Join_Count, numerical_, numerical1, numerica_1, numerica_2) %>% 
-  clean_names() %>% 
-  mutate(numerical_direction = numerical) %>% 
-  mutate(numerical_frequency = numerical1) %>% 
-  mutate(numerical_experience = numerica_1) %>% 
-  mutate(numerical_quality = numerica_2) %>% 
-  select(-numerical, -numerical1, 
-         -numerica_1, -numerica_2)
+  select(id, region, Join_Count, numerical_direction, numerical_frequency, numerical_experience, numerical_quality) %>% 
+  clean_names()
 ```
 
 ### Surf Clusters
@@ -445,6 +430,9 @@ surf_indicators <- surf_indicators %>%
 ### Direction
 
 ```{r}
+max_direction <- round(max(surf_indicators$numerical_direction), 10)
+min_direction <- round(min(surf_indicators$numerical_direction), 10)
+
 surf_indicators <- surf_indicators %>% 
   mutate(normalized_direction = numerical_direction)
 ```
@@ -503,18 +491,15 @@ write_csv(surf_normalized, file = "normalized_surf.csv")
 
 ```{r}
 employment <- read_csv(here("data", "social", "employment.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, Join_Count, SLR_employ) %>% 
+  select(id, region, Join_Count, SLR_employ) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 hotels <- read_csv(here("data", "social", "hotels.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, Join_Count) %>% 
+  select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 airports <- read_csv(here("data", "social", "airports.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, Join_Count) %>% 
+  select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 ```
@@ -590,7 +575,6 @@ write_csv(social_normalized, file = "normalized_social.csv")
 ```{r}
 climate <- read_csv(here("data", "climate", "climate.csv")) %>% 
   clean_names() %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
   filter(id != 331 & id != 511) %>% 
   select(nm_regiao, id, sum_10km, hab_10km)
   # filter(nm_regiao != "Sul", nm_regiao != "Sudeste")
@@ -641,40 +625,34 @@ write_csv(climate_normalized, file = "normalized_climate.csv")
 
 ```{r}
 heritage <- read_csv(here("data", "response", "world_heritage.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, world_heri) %>% 
+  select(id, region, world_heri) %>% 
   clean_names() %>% 
   mutate(heritage_pa = world_heri) %>% 
   select(-world_heri) %>% 
   filter(id != 331 & id != 511)
-atl_for_priority <- read_csv(here("data", "response", "atl_forest_pa.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, protected_) %>% 
+atl_for_priority <- read_csv(here("data", "response", "atl_forest_pa.csv")) %>%
+  select(id, region, protected_) %>% 
   clean_names() %>% 
   mutate(atl_for_pa = protected) %>% 
   select(-protected) %>% 
   filter(id != 331 & id != 511)
 guarda <- read_csv(here("data", "response", "wsr.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, wsr_percen) %>% 
+  select(id, region, wsr_percen) %>% 
   clean_names() %>% 
   mutate(wsr_pa = wsr_percen) %>% 
   select(-wsr_percen) %>% 
   filter(id != 331 & id != 511)
 prot_areas <- read_csv(here("data", "response", "protected.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, protected_) %>% 
+  select(id, region, protected_) %>% 
   clean_names() %>% 
   mutate(protected = protected) %>% 
   filter(id != 331 & id != 511)
 bandeira <- read_csv(here("data", "response", "bandeira.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, Join_Count) %>% 
+  select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 ramsar <- read_csv(here("data", "response", "ramsar.csv")) %>% 
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>%
-  select(id, ramsar_per) %>% 
+  select(id, region, ramsar_per) %>% 
   clean_names() %>% 
   mutate(ramsar_pa = ramsar_per) %>% 
   select(-ramsar_per) %>% 
