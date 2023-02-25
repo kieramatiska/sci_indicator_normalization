@@ -18,7 +18,7 @@ library(janitor)
 built_area <- read_csv(here("data", "sensitivity_analysis", "1km", "pressure", "built_area_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, Shape_Area, sum_Area_SQUAREKILOMETERS) %>% 
   clean_names() %>% 
   mutate(sum_area_sqkm = sum_area_squarekilometers) %>% 
@@ -27,28 +27,28 @@ built_area <- read_csv(here("data", "sensitivity_analysis", "1km", "pressure", "
 human_mod <- read_csv(here("data", "sensitivity_analysis", "1km", "pressure", "human_mod_1km.csv")) %>% 
   # filter(id >= 93 & id <= 194 | id >= 445 & id <= 510 | id >= 537 & id <=548) %>% # for northern and northeastern regions
   # filter(id >= 9 & id <= 92 | id >= 329 & id <= 444 | id >= 519 & id <= 536) %>% # for Southeastern region
-  # filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
+  filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 pop <- read_csv(here("data", "sensitivity_analysis", "1km", "pressure", "pop_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  #filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, pop_change) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 ports <- read_csv(here("data", "sensitivity_analysis", "1km", "pressure", "ports_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 roads <- read_csv(here("data", "sensitivity_analysis", "1km", "pressure", "roads_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, sum_Length_KILOMETERS) %>% 
   clean_names() %>% 
   mutate(sum_length_km = sum_length_kilometers) %>% 
@@ -156,7 +156,7 @@ pressure_normalized <- pressure_normalized %>%
 ## Export Pressure Index
 
 ```{r}
-write_csv(pressure_normalized, file = "s_normalized_pressure.csv")
+write_csv(pressure_normalized, file = "s_normalized_pressure_1km.csv")
 ```
 
 # Social Index
@@ -167,21 +167,21 @@ write_csv(pressure_normalized, file = "s_normalized_pressure.csv")
 marine_richness <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "marine_rich_1km.csv")) %>%
   # filter(id >= 93 & id <= 194 | id >= 445 & id <= 510 | id >= 537 & id <=548) %>% # for northern and northeastern regions
   # filter(id >= 9 & id <= 92 | id >= 329 & id <= 444 | id >= 519 & id <= 536) %>% # for Southeastern region
-  #filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
+  filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 terr_richness <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "terr_rich_1km.csv")) %>% 
   # filter(id >= 93 & id <= 194 | id >= 445 & id <= 510 | id >= 537 & id <=548) %>% # for northern and northeastern regions
   # filter(id >= 9 & id <= 92 | id >= 329 & id <= 444 | id >= 519 & id <= 536) %>% # for Southeastern region
-  # filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
+  filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 coral <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "coral_reef_1km.csv")) %>%
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, coral_reef_area) %>% 
   clean_names() %>% 
   mutate(coral_reef_pa = coral_reef_area) %>% 
@@ -190,7 +190,7 @@ coral <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "c
 mangrove <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "mangrove_1km.csv")) %>% 
   # filter(id >= 93 & id <= 194 | id >= 445 & id <= 510 | id >= 537 & id <=548) %>% # for northern and northeastern regions
   # filter(id >= 9 & id <= 92 | id >= 329 & id <= 444 | id >= 519 & id <= 536) %>% # for Southeastern region
-  # filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
+  filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
   select(id, region, mangrove_percent_area) %>% 
   clean_names() %>% 
   mutate(mangrove_pa = mangrove_percent_area) %>% 
@@ -199,21 +199,21 @@ mangrove <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity",
 seagrass <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "seagrass_1km.csv")) %>% 
   # filter(id >= 93 & id <= 194 | id >= 445 & id <= 510 | id >= 537 & id <=548) %>% # for northern and northeastern regions
   # filter(id >= 9 & id <= 92 | id >= 329 & id <= 444 | id >= 519 & id <= 536) %>% # for Southeastern region
-  # filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
+  filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
   select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 tree_cover <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "tree_cover_1km.csv")) %>%
   # filter(id >= 93 & id <= 194 | id >= 445 & id <= 510 | id >= 537 & id <=548) %>% # for northern and northeastern regions
   # filter(id >= 9 & id <= 92 | id >= 329 & id <= 444 | id >= 519 & id <= 536) %>% # for Southeastern region
-  # filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
+  filter(id >= 0 & id <= 8 | id >= 195 & id <= 328 | id >= 512 & id <= 518) %>% # for Southern region
   select(id, MEAN) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 terr_pa_high <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "terr_pa_high_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, high_percent_area) %>% 
   clean_names() %>% 
   mutate(high_pa = high_percent_area) %>% 
@@ -222,7 +222,7 @@ terr_pa_high <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversi
 terr_pa_ver_high <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "terr_pa_v_high_1km.csv")) %>%
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, very_high_percent_area) %>% 
   clean_names() %>% 
   mutate(very_high_pa = very_high_percent_area) %>% 
@@ -231,7 +231,7 @@ terr_pa_ver_high <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiv
 terr_pa_ext_high <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "terr_pa_ext_high_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, extremely_high_percent_area) %>% 
   clean_names() %>% 
   mutate(ext_high_pa = extremely_high_percent_area) %>% 
@@ -240,7 +240,7 @@ terr_pa_ext_high <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiv
 ocean_pa <- read_csv(here("data", "sensitivity_analysis", "1km", "biodiversity", "oceanic_pa_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, oceanic_pa_percent_area) %>% 
   clean_names() %>% 
   mutate(oceanic_pa = oceanic_pa_percent_area) %>% 
@@ -299,7 +299,7 @@ min_seagrass <- round(min(seagrass$join_count), 10)
 
 seagrass <- seagrass %>% 
   mutate(normalized_seagrass = round((join_count - min_seagrass) /
-                                       (max_seagrass - min_seagrass), 10)) %>%  
+                                       (max_seagrass - min_seagrass), 10)) %>%   
   mutate(normalized_seagrass = case_when( # for Southern Region
     normalized_seagrass == "NaN" ~ 0
   ))
@@ -349,8 +349,8 @@ min_terr_pa_high <- round(min(terr_pa_high$terr_pa_high_weighted), 10)
 
 terr_pa_high <- terr_pa_high %>% 
   mutate(normalized_terr_pa_high = round((terr_pa_high_weighted - min_terr_pa_high) /
-                                           (max_terr_pa_high - min_terr_pa_high), 10)) %>%   
-  mutate(normalized_terr_pa_high = case_when(    # for Southern region
+                                           (max_terr_pa_high - min_terr_pa_high), 10)) %>%    
+  mutate(normalized_terr_pa_high = case_when(    # for Southern and Southeastern regions
     normalized_terr_pa_high == "NaN" ~ 0
   ))
 
@@ -363,7 +363,10 @@ min_terr_pa_very_high <- round(min(terr_pa_ver_high$terr_pa_ver_high_weighted), 
 
 terr_pa_ver_high <- terr_pa_ver_high %>% 
   mutate(normalized_terr_pa_ver_high = round((terr_pa_ver_high_weighted - min_terr_pa_very_high) /
-                                           (max_terr_pa_very_high - min_terr_pa_very_high), 10))
+                                           (max_terr_pa_very_high - min_terr_pa_very_high), 10)) %>% 
+  mutate(normalized_terr_pa_ver_high = case_when(    # for Southern region
+    normalized_terr_pa_ver_high == "NaN" ~ 0
+  ))
 
 # extremely high priority terrestrial areas weighted
 max_terr_pa_ext_high <- round(max(terr_pa_ext_high$ext_high_pa), 10)
@@ -445,7 +448,7 @@ biodiversity_normalized <- biodiversity_normalized %>%
 ### Export Normalized Biodiversity Subindex
 
 ```{r}
-write_csv(biodiversity_normalized, file = "s_normalized_biodiversity.csv")
+write_csv(biodiversity_normalized, file = "s_normalized_biodiversity_1km.csv")
 ```
 
 ## Surf Subindex
@@ -455,7 +458,7 @@ write_csv(biodiversity_normalized, file = "s_normalized_biodiversity.csv")
 surf_indicators <- read_csv(here("data", "sensitivity_analysis", "1km", "surf", "surf_indicators_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   filter(id != 331 & id != 511) %>% 
   select(id, region, Join_Count, numerical_direction, numerical_frequency, numerical_experience, numerical_quality) %>% 
   clean_names()
@@ -530,7 +533,7 @@ surf_normalized <- surf_normalized %>%
 ## Surf Subindex Export
 
 ```{r}
-write_csv(surf_normalized, file = "s_normalized_surf.csv")
+write_csv(surf_normalized, file = "s_normalized_surf_1km.csv")
 ```
 
 ## Social Subindex
@@ -539,7 +542,7 @@ write_csv(surf_normalized, file = "s_normalized_surf.csv")
 employment <- read_csv(here("data", "sensitivity_analysis", "1km", "social", "employment_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, Join_Count, SLR_employment_per_capita) %>% 
   clean_names() %>% 
   mutate(slr_employ = slr_employment_per_capita) %>% 
@@ -548,14 +551,14 @@ employment <- read_csv(here("data", "sensitivity_analysis", "1km", "social", "em
 hotels <- read_csv(here("data", "sensitivity_analysis", "1km", "social", "hotels_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 airports <- read_csv(here("data", "sensitivity_analysis", "1km", "social", "airports_1km.csv")) %>%
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
@@ -591,7 +594,10 @@ min_airport <- round(min(airports$join_count), 10)
 
 airports <- airports %>% 
   mutate(normalized_airports = round((airports$join_count - min_airport) /
-                                       (max_airport - min_airport), 10))
+                                       (max_airport - min_airport), 10)) %>% 
+  mutate(normalized_airports = case_when(    # for all regions
+    normalized_airports == "NaN" ~ 0
+  ))
 ```
 
 ### Merge Social Index Indicators
@@ -624,7 +630,7 @@ social_normalized <- social_normalized %>%
 ### Export Social Subindex
 
 ```{r}
-write_csv(social_normalized, file = "s_normalized_social.csv")
+write_csv(social_normalized, file = "s_normalized_social_1km.csv")
 ```
 
 # Climate Index
@@ -636,27 +642,28 @@ climate <- read_csv(here("data", "climate", "climate.csv")) %>%
   filter(NM_REGIAO == "Sul") %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511) %>% 
-  select(nm_regiao, id, sum_10km, hab_10km)
+  select(nm_regiao, id, sum_1km, hab_1km)
 ```
 
 # Mangrove Carbon
 
 ```{r}
-max_carbon <- round(max(climate$sum_10km), 10)
-min_carbon <- round(min(climate$sum_10km), 10)
+max_carbon <- round(max(climate$sum_1km), 10)
+min_carbon <- round(min(climate$sum_1km), 10)
 
 climate <- climate %>% 
-  mutate(normalized_carbon = round((sum_10km - min_carbon) / (max_carbon - min_carbon), 10))
+  mutate(normalized_carbon = round((sum_1km - min_carbon) / 
+                                     (max_carbon - min_carbon), 10))
 ```
 
 # Coastal Protection
 
 ```{r}
-max_cp <- round(max(climate$hab_10km), 10)
-min_cp <- round(min(climate$hab_10km), 10)
+max_cp <- round(max(climate$hab_1km), 10)
+min_cp <- round(min(climate$hab_1km), 10)
 
 climate <- climate %>% 
-  mutate(normalized_cp = round((hab_10km - min_cp) / 
+  mutate(normalized_cp = round((hab_1km - min_cp) / 
                                  (max_cp - min_cp), 10))
 ```
 
@@ -677,7 +684,7 @@ climate_normalized <- climate_normalized %>%
 # Climate Index Export
 
 ```{r}
-write_csv(climate_normalized, file = "s_normalized_climate.csv")
+write_csv(climate_normalized, file = "s_normalized_climate_1km.csv")
 ```
 
 # Response Index
@@ -686,7 +693,7 @@ write_csv(climate_normalized, file = "s_normalized_climate.csv")
 heritage <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "world_heri_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, world_heritage_percent_area) %>% 
   clean_names() %>% 
   mutate(heritage_pa = world_heritage_percent_area) %>% 
@@ -695,7 +702,7 @@ heritage <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "wo
 atl_for_priority <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "atl_forest_1km.csv")) %>%
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, protected_atl_forest_area) %>% 
   clean_names() %>% 
   mutate(atl_for_pa = protected_atl_forest_area) %>% 
@@ -704,7 +711,7 @@ atl_for_priority <- read_csv(here("data", "sensitivity_analysis", "1km", "respon
 guarda <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "wsr_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, wsr_percent_area) %>% 
   clean_names() %>% 
   mutate(wsr_pa = wsr_percent_area) %>% 
@@ -713,7 +720,7 @@ guarda <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "wsr_
 prot_areas <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "protected_1km.csv")) %>%
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, protected_percent_area) %>% 
   clean_names() %>% 
   mutate(protected = protected_percent_area) %>% 
@@ -721,14 +728,14 @@ prot_areas <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "
 bandeira <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "bandeira_1km.csv")) %>%
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, Join_Count) %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511)
 ramsar <- read_csv(here("data", "sensitivity_analysis", "1km", "response", "ramsar_1km.csv")) %>% 
   # filter(region %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern region
   # filter(region == "Sudeste") %>%  # for Southeastern region
-  # filter(region == "Sul") %>% # for Southern region
+  filter(region == "Sul") %>% # for Southern region
   select(id, region, ramsar_percent_area) %>% 
   clean_names() %>% 
   mutate(ramsar_pa = ramsar_percent_area) %>% 
@@ -744,7 +751,10 @@ min_heritage <- round(min(heritage$heritage_pa), 10)
 
 heritage <- heritage %>% 
   mutate(normalized_heritage = round((heritage_pa - min_heritage) / 
-                               (max_heritage - min_heritage), 10))
+                               (max_heritage - min_heritage), 10)) %>% 
+  mutate(normalized_heritage = case_when(    # for Southern region
+    normalized_heritage == "NaN" ~ 0
+  ))
 ```
 
 ## Atlantic Forest Priority Areas
@@ -766,9 +776,9 @@ min_wsr <- round(min(guarda$wsr_pa), 10)
 
 guarda <- guarda %>% 
   mutate(normalized_wsr = round((wsr_pa - min_wsr) / 
-                          (max_wsr - min_wsr), 10))  
+                          (max_wsr - min_wsr), 10))
   # mutate(normalized_wsr = case_when( # for Southeastern and North-Northeastern regions
-   # normalized_wsr == "NaN" ~ 0
+  #  normalized_wsr == "NaN" ~ 0
   # ))
 ```
 
@@ -802,7 +812,10 @@ min_ramsar <- round(min(ramsar$ramsar_pa), 10)
 
 ramsar <- ramsar %>% 
   mutate(normalized_ramsar = round((ramsar_pa - min_ramsar) / 
-                            (max_ramsar - min_ramsar), 10))
+                            (max_ramsar - min_ramsar), 10)) %>% 
+  mutate(normalized_ramsar = case_when(     # for Southern region
+    normalized_ramsar == "NaN" ~ 0
+  ))
 ```
 
 ## Merge Response Index Indicators
@@ -855,7 +868,7 @@ response_normalized <- response_normalized %>%
 ## Response Index Export
 
 ```{r}
-write_csv(response_normalized, file = "s_normalized_response.csv")
+write_csv(response_normalized, file = "s_normalized_response_1km.csv")
 ```
 
 # Surf Conservation Index (w and w/o climate)
@@ -902,7 +915,7 @@ sci_normalized <- sci_normalized %>%
 ## Export SCI (w/o climate)
 
 ```{r}
-write_csv(sci_normalized, file = "s_sci_wo_climate.csv")
+write_csv(sci_normalized, file = "s_sci_wo_climate_1km.csv")
 ```
 
 ## Normalize SCI (w/ climate)
@@ -930,7 +943,7 @@ sci_normalized_climate <- sci_normalized_climate %>%
 ## Export SCI (w/ climate)
 
 ```{r}
-write_csv(sci_normalized_climate, file = "s_sci_w_climate.csv")
+write_csv(sci_normalized_climate, file = "s_sci_w_climate_1km.csv")
 ```
 
 
