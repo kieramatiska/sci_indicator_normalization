@@ -1,0 +1,548 @@
+﻿OID_,id,region,zone,name,lat,long,quality,frequency,direction,type,experience,numerical_direction,numerical_frequency,numerical_experience,numerical_quality,state
+196,195,Sul,Rio Grande Do Sul,Hermenegildo,-33.668354,-53.262405,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+197,196,Sul,Rio Grande Do Sul,Navio,-32.290561,-52.258675,3,2,Right and left,Beach-break,All surfers,2,2,1,3,Rio Grande do Sul
+198,197,Sul,Rio Grande Do Sul,Tres Marias,-32.192611,-52.085066,5,2,Right and left,Sand-bar,Pros or kamikaze only...,2,2,0,5,Rio Grande do Sul
+199,198,Sul,Rio Grande Do Sul,Praia do Cassino,-32.178337,-52.142143,3,2,Right and left,Sand-bar,All surfers,2,2,1,3,Rio Grande do Sul
+200,199,Sul,Rio Grande Do Sul,Sao Jose do Norte,-32.008076,-52.01889,3,NA,Right and left,Beach-break,All surfers,2,1,1,3,Rio Grande do Sul
+201,200,Sul,Rio Grande Do Sul,Quintão,-30.410782,-50.292664,3.5,3,Right and left,Sand-bar,Experienced surfers,2,3,0,3.5,Rio Grande do Sul
+513,512,Sul,Rio Grande Do Sul,Salinas,-30.154806,-50.192222,2,2,Right and left,Beach-break,All surfers,2,2,1,2,Rio Grande do Sul
+202,201,Sul,Rio Grande Do Sul,Nova Tramandaí,-30.045257,-50.150034,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+203,202,Sul,Rio Grande Do Sul,Oasis Sul,-30.039823,-50.147266,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+204,203,Sul,Rio Grande Do Sul,Tramandai - Malvina,-30.00549,-50.129156,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio Grande do Sul
+205,204,Sul,Rio Grande Do Sul,Tramandai,-29.993077,-50.125508,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+514,513,Sul,Rio Grande Do Sul,Imbé,-29.961877,-50.111065,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+515,514,Sul,Rio Grande Do Sul,Mariluz,-29.931069,-50.09665,3,3,Right and left,Sand-bar,All surfers,2,3,1,3,Rio Grande do Sul
+206,205,Sul,Rio Grande Do Sul,Rainha do Mar,-29.859478,-50.064569,3.5,5,Right and left,Beach-break,All surfers,2,5,1,3.5,Rio Grande do Sul
+207,206,Sul,Rio Grande Do Sul,Xangri-lá,-29.785982,-50.024636,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+208,207,Sul,Rio Grande Do Sul,Atlântida - Pier,-29.784716,-50.022554,3,3,Right and left,Sand-bar,All surfers,2,3,1,3,Rio Grande do Sul
+209,208,Sul,Rio Grande Do Sul,Capao da Canoa,-29.758677,-50.010967,3,3,Right and left,Sand-bar,All surfers,2,3,1,3,Rio Grande do Sul
+210,209,Sul,Rio Grande Do Sul,Capao Novo,-29.686972,-49.972559,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+516,515,Sul,Rio Grande Do Sul,Arroio Teixeira,-29.645605,-49.945509,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+211,210,Sul,Rio Grande Do Sul,Curumim,-29.625605,-49.935745,3,4,Right and left,Beach-break,Experienced surfers,2,4,0,3,Rio Grande do Sul
+212,211,Sul,Rio Grande Do Sul,Itapeva,-29.372975,-49.78411,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Sul
+213,212,Sul,Rio Grande Do Sul,Guarita,-29.357805,-49.733997,3,2,Right and left,Beach-break,All surfers,2,2,1,3,Rio Grande do Sul
+214,213,Sul,Rio Grande Do Sul,Cal,-29.349421,-49.72985,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio Grande do Sul
+215,214,Sul,Rio Grande Do Sul,Ilha dos Lobos,-29.346877,-49.704412,5,2,Left,Reef-rocky,Pros or kamikaze only...,1,2,0,5,Rio Grande do Sul
+216,215,Sul,Rio Grande Do Sul,Prainha,-29.342435,-49.724497,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Rio Grande do Sul
+217,216,Sul,Rio Grande Do Sul,Saraiva,-29.340396,-49.723241,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Rio Grande do Sul
+218,217,Sul,Rio Grande Do Sul,Molhes,-29.327311,-49.712008,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio Grande do Sul
+219,218,Sul,Rio Grande Do Sul,Passo de Torres,-29.324159,-49.712416,3.5,2,Right and left,Rivermouth,Experienced surfers,2,2,0,3.5,Santa Catarina
+220,219,Sul,Santa Catarina South,Gaivota,-29.164828,-49.582157,3,2,Right and left,Beach-break,Experienced surfers,2,2,0,3,Santa Catarina
+221,220,Sul,Santa Catarina South,Arroio do Silva,-28.943866,-49.385605,3.5,2,Right and left,Beach-break,Experienced surfers,2,2,0,3.5,Santa Catarina
+222,221,Sul,Santa Catarina South,Morro dos Conventos,-28.937256,-49.329643,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+223,222,Sul,Santa Catarina South,Rincão,-28.833847,-49.216003,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Santa Catarina
+224,223,Sul,Santa Catarina South,Jaguaruna,-28.635157,-48.948212,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+225,224,Sul,Santa Catarina South,Camacho,-28.615946,-48.859506,3,2,NA,Beach-break,All surfers,1,2,1,3,Santa Catarina
+226,225,Sul,Santa Catarina South,Cigana,-28.613535,-48.845387,3,3,Right and left,Beach-break,Experienced surfers,2,3,0,3,Santa Catarina
+227,226,Sul,Santa Catarina South,Cardozo,-28.607516,-48.822995,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+228,227,Sul,Santa Catarina South,Cemiterio,-28.604342,-48.811998,5,1,Right,Point-break,Pros or kamikaze only...,1,1,0,5,Santa Catarina
+229,228,Sul,Santa Catarina South,Prainha do Farol,-28.600442,-48.816655,3,1,Right,Beach-break,All surfers,1,1,1,3,Santa Catarina
+1,0,Sul,NA,Cardoso,-28.58545,-48.79827,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+230,229,Sul,Santa Catarina South,Ipoa,-28.536689,-48.765521,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Santa Catarina
+231,230,Sul,Santa Catarina South,Teresa,-28.524982,-48.762453,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+232,231,Sul,Santa Catarina South,Praia de Cima,-28.49735,-48.748752,3.5,2,Right and left,Beach-break,All surfers,2,2,1,3.5,Santa Catarina
+233,232,Sul,Santa Catarina South,Laguna,-28.473973,-48.762646,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+2,1,Sul,NA,Ravena,-28.45478,-48.75134,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+234,233,Sul,Santa Catarina South,Cavalinho,-28.419032,-48.744278,3.5,3,Right,Point-break,Experienced surfers,1,3,0,3.5,Santa Catarina
+235,234,Sul,Santa Catarina South,Itapirubá,-28.342309,-48.7078,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+236,235,Sul,Santa Catarina South,Itapirubá Norte,-28.336776,-48.70471,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+237,236,Sul,Santa Catarina South,Castelinho,-28.256232,-48.672695,4,4,Right and left,Beach-break,Experienced surfers,2,4,0,4,Santa Catarina
+3,2,Sul,NA,Praia da Vila Imbituba,-28.25247222,-48.66185,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+238,237,Sul,Santa Catarina South,Praia da Vila,-28.241149,-48.653877,4,4,Right and left,Sand-bar,Experienced surfers,2,4,0,4,Santa Catarina
+4,3,Sul,NA,Praia do Porto Imbituba,-28.220199,-48.663214,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+239,238,Sul,Santa Catarina South,Ribanceira,-28.191742,-48.661344,3,2,Right and left,Sand-bar,All surfers,2,2,1,3,Santa Catarina
+517,516,Sul,Santa Catarina South,Ilha do Batuta,-28.153828,-48.639898,3.5,1,Right,Reef-rocky,Pros or kamikaze only...,1,1,0,3.5,Santa Catarina
+240,239,Sul,Santa Catarina South,Ibiraquera,-28.153732,-48.645895,4,4,Right and left,Point-break,Experienced surfers,2,4,0,4,Santa Catarina
+241,240,Sul,Santa Catarina South,Rosa Sul,-28.135402,-48.642692,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+242,241,Sul,Santa Catarina South,Rosa Norte,-28.124375,-48.637676,3.5,2,Right and left,Beach-break,All surfers,2,2,1,3.5,Santa Catarina
+243,242,Sul,Santa Catarina South,Vermelha,-28.114458,-48.635573,3.5,2,Left,Beach-break,Experienced surfers,1,2,0,3.5,Santa Catarina
+244,243,Sul,Santa Catarina South,Ouvidor,-28.105449,-48.635273,2,2,Right and left,Beach-break,Beginners wave,2,2,0,2,Santa Catarina
+245,244,Sul,Santa Catarina South,Barrinha,-28.085384,-48.630896,3.5,3,Right and left,Beach-break,NA,2,3,1,3.5,Santa Catarina
+246,245,Sul,Santa Catarina South,Ferrugem,-28.077736,-48.626604,3.5,4,Right and left,Sand-bar,All surfers,2,4,1,3.5,Santa Catarina
+247,246,Sul,Santa Catarina South,Praia do Silveira,-28.039069,-48.606863,4,4,Right,Point-break,Pros or kamikaze only...,1,4,0,4,Santa Catarina
+248,247,Sul,Santa Catarina South,Garopaba Centro,-28.021577,-48.619448,3,2,Right and left,Beach-break,All surfers,2,2,1,3,Santa Catarina
+249,248,Sul,Santa Catarina South,Siriu,-27.976249,-48.627999,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+250,249,Sul,Santa Catarina South,Gamboa,-27.958927,-48.624662,3.5,1,Right and left,Beach-break,All surfers,2,1,1,3.5,Santa Catarina
+251,250,Sul,Santa Catarina South,Guarda do embau,-27.905541,-48.586779,4,3,Left,Rivermouth,Experienced surfers,1,3,0,4,Santa Catarina
+252,251,Sul,Santa Catarina South,Costão da Pinheira,-27.881077,-48.586543,3.5,1,Right,Point-break,Experienced surfers,1,1,0,3.5,Santa Catarina
+5,4,Sul,NA,Ponta da Pinheira,-27.878141,-48.576442,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+253,252,Sul,Florianopolis,Naufragados,-27.83474,-48.566748,5,3,Right,Beach-break,Pros or kamikaze only...,1,3,0,5,Santa Catarina
+254,253,Sul,Santa Catarina South,Solidao - Caladinho,-27.793519,-48.533456,3.5,3,Right,Point-break,Experienced surfers,1,3,0,3.5,Santa Catarina
+255,254,Sul,Santa Catarina South,Praia dos Açores,-27.784758,-48.525989,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+256,255,Sul,Florianopolis,Lagoinha do Leste,-27.773576,-48.486528,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+257,256,Sul,Florianopolis,Matadeiro,-27.75514,-48.498523,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Santa Catarina
+258,257,Sul,Florianopolis,Armação,-27.741619,-48.508115,3,2,Right and left,Beach-break,All surfers,2,2,1,3,Santa Catarina
+259,258,Sul,Florianopolis,Caldeirao,-27.72369,-48.504596,3.5,3,Left,Beach-break,Experienced surfers,1,3,0,3.5,Santa Catarina
+260,259,Sul,Florianopolis,Morro das Pedras,-27.715522,-48.502257,3,4,Right and left,Sand-bar,Experienced surfers,2,4,0,3,Santa Catarina
+261,260,Sul,Florianopolis,Campeche Rights,-27.693864,-48.482687,4,2,Right,Sand-bar,Experienced surfers,1,2,0,4,Santa Catarina
+262,261,Sul,Florianopolis,Riozinho,-27.685523,-48.479598,5,3,Right and left,Beach-break,Experienced surfers,2,3,0,5,Santa Catarina
+263,262,Sul,Florianopolis,Joaquina,-27.629589,-48.448768,4,4,Left,Sand-bar,Experienced surfers,1,4,0,4,Santa Catarina
+264,263,Sul,Florianopolis,Praia Mole,-27.602476,-48.432584,3.5,3,Right and left,Sand-bar,All surfers,2,3,1,3.5,Santa Catarina
+265,264,Sul,Florianopolis,Galheta,-27.593482,-48.425224,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+266,265,Sul,Florianopolis,Barra da Lagoa,-27.572818,-48.424376,3,3,Right and left,Beach-break,Beginners wave,2,3,0,3,Santa Catarina
+267,266,Sul,Florianopolis,Mocambique,-27.525323,-48.410568,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+6,5,Sul,NA,Mocambique,-27.51835,-48.39218333,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+268,267,Sul,Santa Catarina South,Ponta das Aranhas,-27.4821,-48.380892,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+269,268,Sul,Florianopolis,Santinho,-27.45794,-48.372631,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Santa Catarina
+270,269,Sul,Florianopolis,Canasvieiras,-27.430966,-48.479662,3.5,1,Right,Sand-bar,All surfers,1,1,1,3.5,Santa Catarina
+271,270,Sul,Florianopolis,Praia do Forte,-27.430747,-48.519659,3.5,1,Right,Point-break,All surfers,1,1,1,3.5,Santa Catarina
+272,271,Sul,Florianopolis,Ingleses,-27.429833,-48.39057,3,2,Right and left,Beach-break,All surfers,2,2,1,3,Santa Catarina
+273,272,Sul,Florianopolis,Praia Brava,-27.400804,-48.413401,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Santa Catarina
+274,273,Sul,Santa Catarina South,Praia Brava,-27.396441,-48.41413,3,4,Right and left,Sand-bar,All surfers,2,4,1,3,Santa Catarina
+7,6,Sul,NA,Ponta das Canas,-27.394819,-48.435709,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+275,274,Sul,Florianopolis,Lambe lambe,-27.387601,-48.433185,4,1,Right,Point-break,Experienced surfers,1,1,0,4,Santa Catarina
+276,275,Sul,Florianopolis,Ponta Do Rapa,-27.380837,-48.420525,4,1,Right,Reef-rocky,Pros or kamikaze only...,1,1,0,4,Santa Catarina
+277,276,Sul,Santa Catarina North,Tingua,-27.368166,-48.532501,3.5,1,Left,Beach-break,Experienced surfers,1,1,0,3.5,Santa Catarina
+278,277,Sul,Santa Catarina North,Palmas,-27.321984,-48.535452,3.5,2,Right and left,Beach-break,Experienced surfers,2,2,0,3.5,Santa Catarina
+279,278,Sul,Santa Catarina North,Mariscal,-27.166504,-48.494833,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+280,279,Sul,Santa Catarina North,Quatro Ilhas,-27.156195,-48.482924,3.5,3,Right,Point-break,Experienced surfers,1,3,0,3.5,Santa Catarina
+281,280,Sul,Santa Catarina North,Bombinhas,-27.148367,-48.489532,2,2,Right and left,Beach-break,Beginners wave,2,2,0,2,Santa Catarina
+282,281,Sul,Santa Catarina North,Bombas,-27.140118,-48.506784,3,2,Right and left,Beach-break,All surfers,2,2,1,3,Santa Catarina
+283,282,Sul,Santa Catarina North,Meia Praia,-27.104825,-48.609009,3,3,Right and left,Sand-bar,All surfers,2,3,1,3,Santa Catarina
+284,283,Sul,Santa Catarina North,Itapema,-27.095541,-48.609738,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+285,284,Sul,Santa Catarina North,Ponta do Cabeço,-27.093436,-48.60196,4,2,Left,Reef-rocky,Experienced surfers,1,2,0,4,Santa Catarina
+286,285,Sul,Santa Catarina North,Mocó,-27.080182,-48.588452,4,2,Left,Reef-rocky,Experienced surfers,1,2,0,4,Santa Catarina
+287,286,Sul,Santa Catarina North,Estaleirinho,-27.049112,-48.586779,3,4,Right and left,Beach-break,Pros or kamikaze only...,2,4,0,3,Santa Catarina
+288,287,Sul,Santa Catarina North,Estaleiro (reef),-27.02505,-48.574065,3.5,2,Left,Reef-rocky,Experienced surfers,1,2,0,3.5,Santa Catarina
+289,288,Sul,Santa Catarina North,Balneário Camboriú,-26.987712,-48.629951,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+290,289,Sul,Santa Catarina North,Parcel,-26.976469,-48.623171,4,1,Right and left,Reef-rocky,Pros or kamikaze only...,2,1,0,4,Santa Catarina
+291,290,Sul,Santa Catarina North,Praia dos Amores,-26.957191,-48.629222,3,2,Right and left,Beach-break,Experienced surfers,2,2,0,3,Santa Catarina
+292,291,Sul,Santa Catarina North,Praia Brava,-26.94166,-48.628235,3,3,Right and left,Beach-break,Experienced surfers,2,3,0,3,Santa Catarina
+293,292,Sul,Santa Catarina North,Morcego,-26.931052,-48.625215,3.5,NA,Left,Point-break,Pros or kamikaze only...,1,1,0,3.5,Santa Catarina
+294,293,Sul,Santa Catarina North,Atalaia,-26.915163,-48.639361,3.5,2,Left,breakwater/jetty,All surfers,1,2,1,3.5,Santa Catarina
+295,294,Sul,Santa Catarina North,Pracinha,-26.901884,-48.641614,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+296,295,Sul,Santa Catarina North,Navegantes,-26.897578,-48.638706,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+297,296,Sul,Santa Catarina North,Garrincha,-26.858703,-48.634619,3,2,Right and left,Sand-bar,Experienced surfers,2,2,0,3,Santa Catarina
+298,297,Sul,Santa Catarina North,Gravatá (1 e 2),-26.831883,-48.621969,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+299,298,Sul,Santa Catarina North,Gravatá,-26.83173,-48.623428,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+300,299,Sul,Santa Catarina North,Quilombo,-26.766993,-48.639414,3.5,2,Left,Beach-break,All surfers,1,2,1,3.5,Santa Catarina
+301,300,Sul,Santa Catarina North,Quilombo (reef),-26.765743,-48.640144,3.5,2,Right,Point-break,All surfers,1,2,1,3.5,Santa Catarina
+302,301,Sul,Santa Catarina North,molhe de Piçarras,-26.757026,-48.673435,3,1,Right,Point-break,All surfers,1,1,1,3,Santa Catarina
+303,302,Sul,Santa Catarina North,Laje do Jacques,-26.726916,-48.67306,4,2,Right and left,Reef-rocky,Experienced surfers,2,2,0,4,Santa Catarina
+304,303,Sul,Santa Catarina North,Syphodys,-26.701371,-48.680248,3,2,Right and left,Beach-break,Experienced surfers,2,2,0,3,Santa Catarina
+305,304,Sul,Santa Catarina North,ilha do grants,-26.696032,-48.674991,3.5,1,Left,Reef-rocky,Pros or kamikaze only...,1,1,0,3.5,Santa Catarina
+306,305,Sul,Santa Catarina North,barra de Itajuba,-26.691345,-48.684164,3,1,Right,Point-break,All surfers,1,1,1,3,Santa Catarina
+307,306,Sul,Santa Catarina North,Praia do Sol,-26.679962,-48.688166,2,3,Right and left,Point-break,All surfers,2,3,1,2,Santa Catarina
+308,307,Sul,Santa Catarina North,Praia do Tabuleiro,-26.643014,-48.682051,3,2,Right and left,Beach-break,Beginners wave,2,2,0,3,Santa Catarina
+309,308,Sul,Santa Catarina North,Canoas,-26.639403,-48.682501,2,3,Right and left,Beach-break,Beginners wave,2,3,0,2,Santa Catarina
+310,309,Sul,Santa Catarina North,Barrinha,-26.623905,-48.679991,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Santa Catarina
+311,310,Sul,Santa Catarina North,Foz do Itapocu,-26.580708,-48.663769,3,3,Left,breakwater/jetty,All surfers,1,3,1,3,Santa Catarina
+312,311,Sul,Santa Catarina South,Foz do Itapocu,-26.566919,-48.657525,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+313,312,Sul,Santa Catarina North,Praia do Bispo,-26.469248,-48.607056,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Santa Catarina
+314,313,Sul,Santa Catarina North,Picama,-26.458087,-48.596874,3,3,Right and left,Sand-bar,Experienced surfers,2,3,0,3,Santa Catarina
+315,314,Sul,Santa Catarina North,"Praia Grande, São Francisco do Sul",-26.23588,-48.5026,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+316,315,Sul,Santa Catarina South,Praia da Saudade,-26.230606,-48.498888,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Santa Catarina
+317,316,Sul,Santa Catarina South,Sao Francisco do Sul,-26.219558,-48.502107,3,1,Right,Sand-bar,Beginners wave,1,1,0,3,Santa Catarina
+318,317,Sul,Santa Catarina South,Píer da Petrobras,-26.217387,-48.500519,3.5,2,Right,Point-break,All surfers,1,2,1,3.5,Santa Catarina
+8,7,Sul,NA,Itagua&ccedil;u,-26.184728,-48.526328,NA,NA,NA,NA,NA,1,1,1,1,Santa Catarina
+319,318,Sul,Santa Catarina North,Sumidouro,-26.169526,-48.552479,3.5,1,Right and left,Beach-break,Experienced surfers,2,1,0,3.5,Santa Catarina
+320,319,Sul,Santa Catarina North,Praia do Forte,-26.163306,-48.53322,3.5,1,Right,Point-break,All surfers,1,1,1,3.5,Santa Catarina
+321,320,Sul,Santa Catarina North,Terceira Pedra,-26.067009,-48.607646,3.5,3,Right,Point-break,All surfers,1,3,1,3.5,Santa Catarina
+322,321,Sul,Santa Catarina North,Barra do sai mirim,-26.007832,-48.604061,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Santa Catarina
+323,322,Sul,Parana,Barrinha,-25.976699,-48.590727,3,2,Right,Beach-break,Experienced surfers,1,2,0,3,Paraná
+324,323,Sul,Parana,Guaratuba Praia Brava,-25.897758,-48.564291,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Paraná
+325,324,Sul,Parana,Praia Brava Guaratuba,-25.892817,-48.561459,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Paraná
+326,325,Sul,Parana,Direitas de Guaratuba,-25.890046,-48.560289,4,2,Right,Point-break,Experienced surfers,1,2,0,4,Paraná
+9,8,Sul,NA,Caioba,-25.838,-48.535,NA,NA,NA,NA,NA,1,1,1,1,Paraná
+518,517,Sul,Parana,Brava de Matinhos,-25.834492,-48.535465,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Paraná
+327,326,Sul,Parana,Pico de Matinhos,-25.817818,-48.529701,3.5,3,Right,Point-break,Experienced surfers,1,3,0,3.5,Paraná
+519,518,Sul,Parana,Pontal do Sul,-25.579974,-48.347616,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Paraná
+328,327,Sul,Parana,Ilha do Mel,-25.548327,-48.295383,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Paraná
+329,328,Sul,Parana,Farolete,-25.515314,-48.286114,3.5,4,Left,Point-break,Experienced surfers,1,4,0,3.5,Paraná
+10,9,Sudeste,NA,Ilha Comprida,-24.784,-47.595,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+11,10,Sudeste,NA,Iguape,-24.753211,-47.542059,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+520,519,Sudeste,Sao Paolo South,Desertinha,-24.43082,-47.048065,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,São Paulo
+330,329,Sudeste,Sao Paolo South,"Guarau, Peruibe SP",-24.369537,-47.0117,3,4,Right and left,Beach-break,All surfers,2,4,1,3,São Paulo
+12,11,Sudeste,NA,Peruibe,-24.324427,-46.978886,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+521,520,Sudeste,Sao Paolo South,Cibratel,-24.208026,-46.827104,3.5,NA,Right and left,Beach-break,All surfers,2,1,1,3.5,São Paulo
+13,12,Sudeste,NA,Praia dos Pescadores,-24.194862,-46.798882,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+14,13,Sudeste,NA,Itanhaem,-24.151427,-46.707858,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+331,330,Sudeste,Sao Paolo South,Pier de Mongaguá,-24.095718,-46.618552,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+15,14,Sudeste,NA,Praia Grande,-24.028497,-46.43831,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+16,15,Sudeste,NA,Praia do Forte dos Andradas,-24.028369,-46.288159,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+17,16,Sudeste,NA,Praia do Forte dos Andradas,-24.02566,-46.28546,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+18,17,Sudeste,NA,Praia da Ponta Grossa,-24.024816,-46.314497,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+19,18,Sudeste,NA,Itaipu,-24.019545,-46.386796,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+20,19,Sudeste,NA,Guaiuba,-24.017082,-46.295202,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+21,20,Sudeste,NA,Santos,-24.015,-46.354,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+333,332,Sudeste,Sao Paolo South,Tombo,-24.01499,-46.272697,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+334,333,Sudeste,Sao Paulo North,Astúrias,-24.007738,-46.266475,3,2,Right and left,Beach-break,All surfers,2,2,1,3,São Paulo
+335,334,Sudeste,Sao Paolo South,Pitangueiras Beach,-24.000936,-46.260767,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,São Paulo
+22,21,Sudeste,NA,Morro do Maluf,-23.99756,-46.251594,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+23,22,Sudeste,NA,Praia da Enseada,-23.990651,-46.209406,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+336,335,Sudeste,Sao Paulo North,porta do sol,-23.981332,-46.373763,3.5,2,Right and left,Point-break,Experienced surfers,2,2,0,3.5,São Paulo
+24,23,Sudeste,NA,Embare,-23.980866,-46.317684,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+25,24,Sudeste,NA,Gonzaga,-23.974027,-46.330098,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+337,336,Sudeste,Sao Paolo South,Itarare,-23.972333,-46.362004,3,3,Right and left,Beach-break,All surfers,2,3,1,3,São Paulo
+338,337,Sudeste,Sao Paolo South,Santos,-23.971744,-46.347209,3,3,Right and left,Beach-break,All surfers,2,3,1,3,São Paulo
+339,338,Sudeste,Sao Paolo South,"Praia de Pernambuco (Pernambuco Beach, in Guaruja)",-23.963431,-46.184034,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+26,25,Sudeste,NA,Pereque,-23.927583,-46.178826,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+340,339,Sudeste,Sao Paulo North,Bonete,-23.917383,-45.347786,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,São Paulo
+341,340,Sudeste,Sao Paulo North,Sao Pedro,-23.908522,-46.166581,4,3,Right and left,Sand-bar,All surfers,2,3,1,4,São Paulo
+342,341,Sudeste,Sao Paolo South,Praia de Iporanga,-23.902192,-46.152725,3.5,2,Left,Reef-rocky,Pros or kamikaze only...,1,2,0,3.5,São Paulo
+343,342,Sudeste,Sao Paolo South,Taguaíba,-23.896726,-46.151354,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+27,26,Sudeste,NA,Praia Preta,-23.8747,-46.138959,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+522,521,Sudeste,Sao Paulo North,Montão do trigo,-23.868587,-45.776427,4,2,Right,Point-break,Experienced surfers,1,2,0,4,São Paulo
+344,343,Sudeste,Sao Paolo South,praia branca,-23.863428,-46.130796,3.5,3,Left,Beach-break,All surfers,1,3,1,3.5,São Paulo
+345,344,Sudeste,Sao Paulo North,Castelhanos,-23.857582,-45.288906,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,São Paulo
+28,27,Sudeste,NA,Praia da Bertioga,-23.846986,-46.126968,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+346,345,Sudeste,Sao Paulo North,Enseada - Bertioga,-23.83986,-46.123674,3,4,Right and left,Beach-break,All surfers,2,4,1,3,São Paulo
+347,346,Sudeste,Sao Paulo North,Santiago,-23.819898,-45.54142,3.5,2,Right and left,Beach-break,Experienced surfers,2,2,0,3.5,São Paulo
+348,347,Sudeste,Sao Paulo North,Guaecá,-23.819123,-45.4662,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,São Paulo
+523,522,Sudeste,Sao Paulo North,Indaiá - Bertioga,-23.814194,-46.059997,3,1,Right and left,Beach-break,All surfers,2,1,1,3,São Paulo
+349,348,Sudeste,Sao Paulo North,Riviera de São Lourenço,-23.808669,-46.022072,3,3,Right and left,Beach-break,All surfers,2,3,1,3,São Paulo
+350,349,Sudeste,Sao Paulo North,Paúba,-23.802819,-45.553168,4,2,Right and left,Beach-break,Pros or kamikaze only...,2,2,0,4,São Paulo
+524,523,Sudeste,Sao Paulo North,Praia Brava,-23.799345,-45.612668,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,São Paulo
+351,350,Sudeste,Sao Paulo North,Itaguaré,-23.796026,-45.991173,3,4,Right and left,Beach-break,All surfers,2,4,1,3,São Paulo
+29,28,Sudeste,NA,Maresias,-23.79369326,-45.55976434,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+30,29,Sudeste,NA,Canto de Moreira,-23.793056,-45.587394,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+352,351,Sudeste,Sao Paulo North,Maresias,-23.79153,-45.573456,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+31,30,Sudeste,NA,Itaguere,-23.786995,-45.971372,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+32,31,Sudeste,NA,Boicucanga,-23.784431,-45.631355,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+353,352,Sudeste,Sao Paulo North,Camburi,-23.778826,-45.649137,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+354,353,Sudeste,Sao Paulo North,Baleia,-23.7776,-45.670217,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,São Paulo
+33,32,Sudeste,NA,Praia de Baleia,-23.775839,-45.683986,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+34,33,Sudeste,NA,Barra do Sahy,-23.774385,-45.69757,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+35,34,Sudeste,NA,Praia Preta,-23.77301,-45.715815,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+355,354,Sudeste,Sao Paulo North,Guaratuba,-23.772306,-45.922251,3,3,Right and left,Beach-break,Experienced surfers,2,3,0,3,São Paulo
+36,35,Sudeste,NA,Bananas Point,-23.771605,-45.70621,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+37,36,Sudeste,NA,Praia do Juquei,-23.768115,-45.745453,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+356,355,Sudeste,Sao Paulo North,Juquehy,-23.768065,-45.738144,3,4,Right and left,Beach-break,All surfers,2,4,1,3,São Paulo
+525,524,Sudeste,Sao Paulo North,Jureia,-23.7662,-45.790182,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+38,37,Sudeste,NA,Barra do Una,-23.763818,-45.76278,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+526,525,Sudeste,Sao Paulo North,Barra do Una - Meio,-23.762623,-45.768425,3,4,Right and left,Beach-break,All surfers,2,4,1,3,São Paulo
+39,38,Sudeste,NA,Praia da Boracéia,-23.758373,-45.828777,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+357,356,Sudeste,Sao Paulo North,Massaguaçu,-23.590773,-45.334611,3.5,2,Right and left,Beach-break,Experienced surfers,2,2,0,3.5,São Paulo
+358,357,Sudeste,Sao Paulo North,Simão,-23.585149,-45.238287,3.5,3,Right,Beach-break,Experienced surfers,1,3,0,3.5,São Paulo
+359,358,Sudeste,Sao Paulo North,Praia do sape,-23.531963,-45.222301,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,São Paulo
+360,359,Sudeste,Sao Paulo North,Lagoinha,-23.521339,-45.205221,3.5,2,Right and left,Beach-break,Beginners wave,2,2,0,3.5,São Paulo
+361,360,Sudeste,Sao Paulo North,Sununga,-23.511344,-45.129433,3.5,3,Right,Beach-break,Pros or kamikaze only...,1,3,0,3.5,São Paulo
+40,39,Sudeste,NA,Praia Dura,-23.496058,-45.171014,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+527,526,Sudeste,Sao Paulo North,Enseada - Ubatuba,-23.494012,-45.090815,3,2,Right,Beach-break,All surfers,1,2,1,3,São Paulo
+362,361,Sudeste,Sao Paulo North,Toninhas,-23.484739,-45.073771,3,2,Right and left,Beach-break,All surfers,2,2,1,3,São Paulo
+363,362,Sudeste,Sao Paulo North,Praia Grande (PG),-23.478835,-45.067291,3,3,Right and left,Beach-break,All surfers,2,3,1,3,São Paulo
+364,363,Sudeste,Sao Paulo North,Praia Grande North,-23.467498,-45.062056,3,3,Left,Beach-break,All surfers,1,3,1,3,São Paulo
+365,364,Sudeste,Sao Paulo North,Vermelha do Centro,-23.463128,-45.049353,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+366,365,Sudeste,Sao Paulo North,Patiero,-23.456318,-45.021243,3.5,2,NA,Reef-rocky,Experienced surfers,1,2,0,3.5,São Paulo
+41,40,Sudeste,NA,Pereque-Acu,-23.424565,-45.062697,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+367,366,Sudeste,Sao Paulo North,Vermelha do Norte,-23.416982,-45.035877,3,3,Right and left,Beach-break,All surfers,2,3,1,3,São Paulo
+42,41,Sudeste,NA,Itamambuca,-23.406683,-45.008741,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+368,367,Sudeste,Sao Paulo North,Itamambuca,-23.402332,-45.001459,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,São Paulo
+369,368,Sudeste,Sao Paulo North,Praia do Felix,-23.389334,-44.972405,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,São Paulo
+370,369,Sudeste,Sao Paulo North,Brava do Camburi,-23.370963,-44.799859,3,3,Right and left,Beach-break,Experienced surfers,2,3,0,3,São Paulo
+43,42,Sudeste,NA,Praia da Fazenda,-23.361352,-44.859766,NA,NA,NA,NA,NA,1,1,1,1,São Paulo
+371,370,Sudeste,Rio De Janeiro City,Ponta do Cepílio,-23.34399,-44.711781,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Rio de Janeiro
+372,371,Sudeste,Rio De Janeiro City,Laranjeiras,-23.33605,-44.674294,3.5,3,Right,Beach-break,All surfers,1,3,1,3.5,Rio de Janeiro
+373,372,Sudeste,Rio De Janeiro City,Martim de Sa,-23.304049,-44.553487,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio de Janeiro
+528,527,Sudeste,Rio De Janeiro City,Presídio,-23.18531,-44.188924,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio de Janeiro
+44,43,Sudeste,NA,Aventureiro,-23.184406,-44.315804,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+374,373,Sudeste,Rio De Janeiro Norte,Aventureiro,-23.180132,-44.304428,3.5,4,Left,Point-break,All surfers,1,4,1,3.5,Rio de Janeiro
+45,44,Sudeste,NA,Praia do Leste,-23.179746,-44.274094,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+46,45,Sudeste,NA,Praia do Sul,-23.178656,-44.296757,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+375,374,Sudeste,Rio De Janeiro City,Lopes Mendes,-23.171453,-44.12899,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Rio de Janeiro
+47,46,Sudeste,NA,Praia do Meio,-23.066913,-43.549809,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+376,375,Sudeste,Rio De Janeiro City,Barra de Guaratiba,-23.064018,-43.569374,4,2,Left,Rivermouth,Experienced surfers,1,2,0,4,Rio de Janeiro
+48,47,Sudeste,NA,Restinga a Marambaia,-23.061833,-43.591673,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+529,528,Sudeste,Rio De Janeiro City,Inferno,-23.059582,-43.545651,3.5,3,Left,Beach-break,Experienced surfers,1,3,0,3.5,Rio de Janeiro
+377,376,Sudeste,Rio De Janeiro City,Laje do Dramin,-23.055999,-44.366816,3.5,2,Left,Reef-rocky,Pros or kamikaze only...,1,2,0,3.5,Rio de Janeiro
+49,48,Sudeste,NA,Grumari,-23.050469,-43.533908,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+378,377,Sudeste,Rio De Janeiro City,Grumari,-23.049131,-43.526673,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Rio de Janeiro
+379,378,Sudeste,Rio De Janeiro City,Prainha,-23.040759,-43.505259,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+530,529,Sudeste,Rio De Janeiro City,Macumba-secreto,-23.037946,-43.495793,3,NA,Right and left,NA,All surfers,2,1,1,3,Rio de Janeiro
+380,379,Sudeste,Rio De Janeiro City,CcB,-23.034577,-43.488738,3.5,4,Right and left,Sand-bar,All surfers,2,4,1,3.5,Rio de Janeiro
+381,380,Sudeste,Rio De Janeiro City,Macumba (Curvão),-23.034085,-43.472729,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio de Janeiro
+382,381,Sudeste,Rio De Janeiro City,Farorinha,-23.033829,-43.470989,3,2,Left,Beach-break,All surfers,1,2,1,3,Rio de Janeiro
+383,382,Sudeste,Rio De Janeiro City,Canto do recreio,-23.033295,-43.46743,3.5,NA,Right and left,Beach-break,All surfers,2,1,1,3.5,Rio de Janeiro
+384,383,Sudeste,Rio De Janeiro City,Praia da Macumba,-23.032031,-43.475604,4,4,Right and left,Beach-break,All surfers,2,4,1,4,Rio de Janeiro
+385,384,Sudeste,Rio De Janeiro City,posto 11 (Atlântico sul),-23.03,-43.466443,3.5,3,Right and left,Sand-bar,All surfers,2,3,1,3.5,Rio de Janeiro
+386,385,Sudeste,Rio De Janeiro City,Mambucaba,-23.029266,-44.519992,3.5,2,Right and left,Sand-bar,All surfers,2,2,1,3.5,Rio de Janeiro
+387,386,Sudeste,Rio De Janeiro City,Posto 10 - Recreio,-23.026218,-43.45804,3.5,2,Right and left,Beach-break,Experienced surfers,2,2,0,3.5,Rio de Janeiro
+388,387,Sudeste,Rio De Janeiro City,Recreio Posto 9,-23.023639,-43.448229,3,3,Right and left,Beach-break,Experienced surfers,2,3,0,3,Rio de Janeiro
+50,49,Sudeste,NA,Reserva,-23.022717,-43.440916,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+51,50,Sudeste,NA,Barra da Tijuca,-23.02034012,-43.37247849,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+389,388,Sudeste,Rio De Janeiro City,Lage Postinho,-23.015482,-43.306539,3.5,2,Right and left,Reef-rocky,Experienced surfers,2,2,0,3.5,Rio de Janeiro
+390,389,Sudeste,Rio De Janeiro City,Joatinga,-23.015205,-43.29109,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+52,51,Sudeste,NA,Barra da Tijuca,-23.01488611,-43.37222222,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+391,390,Sudeste,Rio De Janeiro City,Tropical (posto 1),-23.014825,-43.301845,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Rio de Janeiro
+531,530,Sudeste,Rio De Janeiro City,Posto 4,-23.012323,-43.327707,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+532,531,Sudeste,Rio De Janeiro City,Vala do Mauri,-23.0108661,-43.350477,3.5,3,Right,Beach-break,All surfers,1,3,1,3.5,Rio de Janeiro
+392,391,Sudeste,Rio De Janeiro City,Barra da Tijuca - Posto 8,-23.010857,-43.361874,3.5,4,Right and left,Sand-bar,All surfers,2,4,1,3.5,Rio de Janeiro
+533,532,Sudeste,Rio De Janeiro City,Praia Brava de Angra dos Reis,-23.007446,-44.480341,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio de Janeiro
+53,52,Sudeste,NA,Sao Conrado,-23.000618,-43.264187,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+393,392,Sudeste,Rio De Janeiro City,Sao Conrado,-22.9998,-43.254354,3.5,NA,Right and left,Beach-break,Experienced surfers,2,1,0,3.5,Rio de Janeiro
+394,393,Sudeste,Rio De Janeiro City,Laje do sheraton,-22.995671,-43.231244,4,1,Right and left,Reef-rocky,Pros or kamikaze only...,2,1,0,4,Rio de Janeiro
+534,533,Sudeste,Rio De Janeiro City,Castelinho,-22.991389,-43.195435,3.5,2,Right and left,Point-break,Experienced surfers,2,2,0,3.5,Rio de Janeiro
+395,394,Sudeste,Rio De Janeiro City,Pontão do leblon,-22.989963,-43.22648,3.5,3,Right,Point-break,Experienced surfers,1,3,0,3.5,Rio de Janeiro
+396,395,Sudeste,Rio De Janeiro City,Arpoador,-22.989913,-43.191655,3.5,NA,Right and left,Beach-break,All surfers,2,1,1,3.5,Rio de Janeiro
+397,396,Sudeste,Rio De Janeiro City,Praia do Diabo,-22.988817,-43.189144,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+398,397,Sudeste,Rio De Janeiro City,Leblon,-22.987948,-43.219528,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Rio de Janeiro
+399,398,Sudeste,Rio De Janeiro City,Ipanema,-22.987553,-43.205409,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio de Janeiro
+400,399,Sudeste,Rio De Janeiro City,Shore break expresso escorpiao,-22.986037,-43.182017,3.5,2,Right,Reef-rocky,Pros or kamikaze only...,1,2,0,3.5,Rio de Janeiro
+401,400,Sudeste,Rio De Janeiro City,Forte de Copacabana,-22.985103,-43.185539,3,2,Right,Point-break,All surfers,1,2,1,3,Rio de Janeiro
+402,401,Sudeste,Rio De Janeiro City,Posto 5 - Copacabana,-22.983918,-43.188457,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Rio de Janeiro
+403,402,Sudeste,Rio De Janeiro Norte,Praia Brava - Pontal do Atalaia,-22.98297,-42.021675,3.5,2,Left,Point-break,Experienced surfers,1,2,0,3.5,Rio de Janeiro
+404,403,Sudeste,Rio De Janeiro City,Shock,-22.975816,-43.040493,5,2,Right,Reef-rocky,Pros or kamikaze only...,1,2,0,5,Rio de Janeiro
+405,404,Sudeste,Rio De Janeiro Norte,Praia Grande - Arraial do Cabo,-22.975325,-42.033842,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio de Janeiro
+54,53,Sudeste,NA,Bambui,-22.975255,-42.91657,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+406,405,Sudeste,Rio De Janeiro City,Itacoatiara,-22.972618,-43.033447,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Rio de Janeiro
+55,54,Sudeste,NA,Itaipuacu,-22.971149,-43.01126,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+407,406,Sudeste,Rio De Janeiro City,Canal de Camboinhas,-22.968074,-43.048167,2,3,Right and left,breakwater/jetty,Beginners wave,2,3,0,2,Rio de Janeiro
+408,407,Sudeste,Rio De Janeiro City,Camboinhas,-22.966612,-43.052588,3.5,2,Right and left,Sand-bar,Experienced surfers,2,2,0,3.5,Rio de Janeiro
+409,408,Sudeste,Rio De Janeiro City,Leme,-22.963639,-43.166667,3,3,Left,Sand-bar,All surfers,1,3,1,3,Rio de Janeiro
+56,55,Sudeste,NA,Barra de Marica,-22.9621,-42.809487,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+57,56,Sudeste,NA,Camboinhas,-22.961998,-43.059923,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+535,534,Sudeste,Rio De Janeiro City,Sossego,-22.958317,-43.070285,NA,2,Right,Beach-break,NA,1,2,1,1,Rio de Janeiro
+410,409,Sudeste,Rio De Janeiro Norte,Ponta Negra - Maricá - RJ,-22.957751,-42.696787,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio de Janeiro
+58,57,Sudeste,NA,Pirantininga,-22.955045,-43.088654,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+411,410,Sudeste,Rio De Janeiro City,Piratininga,-22.954699,-43.095675,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio de Janeiro
+412,411,Sudeste,Rio De Janeiro Norte,Massambaba,-22.94717,-42.166815,3.5,4,Right and left,Sand-bar,Experienced surfers,2,4,0,3.5,Rio de Janeiro
+59,58,Sudeste,NA,Jacone,-22.946556,-42.679789,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+60,59,Sudeste,NA,Figueira,-22.944992,-42.188828,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+61,60,Sudeste,NA,Praia do Fora,-22.944794,-43.155304,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+413,412,Sudeste,Rio De Janeiro Norte,Lage de fora,-22.944345,-42.468188,4,2,Left,Reef-rocky,Don't know,1,2,1,4,Rio de Janeiro
+414,413,Sudeste,Rio De Janeiro Norte,Arraial do Cabo,-22.942665,-42.030054,3.5,2,Left,Reef-coral,Experienced surfers,1,2,0,3.5,Rio de Janeiro
+415,414,Sudeste,Rio De Janeiro Norte,Itauna,-22.938836,-42.476208,4,4,Right and left,Point-break,All surfers,2,4,1,4,Rio de Janeiro
+416,415,Sudeste,Rio De Janeiro Norte,Backdoor,-22.938421,-42.472313,3,3,Right,Reef-rocky,Experienced surfers,1,3,0,3,Rio de Janeiro
+62,61,Sudeste,NA,Laje do Pao de Acucar,-22.938409,-43.151797,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+417,416,Sudeste,Rio De Janeiro Norte,Saquarema - Itauna Beach,-22.938318,-42.47999,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+63,62,Sudeste,NA,Canal,-22.937419,-42.487813,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+418,417,Sudeste,Rio De Janeiro Norte,Saquarema - Praia da Vila,-22.936169,-42.495224,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio de Janeiro
+64,63,Sudeste,NA,Praia Seca,-22.936126,-42.361598,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+419,418,Sudeste,Rio De Janeiro Norte,Praia do Foguete - Cabo Frio,-22.929736,-42.037752,3,3,Right and left,Sand-bar,NA,2,3,1,3,Rio de Janeiro
+420,419,Sudeste,Rio De Janeiro City,Flamengo,-22.928832,-43.170261,3.5,1,Left,Point-break,Experienced surfers,1,1,0,3.5,Rio de Janeiro
+421,420,Sudeste,Rio De Janeiro City,prainha de adão e eva,-22.927765,-43.123312,3.5,1,Right and left,Beach-break,All surfers,2,1,1,3.5,Rio de Janeiro
+422,421,Sudeste,Rio De Janeiro City,Itapuca,-22.906618,-43.119707,3.5,2,Right and left,Reef-rocky,All surfers,2,2,1,3.5,Rio de Janeiro
+423,422,Sudeste,Rio De Janeiro Norte,Praia Brava - Cabo Frio,-22.884557,-41.998072,3.5,2,Right and left,Beach-break,All surfers,2,2,1,3.5,Rio de Janeiro
+424,423,Sudeste,Rio De Janeiro Norte,Praia do Forte - Cabo Frio,-22.884167,-42.013056,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+425,424,Sudeste,Rio De Janeiro Norte,Dunas do Peró - Cabo Frio -RJ,-22.842631,-41.981335,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+65,64,Sudeste,NA,Caravelas,-22.81485,-41.953902,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+66,65,Sudeste,NA,Tucuns,-22.799864,-41.929282,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+426,425,Sudeste,Rio De Janeiro Norte,Geriba,-22.77907,-41.910524,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio de Janeiro
+67,66,Sudeste,NA,Praia Brava,-22.754252,-41.872609,NA,NA,NA,NA,NA,1,1,1,1,Rio de Janeiro
+427,426,Sudeste,Rio De Janeiro Norte,Laje da Rasa,-22.726395,-41.971464,3,1,NA,Reef-rocky,Experienced surfers,1,1,0,3,Rio de Janeiro
+428,427,Sudeste,Rio De Janeiro Norte,praia de unamar,-22.609524,-41.997761,2,2,Right and left,Beach-break,Beginners wave,2,2,0,2,Rio de Janeiro
+429,428,Sudeste,Rio De Janeiro Norte,Costazul,-22.525118,-41.920348,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Rio de Janeiro
+430,429,Sudeste,Rio De Janeiro Norte,Pecado,-22.410545,-41.808257,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+431,430,Sudeste,Rio De Janeiro Norte,Cavaleiros,-22.405111,-41.798359,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Rio de Janeiro
+432,431,Sudeste,Rio De Janeiro Norte,Grussaí,-21.690031,-41.022263,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio de Janeiro
+536,535,Sudeste,Rio De Janeiro Norte,atafona - sao joao da barra,-21.630726,-41.014155,3,3,Right and left,Sand-bar,All surfers,2,3,1,3,Rio de Janeiro
+68,67,Sudeste,NA,Marataizes,-21.044883,-40.827456,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+69,68,Sudeste,NA,Ponta do Ubu,-20.793246,-40.579551,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+70,69,Sudeste,NA,Ponta dos Castelhanos,-20.755085,-40.560755,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+71,70,Sudeste,NA,Maimba,-20.707022,-40.514368,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+72,71,Sudeste,NA,Praia do Morro,-20.659788,-40.493843,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+433,432,Sudeste,Esperito Santo,Setiba Pina,-20.635264,-40.425729,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Espírito Santo
+73,72,Sudeste,NA,Ponta de Bororo,-20.614518,-40.415382,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+74,73,Sudeste,NA,Tropical,-20.559544,-40.39181,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+75,74,Sudeste,NA,Dunas de Ule,-20.5421,-40.379861,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+76,75,Sudeste,NA,Guarapari - Ule,-20.541319,-40.378386,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+77,76,Sudeste,NA,Ponta da Fruta,-20.516837,-40.358133,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+78,77,Sudeste,NA,Coral Dois,-20.448948,-40.3303,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+79,78,Sudeste,NA,Ponta da Belina,-20.445827,-40.329245,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+80,79,Sudeste,NA,Coral Um,-20.437659,-40.326007,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+537,536,Sudeste,Esperito Santo,Cemitério,-20.430439,-40.322749,3.5,2,Right,Sand-bar,Experienced surfers,1,2,0,3.5,Espírito Santo
+81,80,Sudeste,NA,"Barrao, Brazil",-20.427381,-40.320982,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+82,81,Sudeste,NA,Barrinha,-20.422541,-40.321934,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+434,433,Sudeste,Esperito Santo,Barra Sol,-20.384262,-40.310088,3.5,2,Right and left,Sand-bar,Experienced surfers,2,2,0,3.5,Espírito Santo
+435,434,Sudeste,Esperito Santo,Secret,-20.379057,-40.307132,3,2,Right and left,Sand-bar,All surfers,2,2,1,3,Espírito Santo
+436,435,Sudeste,Esperito Santo,Coral do Céu,-20.3787,-40.286881,3.5,2,Left,Reef-rocky,Pros or kamikaze only...,1,2,0,3.5,Espírito Santo
+437,436,Sudeste,Esperito Santo,Pompeia,-20.356919,-40.289633,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Espírito Santo
+438,437,Sudeste,Esperito Santo,D2,-20.348965,-40.270665,3.5,3,Right,Reef-rocky,Experienced surfers,1,3,0,3.5,Espírito Santo
+439,438,Sudeste,Esperito Santo,Canal de Vitória,-20.317524,-40.288539,3,1,Left,Sand-bar,All surfers,1,1,1,3,Espírito Santo
+83,82,Sudeste,NA,Praia de Camburi,-20.279677,-40.248994,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+440,439,Sudeste,Esperito Santo,Praia de Camburi,-20.275804,-40.270987,3,1,Right and left,Beach-break,All surfers,2,1,1,3,Espírito Santo
+84,83,Sudeste,NA,Velzyland,-20.244839,-40.216205,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+441,440,Sudeste,Esperito Santo,Prainha de Carapebus,-20.23655,-40.215025,3.5,2,Right,Point-break,Experienced surfers,1,2,0,3.5,Espírito Santo
+85,84,Sudeste,NA,Ponta da Cacao,-20.219573,-40.196268,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+86,85,Sudeste,NA,"Manguinhos, Brazil",-20.199344,-40.190267,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+87,86,Sudeste,NA,Praia da Baleia,-20.171105,-40.184866,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+442,441,Sudeste,Esperito Santo,Barrote-Jacaraipe,-20.151101,-40.183461,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Espírito Santo
+443,442,Sudeste,Esperito Santo,Jacaraípe- Solemar,-20.13565,-40.180628,3,3,Right and left,Sand-bar,All surfers,2,3,1,3,Espírito Santo
+88,87,Sudeste,NA,Jacaraipe - Solemar,-20.109775,-40.171481,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+89,88,Sudeste,NA,Xa,-20.107229,-40.171175,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+90,89,Sudeste,NA,Nova Almeida,-20.058462,-40.183001,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+91,90,Sudeste,NA,Praia Grande,-20.0471,-40.182743,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+444,443,Sudeste,Esperito Santo,Regencia,-19.659239,-39.841576,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Espírito Santo
+92,91,Sudeste,NA,Regencia,-19.562811,-39.764264,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+93,92,Sudeste,NA,Guriri,-18.91075,-39.738564,NA,NA,NA,NA,NA,1,1,1,1,Espírito Santo
+445,444,Sudeste,Esperito Santo,Guriri,-18.739378,-39.746389,3,2,Right and left,Beach-break,All surfers,2,2,1,3,Espírito Santo
+538,537,Nordeste,Bahia Sul,Sirihyba,-14.9551509,-39.0073383,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Bahia
+94,93,Nordeste,NA,Milionarios,-14.847631,-39.022942,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+446,445,Nordeste,Bahia Sul,Backdoor,-14.840603,-39.001465,3.5,2,Right,Point-break,Experienced surfers,1,2,0,3.5,Bahia
+95,94,Nordeste,NA,Sul,-14.83112,-39.022563,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+96,95,Nordeste,NA,Pedra da Cachorra,-14.821026,-39.023633,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+97,96,Nordeste,NA,Jardim Atlantico,-14.815026,-39.0234,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+98,97,Nordeste,NA,Baduska,-14.809442,-39.023423,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+99,98,Nordeste,NA,Norte,-14.66009,-39.063007,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+100,99,Nordeste,NA,Havaizinho,-14.468062,-39.023161,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+447,446,Nordeste,Bahia Sul,Itacarezinho,-14.370585,-39.006014,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Bahia
+448,447,Nordeste,Bahia Sul,Engenhoca,-14.352541,-39.00095,NA,4,Right and left,Beach-break,All surfers,2,4,1,1,Bahia
+449,448,Nordeste,Bahia Sul,Jeribucaçu,-14.344392,-39.001379,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Bahia
+101,100,Nordeste,NA,Sao Jose,-14.316062,-38.990701,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+450,449,Nordeste,Bahia Sul,Prainha,-14.297738,-38.981037,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Bahia
+451,450,Nordeste,Bahia Sul,Tiririca,-14.28601,-38.982925,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Bahia
+452,451,Nordeste,Bahia Sul,Praia da Resende,-14.283889,-38.985069,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Bahia
+102,101,Nordeste,NA,Corals,-14.275408,-38.982569,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+453,452,Nordeste,Bahia Sul,Boca da Barra,-14.26588,-38.986702,3.5,4,Right,Rivermouth,Experienced surfers,1,4,0,3.5,Bahia
+454,453,Nordeste,Bahia Sul,Pontal,-14.263551,-38.993568,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Bahia
+455,454,Nordeste,Bahia Sul,Praia dos Algodoes,-14.0775,-38.954444,3,3,Right and left,Reef-coral,All surfers,2,3,1,3,Bahia
+456,455,Nordeste,Bahia Sul,Saquaira,-14.041089,-38.948078,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Bahia
+457,456,Nordeste,Bahia Sul,Taipu de Fora,-13.942398,-38.92662,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Bahia
+539,538,Nordeste,Bahia Sul,Sol do Muta,-13.8818593,-38.9483376,NA,3,Right,Point-break,All surfers,1,3,1,1,Bahia
+458,457,Nordeste,Bahia Sul,Pedra do Moleque,-13.377011,-38.91263,3.5,3,Right,Reef-coral,Experienced surfers,1,3,0,3.5,Bahia
+103,102,Nordeste,NA,Tony,-13.016732,-38.488781,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+104,103,Nordeste,NA,Meridien,-13.016598,-38.484879,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+105,104,Nordeste,NA,Amaralina,-13.015369,-38.471834,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+106,105,Nordeste,NA,Tubao,-13.010684,-38.461411,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+459,458,Nordeste,Bahia Norte,Farol da Barra,-13.009994,-38.533602,3.5,2,Left,breakwater/jetty,Experienced surfers,1,2,0,3.5,Bahia
+460,459,Nordeste,Bahia Norte,Barravento,-13.009764,-38.526971,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Bahia
+461,460,Nordeste,Bahia Norte,Espanhol,-13.00623,-38.533398,3.5,2,Right and left,Point-break,Experienced surfers,2,2,0,3.5,Bahia
+107,106,Nordeste,NA,Psiu,-12.995919,-38.43939,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+462,461,Nordeste,Bahia Norte,Corsário,-12.976457,-38.423395,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Bahia
+108,107,Nordeste,NA,Alex,-12.973279,-38.406477,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+109,108,Nordeste,NA,Terceira Ponte,-12.96384,-38.396822,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+110,109,Nordeste,NA,SESC,-12.960485,-38.390998,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+111,110,Nordeste,NA,Farol,-12.958147,-38.352813,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+463,462,Nordeste,Bahia Norte,Jaguaribe,-12.955755,-38.385007,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Bahia
+112,111,Nordeste,NA,Pedro do Sal,-12.954224,-38.347234,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+113,112,Nordeste,NA,Itapoa,-12.952339,-38.369609,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+114,113,Nordeste,NA,Seper,-12.952041,-38.343244,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+115,114,Nordeste,NA,Corrente,-12.948985,-38.3392,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+116,115,Nordeste,NA,Stela Maris,-12.947385,-38.337372,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+117,116,Nordeste,NA,Plator,-12.946393,-38.333084,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+540,539,Nordeste,Bahia Norte,Rock Quente,-12.937672,-38.326481,3.5,NA,Right and left,Reef-rocky,NA,2,1,1,3.5,Bahia
+464,463,Nordeste,Bahia Norte,Stella Maris,-12.936098,-38.323714,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Bahia
+118,117,Nordeste,NA,Aleluia,-12.926801,-38.312619,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+119,118,Nordeste,NA,Ipitanga,-12.920477,-38.309718,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+541,540,Nordeste,Bahia Norte,Ribeira,-12.918762,-38.50208,NA,3,Right and left,Beach-break,Beginners wave,2,3,0,1,Bahia
+120,119,Nordeste,NA,Vilas,-12.894546,-38.290791,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+121,120,Nordeste,NA,Busca Vida,-12.863464,-38.255962,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+465,464,Nordeste,Bahia Norte,Praia do forte,-12.734415,-38.144445,3.5,4,Right and left,Reef-coral,Experienced surfers,2,4,0,3.5,Bahia
+466,465,Nordeste,Bahia Norte,Scar Reef,-12.674941,-38.085174,3.5,2,Right and left,Reef-coral,Experienced surfers,2,2,0,3.5,Bahia
+122,121,Nordeste,NA,Itacimirim,-12.639232,-38.048194,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+542,541,Nordeste,Bahia Norte,Praia das Ondas,-12.596084,-38.028939,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Bahia
+123,122,Nordeste,NA,Praia do Forte,-12.583305,-38.005078,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+467,466,Nordeste,Bahia Norte,Casinha,-12.556333,-37.988352,3.5,3,Right,Reef-coral,Experienced surfers,1,3,0,3.5,Bahia
+124,123,Nordeste,NA,Imbassai,-12.342055,-37.8462,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+125,124,Nordeste,NA,Costa do Sauipe,-12.022171,-37.645508,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+126,125,Nordeste,NA,Marlin,-11.939803,-37.602476,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+127,126,Nordeste,NA,Conde,-11.848141,-37.55817,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+128,127,Nordeste,NA,Mangue Seco,-11.483614,-37.364454,NA,NA,NA,NA,NA,1,1,1,1,Bahia
+129,128,Nordeste,NA,Mosqueiro,-11.138116,-37.145493,NA,NA,NA,NA,NA,1,1,1,1,Sergipe
+130,129,Nordeste,NA,Aruana,-11.067069,-37.101289,NA,NA,NA,NA,NA,1,1,1,1,Sergipe
+131,130,Nordeste,NA,Hawaiizinho,-11.043928,-37.082978,NA,NA,NA,NA,NA,1,1,1,1,Sergipe
+132,131,Nordeste,NA,Praia do Meio,-10.999541,-37.050151,NA,NA,NA,NA,NA,1,1,1,1,Sergipe
+468,467,Nordeste,Sergipe Alagoas,Aracaju,-10.987674,-37.041146,3,3,Right and left,NA,All surfers,2,3,1,3,Sergipe
+133,132,Nordeste,NA,Pirambu,-10.746346,-36.855099,NA,NA,NA,NA,NA,1,1,1,1,Sergipe
+134,133,Nordeste,NA,Ponta do Mangue,-10.639483,-36.678539,NA,NA,NA,NA,NA,1,1,1,1,Sergipe
+135,134,Nordeste,NA,Pontal de Peba,-10.367584,-36.303941,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+136,135,Nordeste,NA,Mihai,-10.196728,-36.181642,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+137,136,Nordeste,NA,Pontal do Coruripe,-10.160775,-36.150664,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+138,137,Nordeste,NA,Forjos,-10.107662,-36.097672,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+139,138,Nordeste,NA,Poxim,-10.063563,-36.040909,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+140,139,Nordeste,NA,Jacarecica,-9.916383,-35.945964,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+141,140,Nordeste,NA,Praia do Meio,-9.824447,-35.877803,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+469,468,Nordeste,Sergipe Alagoas,Praia Do Francês,-9.772375,-35.84517,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Alagoas
+142,141,Nordeste,NA,Praia do Pontal,-9.68259,-35.758537,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+143,142,Nordeste,NA,Salgema,-9.679629,-35.718974,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+470,469,Nordeste,Sergipe Alagoas,Pedra Virada,-9.678906,-35.702514,3.5,2,Left,Reef-rocky,Experienced surfers,1,2,0,3.5,Alagoas
+144,143,Nordeste,NA,Pier do Emissario,-9.673301,-35.715234,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+145,144,Nordeste,NA,Praia do Sobral,-9.666869,-35.710735,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+146,145,Nordeste,NA,"Pico da Barra, Brazil",-9.66563,-35.697186,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+543,542,Nordeste,Sergipe and Alagoas,Rainha,-9.644078,-35.698022,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Alagoas
+471,470,Nordeste,Sergipe Alagoas,Cruz das Almas,-9.631199,-35.696071,3.5,4,Right and left,Sand-bar,All surfers,2,4,1,3.5,Alagoas
+147,146,Nordeste,NA,Pedra Virada,-9.585522,-35.660038,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+472,471,Nordeste,Sergipe Alagoas,Riacho Doce,-9.56805,-35.646794,3,3,Right and left,Rivermouth,All surfers,2,3,1,3,Alagoas
+148,147,Nordeste,NA,Praia de Jatiuca,-9.531449,-35.590928,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+473,472,Nordeste,Sergipe Alagoas,New Orleans,-9.52629,-35.583022,3,NA,Right and left,Beach-break,All surfers,2,1,1,3,Alagoas
+149,148,Nordeste,NA,Garca Torta,-9.487114,-35.557477,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+150,149,Nordeste,NA,Mirante da Sirena,-9.430906,-35.503683,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+474,473,Nordeste,Sergipe Alagoas,Praia do Morro,-9.327169,-35.438531,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Alagoas
+151,150,Nordeste,NA,Japaratinga,-9.261582,-35.353366,NA,NA,NA,NA,NA,1,1,1,1,Alagoas
+152,151,Nordeste,NA,Impossivel,-8.615505,-35.020375,NA,NA,NA,NA,NA,1,1,1,1,Pernambuco
+153,152,Nordeste,NA,Serrambi,-8.576358,-35.028715,NA,NA,NA,NA,NA,1,1,1,1,Pernambuco
+475,474,Nordeste,Paraiba and Pernambucco,Maracaipe,-8.525427,-35.006261,4,4,Right and left,Beach-break,Experienced surfers,2,4,0,4,Pernambuco
+476,475,Nordeste,Paraiba and Pernambucco,Borete,-8.499622,-35.003128,3,4,Right and left,Beach-break,All surfers,2,4,1,3,Pernambuco
+154,153,Nordeste,NA,Porto de Galinhas,-8.488678,-34.999501,NA,NA,NA,NA,NA,1,1,1,1,Pernambuco
+155,154,Nordeste,NA,Cupe,-8.479708,-34.996577,NA,NA,NA,NA,NA,1,1,1,1,Pernambuco
+477,476,Nordeste,Paraiba and Pernambucco,cupe,-8.466621,-34.989438,4,3,Right and left,Beach-break,Experienced surfers,2,3,0,4,Pernambuco
+156,155,Nordeste,NA,Gaibu,-8.341567,-34.948826,NA,NA,NA,NA,NA,1,1,1,1,Pernambuco
+478,477,Nordeste,Paraiba and Pernambucco,Enseada dos Corais,-8.312229,-34.946179,3.5,4,Right and left,Beach-break,Experienced surfers,2,4,0,3.5,Pernambuco
+544,543,Nordeste,Paraiba and Pernambucco,Pedra de Xaréu,-8.303081,-34.945245,3.5,4,Right,Point-break,All surfers,1,4,1,3.5,Pernambuco
+479,478,Nordeste,Paraiba and Pernambucco,Tambaba,-7.361306,-34.798406,3,NA,Right and left,Beach-break,All surfers,2,1,1,3,Paraíba
+157,156,Nordeste,NA,Bessa,-7.091138,-34.832765,NA,NA,NA,NA,NA,1,1,1,1,Paraíba
+480,479,Nordeste,Paraiba and Pernambucco,Mar do Macaco,-7.045016,-34.841423,2,3,Right and left,Beach-break,Beginners wave,2,3,0,2,Paraíba
+481,480,Nordeste,Paraiba and Pernambucco,Dique de Cabedelo,-6.963415,-34.84256,3,2,Left,Beach-break,All surfers,1,2,1,3,Paraíba
+158,157,Nordeste,NA,Saji,-6.46688,-34.970449,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+159,158,Nordeste,NA,Farol,-6.408908,-34.979017,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+160,159,Nordeste,NA,Xilauzinho,-6.395101,-34.983205,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+161,160,Nordeste,NA,Mar Aberto,-6.379758,-34.989437,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+162,161,Nordeste,NA,Pontal,-6.36868,-34.993424,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+482,481,Nordeste,Rio Grande Do Norte,Baia Formosa,-6.366994,-35.014801,3.5,3,Right,Point-break,All surfers,1,3,1,3.5,Rio Grande do Norte
+163,162,Nordeste,NA,Mar da Frente,-6.365217,-35.006212,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+164,163,Nordeste,NA,Lajinha,-6.27896,-35.033028,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+165,164,Nordeste,NA,Afogados,-6.24435,-35.036464,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+166,165,Nordeste,NA,Sororoca,-6.238074,-35.035608,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+167,166,Nordeste,NA,Abacateiro,-6.233891,-35.036747,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+483,482,Nordeste,Rio Grande Do Norte,Pipa,-6.227699,-35.044627,4,4,Right and left,Beach-break,All surfers,2,4,1,4,Rio Grande do Norte
+484,483,Nordeste,Rio Grande Do Norte,Lajão,-6.225929,-35.050244,3.5,2,Right,Point-break,Experienced surfers,1,2,0,3.5,Rio Grande do Norte
+485,484,Nordeste,Rio Grande Do Norte,Madeiro,-6.221044,-35.067995,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio Grande do Norte
+486,485,Nordeste,Rio Grande Do Norte,Cacimbinhas,-6.21153,-35.0775,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Rio Grande do Norte
+168,167,Nordeste,NA,Tibau do Sul,-6.180279,-35.089709,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+487,486,Nordeste,Rio Grande Do Norte,Tabatinga,-6.068866,-35.097198,3,NA,Right and left,NA,NA,2,1,1,3,Rio Grande do Norte
+169,168,Nordeste,NA,Tabatinga,-6.049479,-35.108238,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+170,169,Nordeste,NA,Xoxoline,-6.0058,-35.105259,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+171,170,Nordeste,NA,Pirangi Reef,-5.980259,-35.107796,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+172,171,Nordeste,NA,Cotovelo,-5.949906,-35.151975,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+488,487,Nordeste,Rio Grande Do Norte,Ponta negra,-5.879271,-35.17127,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Norte
+173,172,Nordeste,NA,Miami,-5.794834,-35.181664,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+174,173,Nordeste,NA,Areia Preta,-5.792249,-35.184387,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+175,174,Nordeste,NA,Praia dos Artistas,-5.781239,-35.19205,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+176,175,Nordeste,NA,Genipabu,-5.694407,-35.201922,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+489,488,Nordeste,Rio Grande Do Norte,Genipabu,-5.687221,-35.21101,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Rio Grande do Norte
+177,176,Nordeste,NA,Touros Area,-5.197434,-35.45793,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+178,177,Nordeste,NA,Urca da Concei&ccedil;&atilde;o,-5.069617,-35.800231,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+179,178,Nordeste,NA,Cocoa das Lavadeiras,-5.066515,-35.862005,NA,NA,NA,NA,NA,1,1,1,1,Rio Grande do Norte
+490,489,Nordeste,Ceara,Morro Branco,-4.150763,-38.109727,3,NA,Right and left,Beach-break,All surfers,2,1,1,3,Ceará
+491,490,Nordeste,Ceara,Iguape Meio,-3.941302,-38.292251,NA,NA,NA,Beach-break,All surfers,1,1,1,1,Ceará
+545,544,Nordeste,Ceara,Prainha,-3.899172,-38.346806,3.5,3,Right and left,Beach-break,All surfers,2,3,1,3.5,Ceará
+492,491,Nordeste,Fernando Do Noronha,Cacimba do Padre,-3.848947,-32.439537,4,2,Left,Beach-break,Experienced surfers,1,2,0,4,Pernambuco
+546,545,Nordeste,Fernando Do Noronha,Laje do Bode,-3.847468,-32.434612,3.5,2,Left,Reef-coral,Experienced surfers,1,2,0,3.5,Pernambuco
+493,492,Nordeste,Fernando Do Noronha,Boldró,-3.845457,-32.431694,4,3,Right and left,Reef-coral,Pros or kamikaze only...,2,3,0,4,Pernambuco
+494,493,Nordeste,Fernando Do Noronha,Conceição,-3.841122,-32.418498,3,NA,Right and left,Beach-break,All surfers,2,1,1,3,Pernambuco
+495,494,Nordeste,Fernando Do Noronha,Meio,-3.839607,-32.413289,3,NA,Right and left,NA,All surfers,2,1,1,3,Pernambuco
+496,495,Nordeste,Fernando Do Noronha,Cachorro,-3.838906,-32.411127,3,2,Right,Beach-break,All surfers,1,2,1,3,Pernambuco
+497,496,Nordeste,Fernando Do Noronha,Biboca,-3.835106,-32.403349,3.5,NA,Right,Reef-coral,Experienced surfers,1,1,0,3.5,Pernambuco
+498,497,Nordeste,Fernando Do Noronha,Abras,-3.827602,-32.400581,4,2,Left,Reef-rocky,Experienced surfers,1,2,0,4,Pernambuco
+180,179,Nordeste,NA,Baia das Ratas,-3.813,-32.393,NA,NA,NA,NA,NA,1,1,1,1,Pernambuco
+499,498,Nordeste,Ceara,Futuro,-3.726691,-38.457009,3.5,4,Right and left,Beach-break,All surfers,2,4,1,3.5,Ceará
+181,180,Nordeste,NA,Volta da Jurema,-3.724294,-38.496072,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+182,181,Nordeste,NA,Portao,-3.719326,-38.510655,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+500,499,Nordeste,Ceara,Iracema (ponte metalica),-3.718212,-38.518002,3.5,3,Right and left,Reef-rocky,Experienced surfers,2,3,0,3.5,Ceará
+501,500,Nordeste,Ceara,Leste-Oeste,-3.71408,-38.54049,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Ceará
+502,501,Nordeste,Ceara,Titanzinho,-3.707351,-38.467813,3.5,NA,Right and left,Reef-rocky,Experienced surfers,2,1,0,3.5,Ceará
+183,182,Nordeste,NA,Barra do Ceara,-3.692659,-38.584716,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+503,502,Nordeste,Ceara,Icarai,-3.670278,-38.669444,3.5,3,Right and left,Beach-break,Experienced surfers,2,3,0,3.5,Ceará
+504,503,Nordeste,Ceara,Pico das Almas,-3.605083,-38.761997,3,2,Right and left,Beach-break,Experienced surfers,2,2,0,3,Ceará
+184,183,Nordeste,NA,Praia do Pecem,-3.54617,-38.806919,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+505,504,Nordeste,Ceara,Taiba,-3.505663,-38.90527,3,3,Right and left,Point-break,All surfers,2,3,1,3,Ceará
+185,184,Nordeste,NA,Tabinha,-3.500935,-38.911282,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+186,185,Nordeste,NA,Pedra do Meio,-3.410858,-39.040807,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+506,505,Nordeste,Ceara,Paracuru,-3.406714,-39.032621,3.5,NA,Right and left,Reef-coral,Experienced surfers,2,1,0,3.5,Ceará
+187,186,Nordeste,NA,Havaizinho,-3.403507,-39.022171,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+188,187,Nordeste,NA,Curral,-3.403353,-39.025868,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+189,188,Nordeste,NA,Outside,-3.398539,-39.013306,NA,NA,NA,NA,NA,1,1,1,1,Ceará
+507,506,Nordeste,Ceara,Jericoacoara,-2.787089,-40.512611,3,3,Right and left,Beach-break,Beginners wave,2,3,0,3,Ceará
+190,189,Nordeste,NA,Atins,-2.555789,-42.727836,NA,NA,NA,NA,NA,1,1,1,1,Maranhão
+191,190,Nordeste,NA,Ponta d'Areia,-2.497384,-44.311779,NA,NA,NA,NA,NA,1,1,1,1,Maranhão
+192,191,Nordeste,NA,S&atilde;o Marcos,-2.485445,-44.2979,NA,NA,NA,NA,NA,1,1,1,1,Maranhão
+193,192,Nordeste,NA,Calhau,-2.480673,-44.24968,NA,NA,NA,NA,NA,1,1,1,1,Maranhão
+547,546,Nordeste,Maranhao,Caolho,-2.478724,-44.240185,3.5,NA,Right and left,Beach-break,All surfers,2,1,1,3.5,Maranhão
+194,193,Nordeste,NA,Olho D'Agu,-2.477097,-44.230155,NA,NA,NA,NA,NA,1,1,1,1,Maranhão
+195,194,Nordeste,NA,Ponta do Farol,-2.456442,-44.173348,NA,NA,NA,NA,NA,1,1,1,1,Maranhão
+508,507,Nordeste,Maranhao,Travosa,-2.358991,-43.243904,3.5,NA,Right and left,Beach-break,All surfers,2,1,1,3.5,Pará
+509,508,Norte,Para,marahu,-1.073422,-48.403187,3.5,2,Right and left,Sand-bar,All surfers,2,2,1,3.5,Pará
+510,509,Norte,Para,Camaraçu,-0.868831,-46.430798,5,4,Right and left,Beach-break,Experienced surfers,2,4,0,5,Pará
+511,510,Norte,Para,Araruna,-0.688517,-48.483267,3,3,Right and left,Sand-bar,All surfers,2,3,1,3,Pará
+548,547,Norte,Para,Atalaia (salinas),-0.596981,-47.293623,3,3,Right and left,Beach-break,All surfers,2,3,1,3,Pará
+549,548,Norte,Para,Algodoal,-0.577838,-47.579901,3,2,Right,Beach-break,All surfers,1,2,1,3,Pará
