@@ -156,7 +156,7 @@ pressure_normalized <- pressure_normalized %>%
 ## Export Pressure Index
 
 ```{r}
-write_csv(pressure_normalized, file = "s_normalized_pressure.csv")
+write_csv(pressure_normalized, file = "normalized_pressure_5km.csv")
 ```
 
 # Social Index
@@ -282,10 +282,10 @@ min_coral <- round(min(coral$coral_reef_pa), 10)
 
 coral <- coral %>% 
   mutate(normalized_coral_reef = round((coral_reef_pa - min_coral) /
-                                          (max_coral - min_coral), 10)) %>% 
-  mutate(normalized_coral_reef = case_when( # for Southeastern and Southern regions
-   normalized_coral_reef == "NaN" ~ 0
-  ))
+                                          (max_coral - min_coral), 10)) 
+  # mutate(normalized_coral_reef = case_when( # for Southeastern and Southern regions
+  #  normalized_coral_reef == "NaN" ~ 0
+  # ))
 
 max_mangrove <- round(max(mangrove$mangrove_pa), 10)
 min_mangrove <- round(min(mangrove$mangrove_pa), 10)
@@ -299,10 +299,10 @@ min_seagrass <- round(min(seagrass$join_count), 10)
 
 seagrass <- seagrass %>% 
   mutate(normalized_seagrass = round((join_count - min_seagrass) /
-                                       (max_seagrass - min_seagrass), 10)) %>%  
-  mutate(normalized_seagrass = case_when( # for Southern Region
-    normalized_seagrass == "NaN" ~ 0
-  ))
+                                       (max_seagrass - min_seagrass), 10)) 
+  # mutate(normalized_seagrass = case_when( # for Southern Region
+  #   normalized_seagrass == "NaN" ~ 0
+  # ))
 
 # terrestrial ecosystems
 max_tree_cover <- round(max(tree_cover$mean), 10)
@@ -349,10 +349,10 @@ min_terr_pa_high <- round(min(terr_pa_high$terr_pa_high_weighted), 10)
 
 terr_pa_high <- terr_pa_high %>% 
   mutate(normalized_terr_pa_high = round((terr_pa_high_weighted - min_terr_pa_high) /
-                                           (max_terr_pa_high - min_terr_pa_high), 10)) %>%   
-  mutate(normalized_terr_pa_high = case_when(    # for Southern region
-    normalized_terr_pa_high == "NaN" ~ 0
-  ))
+                                           (max_terr_pa_high - min_terr_pa_high), 10))   
+  # mutate(normalized_terr_pa_high = case_when(    # for Southern region
+  #   normalized_terr_pa_high == "NaN" ~ 0
+  # ))
 
 # very high priority terrestrial areas weighted
 terr_pa_ver_high <- terr_pa_ver_high %>% 
@@ -445,7 +445,7 @@ biodiversity_normalized <- biodiversity_normalized %>%
 ### Export Normalized Biodiversity Subindex
 
 ```{r}
-write_csv(biodiversity_normalized, file = "s_normalized_biodiversity.csv")
+write_csv(biodiversity_normalized, file = "normalized_biodiversity_5km.csv")
 ```
 
 ## Surf Subindex
@@ -530,7 +530,7 @@ surf_normalized <- surf_normalized %>%
 ## Surf Subindex Export
 
 ```{r}
-write_csv(surf_normalized, file = "s_normalized_surf.csv")
+write_csv(surf_normalized, file = "normalized_surf_5km.csv")
 ```
 
 ## Social Subindex
@@ -624,7 +624,7 @@ social_normalized <- social_normalized %>%
 ### Export Social Subindex
 
 ```{r}
-write_csv(social_normalized, file = "s_normalized_social.csv")
+write_csv(social_normalized, file = "normalized_social_5km.csv")
 ```
 
 # Climate Index
@@ -633,30 +633,30 @@ write_csv(social_normalized, file = "s_normalized_social.csv")
 climate <- read_csv(here("data", "climate", "climate.csv")) %>% 
   # filter(NM_REGIAO %in% c("Norte", "Nordeste")) %>% # for Northern and Northeastern regions
   # filter(NM_REGIAO == "Sudeste") %>% # for Southeastern region
-  filter(NM_REGIAO == "Sul") %>% 
+  # filter(NM_REGIAO == "Sul") %>% 
   clean_names() %>% 
   filter(id != 331 & id != 511) %>% 
-  select(nm_regiao, id, sum_10km, hab_10km)
+  select(nm_regiao, id, sum_5km, hab_5km)
 ```
 
 # Mangrove Carbon
 
 ```{r}
-max_carbon <- round(max(climate$sum_10km), 10)
-min_carbon <- round(min(climate$sum_10km), 10)
+max_carbon <- round(max(climate$sum_5km), 10)
+min_carbon <- round(min(climate$sum_5km), 10)
 
 climate <- climate %>% 
-  mutate(normalized_carbon = round((sum_10km - min_carbon) / (max_carbon - min_carbon), 10))
+  mutate(normalized_carbon = round((sum_5km - min_carbon) / (max_carbon - min_carbon), 10))
 ```
 
 # Coastal Protection
 
 ```{r}
-max_cp <- round(max(climate$hab_10km), 10)
-min_cp <- round(min(climate$hab_10km), 10)
+max_cp <- round(max(climate$hab_5km), 10)
+min_cp <- round(min(climate$hab_5km), 10)
 
 climate <- climate %>% 
-  mutate(normalized_cp = round((hab_10km - min_cp) / 
+  mutate(normalized_cp = round((hab_5km - min_cp) / 
                                  (max_cp - min_cp), 10))
 ```
 
@@ -677,7 +677,7 @@ climate_normalized <- climate_normalized %>%
 # Climate Index Export
 
 ```{r}
-write_csv(climate_normalized, file = "s_normalized_climate.csv")
+write_csv(climate_normalized, file = "normalized_climate_5km.csv")
 ```
 
 # Response Index
@@ -855,7 +855,7 @@ response_normalized <- response_normalized %>%
 ## Response Index Export
 
 ```{r}
-write_csv(response_normalized, file = "s_normalized_response.csv")
+write_csv(response_normalized, file = "normalized_response_5km.csv")
 ```
 
 # Surf Conservation Index (w and w/o climate)
@@ -902,7 +902,7 @@ sci_normalized <- sci_normalized %>%
 ## Export SCI (w/o climate)
 
 ```{r}
-write_csv(sci_normalized, file = "s_sci_wo_climate.csv")
+write_csv(sci_normalized, file = "sci_wo_climate_5km.csv")
 ```
 
 ## Normalize SCI (w/ climate)
@@ -930,7 +930,7 @@ sci_normalized_climate <- sci_normalized_climate %>%
 ## Export SCI (w/ climate)
 
 ```{r}
-write_csv(sci_normalized_climate, file = "s_sci_w_climate.csv")
+write_csv(sci_normalized_climate, file = "sci_w_climate_5km.csv")
 ```
 
 
