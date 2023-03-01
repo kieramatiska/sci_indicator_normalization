@@ -53,41 +53,53 @@ surf_spots_s <- surf_spots %>%
 # Distribution of priority
 
 ```{r}
+# calculate mean priority for different size buffers
+mean_priority_10km_w_clim <- mean(surf_spots$sci_10km)
+mean_priority_10km_wo_clim <- mean(surf_spots$sci_wo_climate)
+mean_priority_5km <- mean(surf_spots$sci_5km)
+mean_priority_1km <- mean(surf_spots$sci_1km)
+
 # make histograms for all of Brazil and each region
 hist_w_clim <- ggplot(data = surf_spots, aes(x = sci_10km)) +
   geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
-  labs(x = "SCI", y = "Number of spots") +
-  scale_y_continuous(limits = c(0, 160)) +
+  labs(x = "SCI with Climate", y = "Number of breaks") +
+  scale_y_continuous(limits = c(0, 185)) +
   theme_minimal()
 hist_wo_clim <- ggplot(data = surf_spots, aes(x = sci_wo_climate)) +
   geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
-  labs(x = "SCI", y = "Number of spots") +
-  scale_y_continuous(limits = c(0, 160)) +
+  labs(x = "SCI without Climate", y = "Number of breaks") +
+  scale_y_continuous(limits = c(0, 185)) +
   theme_minimal()
 hist_5km <- ggplot(data = surf_spots, aes(x = sci_5km)) +
   geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
-  labs(x = "SCI", y = "Number of spots") +
+  labs(x = "SCI with Climate", y = "Number of breaks") +
+  scale_y_continuous(limits = c(0, 185)) +
+  geom_vline(xintercept = mean_priority_5km, linetype = 2) +
   theme_minimal()
 hist_1km <- ggplot(data = surf_spots, aes(x = sci_1km)) +
   geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
-  labs(x = "SCI", y = "Number of spots") +
+  labs(x = "SCI with Climate", y = "Number of breaks") +
+  scale_y_continuous(limits = c(0, 185)) +
+  geom_vline(xintercept = mean_priority_1km, linetype = 2) +
   theme_minimal()
 
 hist_nne <- ggplot(data = surf_spots_nne, aes(x = sci_10km)) +
   geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
   scale_y_continuous(limits = c(0, 60)) +
-  labs(x = "SCI", y = "Number of spots") +
+  labs(x = "SCI with Climate", y = "Number of breaks") +
   theme_minimal()
 hist_se <- ggplot(data = surf_spots_se, aes(x = sci_10km)) +
   geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
   scale_y_continuous(limits = c(0, 60)) +
-  labs(x = "SCI", y = "Number of spots") +
+  labs(x = "SCI with Climate", y = "Number of breaks") +
   theme_minimal()
 hist_s <- ggplot(data = surf_spots_s, aes(x = sci_10km)) +
   geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
   scale_y_continuous(limits = c(0, 60)) +
-  labs(x = "SCI", y = "Number of spots") +
+  labs(x = "SCI with Climate", y = "Number of breaks") +
   theme_minimal()
+
+
 ```
 
 # Number of top spots in each state
@@ -106,30 +118,49 @@ states_w_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_10km)) +
   geom_col() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   scale_y_continuous(limits = c(0, 22)) +
-  labs(x = "State", y = "Number of spots")
+  labs(x = "State", y = "Number of breaks")
 
 states_wo_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_wo_clim)) +
   geom_col() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   scale_y_continuous(limits = c(0, 22)) +
-  labs(x = "State", y = "Number of spots")
+  labs(x = "State", y = "Number of breaks")
 
 states_5km <- ggplot(top_spots_by_state, aes(x = state, y = difference_5_10)) +
   geom_col() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
-  labs(x = "State", y = "Number of spots")
+  scale_y_continuous(limits = c(-15, 5)) +
+  labs(x = "State", y = "Number of breaks")
 
 states_1km <- ggplot(top_spots_by_state, aes(x = state, y = difference_1_10)) +
   geom_col() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
-  labs(x = "State", y = "Number of spots")
+  scale_y_continuous(limits = c(-15, 5)) +
+  labs(x = "State", y = "Number of breaks")
 ```
 
-# Join into figure
+# Join into figures
 
 ```{r}
-figure <- plot_grid(hist_wo_clim, hist_w_clim, states_wo_clim, states_w_clim, labels = "AUTO", ncol = 2)
+figure1 <- plot_grid(hist_wo_clim, hist_w_clim, states_wo_clim, states_w_clim, labels = "AUTO", ncol = 2)
+figure1
 
-figure
+# add mean line to hist_w_clim for sensitivity analysis figure
+hist_w_clim <- hist_w_clim +
+  geom_vline(xintercept = mean_priority_10km_wo_clim, linetype = 2)
+
+# increase font size for figure 2
+# hist_w_clim <- hist_w_clim +
+#   theme(text = element_text(size = 20))
+# hist_5km <- hist_5km +
+#   theme(text = element_text(size = 20))
+# hist_1km <- hist_1km +
+#   theme(text = element_text(size = 20))
+
+figure2_top_row <- plot_grid(hist_w_clim, hist_5km, hist_1km, labels = "AUTO", nrow = 1)
+figure2_bottom_row <- plot_grid(states_5km, states_1km, labels = c("D", "E"), nrow = 1)
+figure2 <- plot_grid(figure2_top_row, figure2_bottom_row, labels = "", nrow = 2)
+
+figure2
 ```
 
