@@ -160,7 +160,7 @@ states_w_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_10km, fill 
   scale_y_continuous(limits = c(0, 22)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
   theme(legend.position = "none") +
-  labs(x = "State", y = "Number of breaks")
+  labs(x = "State", y = "Number of top breaks")
 
 states_wo_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_wo_clim, fill = region)) +
   geom_col() +
@@ -168,7 +168,7 @@ states_wo_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_wo_clim, f
   scale_y_continuous(limits = c(0, 22)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
   theme(legend.position = "none") +
-  labs(x = "State", y = "Number of breaks")
+  labs(x = "State", y = "Number of top breaks")
 
 states_5km <- ggplot(top_spots_by_state, aes(x = state, y = difference_5_10, fill = region)) +
   geom_col() +
@@ -176,7 +176,7 @@ states_5km <- ggplot(top_spots_by_state, aes(x = state, y = difference_5_10, fil
   scale_y_continuous(limits = c(-15, 5)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
   theme(legend.position = "none") +
-  labs(x = "State", y = "Number of breaks")
+  labs(x = "State", y = "Number of top breaks")
 
 states_1km <- ggplot(top_spots_by_state, aes(x = state, y = difference_1_10, fill = region)) +
   geom_col() +
@@ -184,7 +184,7 @@ states_1km <- ggplot(top_spots_by_state, aes(x = state, y = difference_1_10, fil
   scale_y_continuous(limits = c(-15, 5)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
   theme(legend.position = "none") +
-  labs(x = "State", y = "Number of breaks")
+  labs(x = "State", y = "Number of top breaks")
 ```
 
 # Join into figures
