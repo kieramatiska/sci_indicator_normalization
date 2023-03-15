@@ -40,6 +40,12 @@ surf_spots <- left_join(surf_spots, sci_w_climate_10km, by = "id", keep = FALSE)
   left_join(sci_w_climate_1km, by = "id", keep = FALSE) %>% 
   left_join(sci_wo_climate_10km, by = "id", keep = FALSE)
 
+# read in normalized climate results
+normalized_climate <- read_csv(here("normalized_climate.csv"))
+
+# join to surf spots
+surf_spots <- surf_spots %>% 
+  left_join(normalized_climate, by = "id", keep = FALSE)
 
 # filter for each region
 surf_spots_nne <- surf_spots %>% 
@@ -136,6 +142,27 @@ hist_s_wo_clim <- ggplot(data = surf_spots_s, aes(x = sci_wo_climate)) +
   theme(text = element_text(size = 18), plot.background = element_rect(colour = "#FFFFBE", fill=NA, size=5))
 ```
 
+# Climate histograms
+
+```{r}
+hist_nne_carbon <- ggplot(data = surf_spots_nne, aes(x = normalized_carbon)) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#edf8e9", "#bae4b3", "#74c476", "#31a354", "#006d2c")) +
+  scale_y_continuous(limits = c(0, 200)) +
+  #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
+  labs(x = "Normalized carbon storage", y = "Number of breaks", title = "North and Northeast")
+hist_se_carbon <- ggplot(data = surf_spots_se, aes(x = normalized_carbon)) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#edf8e9", "#bae4b3", "#74c476", "#31a354", "#006d2c")) +
+  scale_y_continuous(limits = c(0, 200)) +
+  #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
+  labs(x = "Normalized carbon storage", y = "Number of breaks", title = "Southeast")
+hist_s_carbon <- ggplot(data = surf_spots_s, aes(x = normalized_carbon)) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#edf8e9", "#bae4b3", "#74c476", "#31a354", "#006d2c")) +
+  scale_y_continuous(limits = c(0, 200)) +
+  #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
+  labs(x = "Normalized carbon storage", y = "Number of breaks", title = "South")
+```
+
+
 # Number of top spots in each state
 
 ```{r}
@@ -193,7 +220,7 @@ states_1km <- ggplot(top_spots_by_state, aes(x = state, y = difference_1_10, fil
 figure1 <- plot_grid(hist_wo_clim, hist_w_clim, states_wo_clim, states_w_clim, labels = "AUTO", ncol = 2)
 figure1
 
-# add mean line and change x axis label for hist_w_clim for sensitivity analysis figure
+# add mean line and change x axis label on hist_w_clim for sensitivity analysis figure
 hist_w_clim_sens <- hist_w_clim +
   labs(x = "SCI with Climate (10 km)") +
   geom_vline(xintercept = mean_priority_10km_wo_clim, linetype = 2)
