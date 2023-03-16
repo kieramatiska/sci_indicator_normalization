@@ -146,20 +146,36 @@ hist_s_wo_clim <- ggplot(data = surf_spots_s, aes(x = sci_wo_climate)) +
 
 ```{r}
 hist_nne_carbon <- ggplot(data = surf_spots_nne, aes(x = normalized_carbon)) +
-  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#edf8e9", "#bae4b3", "#74c476", "#31a354", "#006d2c")) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("white", "#bae4b3", "#74c476", "#31a354", "#006d2c"), col = "black") +
   scale_y_continuous(limits = c(0, 200)) +
   #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
   labs(x = "Normalized carbon storage", y = "Number of breaks", title = "North and Northeast")
 hist_se_carbon <- ggplot(data = surf_spots_se, aes(x = normalized_carbon)) +
-  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#edf8e9", "#bae4b3", "#74c476", "#31a354", "#006d2c")) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("white", "#bae4b3", "#74c476", "#31a354", "#006d2c"), col = "black") +
   scale_y_continuous(limits = c(0, 200)) +
   #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
   labs(x = "Normalized carbon storage", y = "Number of breaks", title = "Southeast")
 hist_s_carbon <- ggplot(data = surf_spots_s, aes(x = normalized_carbon)) +
-  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#edf8e9", "#bae4b3", "#74c476", "#31a354", "#006d2c")) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("white", "#bae4b3", "#74c476", "#31a354", "#006d2c"), col = "black") +
   scale_y_continuous(limits = c(0, 200)) +
   #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
   labs(x = "Normalized carbon storage", y = "Number of breaks", title = "South")
+
+hist_nne_cp <- ggplot(data = surf_spots_nne, aes(x = normalized_cp)) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"), col = "black") +
+  scale_y_continuous(limits = c(0, 115)) +
+  #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
+  labs(x = "Normalized coastal protection", y = "Number of breaks", title = "North and Northeast")
+hist_se_cp <- ggplot(data = surf_spots_se, aes(x = normalized_cp)) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"), col = "black") +
+  scale_y_continuous(limits = c(0, 115)) +
+  #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
+  labs(x = "Normalized coastal protection", y = "Number of breaks", title = "Southeast")
+hist_s_cp <- ggplot(data = surf_spots_s, aes(x = normalized_cp)) +
+  geom_histogram(breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1), fill = c("#ffffb2", "#fecc5c", "#fd8d3c", "#f03b20", "#bd0026"), col = "black") +
+  scale_y_continuous(limits = c(0, 115)) +
+  #geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
+  labs(x = "Normalized coastal protection", y = "Number of breaks", title = "South")
 ```
 
 
