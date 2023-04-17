@@ -47,6 +47,14 @@ normalized_climate <- read_csv(here("normalized_climate.csv"))
 surf_spots <- surf_spots %>% 
   left_join(normalized_climate, by = "id", keep = FALSE)
 
+# read in difference data
+sci_diff <- read_csv(here("data", "sci_difference.csv")) %>% 
+  select(id, difference)
+
+# join to surf spots
+surf_spots <- surf_spots %>% 
+  left_join(sci_diff, by = "id", keep = FALSE)
+
 # filter for each region
 surf_spots_nne <- surf_spots %>% 
   filter(region == "Norte" | region == "Nordeste")
@@ -255,4 +263,39 @@ figure2 <- plot_grid(figure2_top_row, figure2_bottom_row, labels = "", nrow = 2)
 
 figure2
 ```
+
+# Differences Histogram
+
+```{r}
+sci_diff <- surf_spots %>% 
+  filter(difference < 0)
+
+sci_clim_diff <- surf_spots %>% 
+  filter(difference > 0)
+
+sci_diff_sum <- sci_diff %>% 
+  group_by(region) %>% 
+  summarize(sci_count = n())
+
+sci_clim_diff_sum <- sci_clim_diff %>% 
+  group_by(region) %>% 
+  summarize(sci_clim_count = n())
+
+x <- c("Norte", "Nordeste", "Sudeste", "Sul")
+
+diff <- sci_diff_sum %>% 
+  left_join(sci_clim_diff_sum, by = "region", keep = FALSE) %>% 
+  slice(match(x, region))
+
+ggplot(data = diff) +
+  geom_col(aes(x = region, y = sci_count))
+  geom_col(aes(x = region, y = sci_clim_count))
+```
+
+
+
+
+
+
+
 
