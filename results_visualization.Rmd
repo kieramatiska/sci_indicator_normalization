@@ -268,13 +268,10 @@ figure2 <- plot_grid(figure2_top_row, figure2_bottom_row, labels = "", nrow = 2)
 figure2
 ```
 
-<<<<<<< HEAD
 ```{r}
 sci_report_figure <- plot_grid(hist_w_clim, states_w_clim, ncol = 1, labels = "AUTO")
 ```
 
-
-=======
 # Differences Histogram
 
 ```{r}
@@ -303,11 +300,3 @@ ggplot(data = diff) +
   geom_col(aes(x = region, y = sci_clim_count))
 ```
 
-
-
-
-
-
-
-
->>>>>>> 269dcee1168ccc9a55546e858f45c6bf70168b8b
