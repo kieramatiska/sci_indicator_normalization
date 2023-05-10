@@ -67,23 +67,23 @@ mean_priority_1km <- mean(surf_spots$sci_1km)
 
 # make histograms for all of Brazil and each region
 hist_w_clim <- ggplot(data = surf_spots, aes(x = sci_10km)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   labs(x = "SCI with Climate", y = "Number of breaks") +
   scale_y_continuous(limits = c(0, 185)) +
   theme_minimal()
 hist_wo_clim <- ggplot(data = surf_spots, aes(x = sci_wo_climate)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   labs(x = "SCI without Climate", y = "Number of breaks") +
   scale_y_continuous(limits = c(0, 185)) +
   theme_minimal()
 hist_5km <- ggplot(data = surf_spots, aes(x = sci_5km)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   labs(x = "SCI with Climate (5 km)", y = "Number of breaks") +
   scale_y_continuous(limits = c(0, 185)) +
   geom_vline(xintercept = mean_priority_5km, linetype = 2) +
   theme_minimal()
 hist_1km <- ggplot(data = surf_spots, aes(x = sci_1km)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   labs(x = "SCI with Climate (1 km)", y = "Number of breaks") +
   scale_y_continuous(limits = c(0, 185)) +
   geom_vline(xintercept = mean_priority_1km, linetype = 2) +
@@ -98,21 +98,21 @@ mean_priority_se_wo_clim <- mean(surf_spots_se$sci_wo_climate)
 mean_priority_s_wo_clim <- mean(surf_spots_s$sci_wo_climate)
 
 hist_nne_w_clim <- ggplot(data = surf_spots_nne, aes(x = sci_10km)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   scale_y_continuous(limits = c(0, 60)) +
   geom_vline(xintercept = mean_priority_nne_w_clim, linetype = 2) +
   labs(x = "SCI with Climate", y = "Number of breaks", title = "North/Northeast") +
   theme_minimal() +
   theme(text = element_text(size = 18), plot.background = element_rect(colour = "#FFBEBE", fill=NA, size=5))
 hist_se_w_clim <- ggplot(data = surf_spots_se, aes(x = sci_10km)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   scale_y_continuous(limits = c(0, 60)) +
   geom_vline(xintercept = mean_priority_se_w_clim, linetype = 2) +
   labs(x = "SCI with Climate", y = "Number of breaks", title = "Southeast") +
   theme_minimal() +
   theme(text = element_text(size = 18), plot.background = element_rect(colour = "#E8BEFF", fill=NA, size=5))
 hist_s_w_clim <- ggplot(data = surf_spots_s, aes(x = sci_10km)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   scale_y_continuous(limits = c(0, 60)) +
   geom_vline(xintercept = mean_priority_s_w_clim, linetype = 2) +
   labs(x = "SCI with Climate", y = "Number of breaks", title = "South") +
@@ -120,21 +120,21 @@ hist_s_w_clim <- ggplot(data = surf_spots_s, aes(x = sci_10km)) +
   theme(text = element_text(size = 18), plot.background = element_rect(colour = "#FFFFBE", fill=NA, size=5))
 
 hist_nne_wo_clim <- ggplot(data = surf_spots_nne, aes(x = sci_wo_climate)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   scale_y_continuous(limits = c(0, 60)) +
   geom_vline(xintercept = mean_priority_nne_wo_clim, linetype = 2) +
   labs(x = "SCI without Climate", y = "Number of breaks", title = "North/Northeast") +
   theme_minimal() +
   theme(text = element_text(size = 18), plot.background = element_rect(colour = "#FFBEBE", fill=NA, size=5))
 hist_se_wo_clim <- ggplot(data = surf_spots_se, aes(x = sci_wo_climate)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   scale_y_continuous(limits = c(0, 60)) +
   geom_vline(xintercept = mean_priority_se_wo_clim, linetype = 2) +
   labs(x = "SCI without Climate", y = "Number of breaks", title = "Southeast") +
   theme_minimal() +
   theme(text = element_text(size = 18), plot.background = element_rect(colour = "#E8BEFF", fill=NA, size=5))
 hist_s_wo_clim <- ggplot(data = surf_spots_s, aes(x = sci_wo_climate)) +
-  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641")) +
+  geom_histogram(breaks = c(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1), fill = c("#d7191c", "#d7191c", "#fdae61", "#fdae61", "#a6d96a", "#a6d96a", "#1a9641", "#1a9641"), col = "black") +
   scale_y_continuous(limits = c(0, 60)) +
   geom_vline(xintercept = mean_priority_s_wo_clim, linetype = 2) +
   labs(x = "SCI without Climate", y = "Number of breaks", title = "South") +
@@ -198,7 +198,8 @@ top_spots_by_state <- top_spots_by_state %>%
 top_spots_by_state$region <- c("North/northeast", "North/northeast", "North/northeast", "North/northeast", "North/northeast", "North/northeast", "North/northeast", "North/northeast", "North/northeast", "Southeast", "Southeast", "Southeast", "South", "South", "South")
 
 states_w_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_10km, fill = region)) +
-  geom_col() +
+  geom_col(col = "black") +
+  theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   scale_y_continuous(limits = c(0, 22)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
@@ -206,7 +207,8 @@ states_w_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_10km, fill 
   labs(x = "State", y = "Number of top breaks")
 
 states_wo_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_wo_clim, fill = region)) +
-  geom_col() +
+  geom_col(col = "black") +
+  theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   scale_y_continuous(limits = c(0, 22)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
@@ -214,7 +216,8 @@ states_wo_clim <- ggplot(top_spots_by_state, aes(x = state, y = count_wo_clim, f
   labs(x = "State", y = "Number of top breaks")
 
 states_5km <- ggplot(top_spots_by_state, aes(x = state, y = difference_5_10, fill = region)) +
-  geom_col() +
+  geom_col(col = "black") +
+  theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   scale_y_continuous(limits = c(-15, 5)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
@@ -222,7 +225,8 @@ states_5km <- ggplot(top_spots_by_state, aes(x = state, y = difference_5_10, fil
   labs(x = "State", y = "Number of top breaks")
 
 states_1km <- ggplot(top_spots_by_state, aes(x = state, y = difference_1_10, fill = region)) +
-  geom_col() +
+  geom_col(col = "black") +
+  theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   scale_y_continuous(limits = c(-15, 5)) +
   scale_fill_manual(values = c("#FFBEBE", "#FFFFBE", "#E8BEFF")) +
@@ -255,4 +259,9 @@ figure2 <- plot_grid(figure2_top_row, figure2_bottom_row, labels = "", nrow = 2)
 
 figure2
 ```
+
+```{r}
+sci_report_figure <- plot_grid(hist_w_clim, states_w_clim, ncol = 1, labels = "AUTO")
+```
+
 
