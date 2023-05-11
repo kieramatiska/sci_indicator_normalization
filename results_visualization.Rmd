@@ -300,3 +300,48 @@ ggplot(data = diff) +
   geom_col(aes(x = region, y = sci_clim_count))
 ```
 
+# Region Counts
+
+```{r}
+surf_spots <- surf_spots %>% 
+  select(id, nm_regiao, sci_10km)
+
+surf_spots_nne <- surf_spots_nne %>% 
+  select(id, region, sci_10km) %>% 
+  mutate(rank = case_when(
+    sci_10km > 0.75 ~ "High Priority",
+    sci_10km <= 0.75 & sci_10km > 0.5 ~ "Medium Priority",
+    sci_10km <= 0.5 & sci_10km > 0.25 ~ "Low Priority",
+    sci_10km <= 0.25 ~ "Very Low Priority"
+  )) %>% 
+  group_by(rank) %>% 
+  summarize(count = n())
+
+surf_spots_se <- surf_spots_se %>% 
+  select(id, region, sci_10km) %>% 
+  mutate(rank = case_when(
+    sci_10km > 0.75 ~ "High Priority",
+    sci_10km <= 0.75 & sci_10km > 0.5 ~ "Medium Priority",
+    sci_10km <= 0.5 & sci_10km > 0.25 ~ "Low Priority",
+    sci_10km <= 0.25 ~ "Very Low Priority"
+  )) %>% 
+  group_by(rank) %>% 
+  summarize(count = n())
+
+surf_spots_s <- surf_spots_s %>% 
+  select(id, region, sci_10km) %>% 
+  mutate(rank = case_when(
+    sci_10km > 0.75 ~ "High Priority",
+    sci_10km <= 0.75 & sci_10km > 0.5 ~ "Medium Priority",
+    sci_10km <= 0.5 & sci_10km > 0.25 ~ "Low Priority",
+    sci_10km <= 0.25 ~ "Very Low Priority"
+  )) %>% 
+  group_by(rank) %>% 
+  summarize(count = n())
+```
+
+
+
+
+
+
