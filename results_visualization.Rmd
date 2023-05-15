@@ -340,7 +340,22 @@ surf_spots_s <- surf_spots_s %>%
   summarize(count = n())
 ```
 
+## Combine SCI data with Sensitivity Analysis
 
+```{r}
+sci_data <- read_csv(here("all_data.csv"))
+
+sci_sa <- left_join(sci_data, sci_w_climate_5km,
+                   by = "id")
+
+all_data_sa <- left_join(sci_sa, sci_w_climate_1km,
+                         by = "id")
+```
+
+```{r}
+# export
+write_csv(all_data_sa, file = "all_data_sa.csv")
+```
 
 
 
