@@ -303,10 +303,7 @@ ggplot(data = diff) +
 # Region Counts
 
 ```{r}
-surf_spots <- surf_spots %>% 
-  select(id, nm_regiao, sci_10km)
-
-surf_spots_nne <- surf_spots_nne %>% 
+surf_spots_nne_subset <- surf_spots_nne %>% 
   select(id, region, sci_10km) %>% 
   mutate(rank = case_when(
     sci_10km > 0.75 ~ "High Priority",
@@ -317,7 +314,7 @@ surf_spots_nne <- surf_spots_nne %>%
   group_by(rank) %>% 
   summarize(count = n())
 
-surf_spots_se <- surf_spots_se %>% 
+surf_spots_se_subset <- surf_spots_se %>% 
   select(id, region, sci_10km) %>% 
   mutate(rank = case_when(
     sci_10km > 0.75 ~ "High Priority",
@@ -328,7 +325,7 @@ surf_spots_se <- surf_spots_se %>%
   group_by(rank) %>% 
   summarize(count = n())
 
-surf_spots_s <- surf_spots_s %>% 
+surf_spots_s_subset <- surf_spots_s %>% 
   select(id, region, sci_10km) %>% 
   mutate(rank = case_when(
     sci_10km > 0.75 ~ "High Priority",
