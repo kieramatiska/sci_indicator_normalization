@@ -45,6 +45,7 @@ Each .Rmd file has comments regarding what the code is doing and what should occ
 ## Contributors
 
 Kiera Matiska: Bren School of Environmental Science & Management
+
 Kort Alexander: Bren School of Environmental Science & Management
 
 ## Use
