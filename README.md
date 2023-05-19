@@ -8,7 +8,7 @@ Below are the files in the repo and what each one contains.
 
 ### Data Folder (data)
 
-This folder is split into 8 different subfolders, listed below, and contains 1 .csv file not located in a folder, "sci_difference.csv". All data in the subfolders were imported into R from ArcGIS Pro. Each .csv file contains numbers indicating the amount of each locator found within a surf break buffer.
+This folder is split into 8 different subfolders, listed below, and contains 1 .csv file not located in a folder, "sci_difference.csv". All data in the subfolders were imported into R from ArcGIS Pro. Each .csv file contains numbers indicating the amount of each indicator found within a surf break buffer.
 
 - pressure folder: Contains indicators for built area, human modification, population change, roads, and ports
 - biodiversity folder: Contains indicators for coral reefs, mangroves, seagrass, marine and terrestrial species richness, oceanic priority areas, terrestrial priority areas ranked high, very high, and extremely high, and tree cover
@@ -28,7 +28,7 @@ This folder is split into 8 different subfolders, listed below.
 - surf folder: contains the normalized surf index values for all of Brazil and each subregion, and is split into two additional subfolders to separate the 1km and 5km normalized files.
 - climate folder: contains the normalized climate index values for all of Brazil and each subregion, and is split into two additional subfolders to separate the 1km and 5km normalized files.
 - response folder: contains the normalized response index values for all of Brazil and each subregion, and is split into two additional subfolders to separate the 1km and 5km normalized files.
--sci folder: split into two subfolders ("sci_w_climate"" and "sci_wo_climate") that contains the normalized values for the specific sci the folder refers to for all of Brazil and each subregion, and is split into two additional subfolders to separate the 1km and 5km normalized files
+- sci folder: split into two subfolders ("sci_w_climate"" and "sci_wo_climate") that contains the normalized values for the specific sci the folder refers to for all of Brazil and each subregion, and is split into two additional subfolders to separate the 1km and 5km normalized files
 - all data folder: contains two files, one with all normalized data without the sensitivity analysis ("all_data.csv") and one with all normalized data with the sensitivity analysis ("all_data_sa.csv")
 
 ### RMarkdown folder (Rmds)
