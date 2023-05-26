@@ -42,6 +42,10 @@ This folder contains four .Rmds, listed below.
 
 Each .Rmd file has comments regarding what the code is doing and what should occur depending on the analysis. For example, if finding a normalized biodiversity index score for the sourthern region, you would want to uncomment the code for the coral reef indicator as there are not coral reefs on the Southern coast of Brazil.
 
+### ArcGIS Pro model code (Model code)
+
+This folder contains the exported python code from the models we built in ArcGIS Pro to analyze all the spatial data and calculate indicator values used in the SCI.
+
 ## Contributors
 
 Kiera Matiska: Bren School of Environmental Science & Management
